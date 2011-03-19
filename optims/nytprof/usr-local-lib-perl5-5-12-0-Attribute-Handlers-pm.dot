@@ -1,0 +1,104 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::import";
+}
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_attributes {
+	label="attributes";
+	"attributes::BEGIN@9";
+	"attributes::CORE:qr";
+	"attributes::import";
+}
+subgraph cluster_XSLoader {
+	label="XSLoader";
+	"XSLoader::load";
+}
+subgraph cluster_Attribute_Handlers {
+	label="Attribute::Handlers";
+	"Attribute::Handlers::END";
+	"Attribute::Handlers::CHECK";
+	"Attribute::Handlers::__ANON__[Attribute/Handlers.pm:111]";
+	"Attribute::Handlers::_gen_handler_AH_";
+	"Attribute::Handlers::BEGIN@104";
+	"Attribute::Handlers::CORE:qr";
+	"Attribute::Handlers::BEGIN@2";
+	"Attribute::Handlers::BEGIN@148";
+	"Attribute::Handlers::BEGIN@110";
+	"Attribute::Handlers::import";
+	"Attribute::Handlers::BEGIN@199";
+	"Attribute::Handlers::INIT";
+	"Attribute::Handlers::BEGIN@17";
+	"Attribute::Handlers::BEGIN@6";
+	"Attribute::Handlers::BEGIN@3";
+	"Attribute::Handlers::BEGIN@215";
+	"Attribute::Handlers::BEGIN@4";
+	"Attribute::Handlers::BEGIN@5";
+	"Attribute::Handlers::BEGIN@15";
+	"Attribute::Handlers::BEGIN@124";
+	"Attribute::Handlers::BEGIN@236";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_main {
+	label="main";
+	"main::RUNTIME";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::BEGIN@7";
+}
+subgraph cluster_Attribute_Handlers__TEST_ {
+	label="Attribute::Handlers::_TEST_";
+	"Attribute::Handlers::_TEST_::MODIFY_CODE_ATTRIBUTES";
+}
+"Attribute::Handlers::BEGIN@3" -> "Exporter::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@2";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@199";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@215";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@148";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@236";
+"Attribute::Handlers::BEGIN@148" -> "strict::unimport";
+"Attribute::Handlers::BEGIN@199" -> "strict::unimport";
+"Attribute::Handlers::BEGIN@15" -> "strict::unimport";
+"Attribute::Handlers::BEGIN@124" -> "strict::unimport";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@104";
+"Attribute::Handlers::BEGIN@4" -> "warnings::import";
+"Attribute::Handlers::CHECK" -> "Attribute::Handlers::__ANON__[Attribute/Handlers.pm:111]";
+"Attribute::Handlers::BEGIN@6" -> "vars::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@6";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@17";
+"Attribute::Handlers::BEGIN@5" -> "strict::import";
+"Attribute::Handlers::BEGIN@17" -> "strict::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::CORE:qr";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@110";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@3";
+"Attribute::Handlers::BEGIN@215" -> "warnings::unimport";
+"Attribute::Handlers::BEGIN@236" -> "warnings::unimport";
+"main::RUNTIME" -> "Attribute::Handlers::END";
+"Attribute::Handlers::BEGIN@110" -> "attributes::import";
+"main::RUNTIME" -> "Attribute::Handlers::CHECK";
+"attributes::import" -> "Attribute::Handlers::_TEST_::MODIFY_CODE_ATTRIBUTES";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::_gen_handler_AH_";
+"Attribute::Handlers::BEGIN@110" -> "attributes::BEGIN@9";
+"Attribute::Handlers::BEGIN@110" -> "XSLoader::load";
+"main::RUNTIME" -> "Attribute::Handlers::INIT";
+"Attribute::Handlers::BEGIN@110" -> "attributes::CORE:qr";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@4";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@5";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@15";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@124";
+}

@@ -1,0 +1,31 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::BEGIN@18";
+}
+subgraph cluster_Moose_Meta_Role_Method {
+	label="Moose::Meta::Role::Method";
+	"Moose::Meta::Role::Method::BEGIN@11";
+	"Moose::Meta::Role::Method::BEGIN@4";
+	"Moose::Meta::Role::Method::BEGIN@5";
+}
+"Moose::Meta::Role::BEGIN@18" -> "Moose::Meta::Role::Method::BEGIN@5";
+"Moose::Meta::Role::BEGIN@18" -> "Moose::Meta::Role::Method::BEGIN@11";
+"Moose::Meta::Role::Method::BEGIN@11" -> "base::import";
+"Moose::Meta::Role::Method::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Role::Method::BEGIN@4" -> "strict::import";
+"Moose::Meta::Role::BEGIN@18" -> "Moose::Meta::Role::Method::BEGIN@4";
+}

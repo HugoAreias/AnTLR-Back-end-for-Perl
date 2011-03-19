@@ -1,0 +1,46 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Meta_Method {
+	label="Moose::Meta::Method";
+	"Moose::Meta::Method::BEGIN@4";
+	"Moose::Meta::Method::BEGIN@10";
+	"Moose::Meta::Method::_inline_throw_error";
+	"Moose::Meta::Method::BEGIN@3";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::_generate_slot_initializer";
+	"Moose::Meta::Method::Constructor::_generate_BUILDARGS";
+	"Moose::Meta::Method::Constructor::_generate_type_constraint_check";
+}
+subgraph cluster_Moose_Meta_Method_Accessor {
+	label="Moose::Meta::Method::Accessor";
+	"Moose::Meta::Method::Accessor::_generate_reader_method_inline";
+	"Moose::Meta::Method::Accessor::_inline_check_required";
+	"Moose::Meta::Method::Accessor::_inline_check_constraint";
+}
+"base::import" -> "Moose::Meta::Method::BEGIN@3";
+"base::import" -> "Moose::Meta::Method::BEGIN@10";
+"base::import" -> "Moose::Meta::Method::BEGIN@4";
+"Moose::Meta::Method::BEGIN@10" -> "base::import";
+"Moose::Meta::Method::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Method::BEGIN@3" -> "strict::import";
+"Moose::Meta::Method::Accessor::_generate_reader_method_inline" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Accessor::_inline_check_required" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Accessor::_inline_check_constraint" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_check" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Moose::Meta::Method::_inline_throw_error";
+}

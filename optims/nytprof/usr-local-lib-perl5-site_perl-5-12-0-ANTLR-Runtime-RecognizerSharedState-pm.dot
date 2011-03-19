@@ -1,0 +1,28 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::__ANON__[ANTLR/Runtime/RecognizerSharedState.pm:13]";
+	"ANTLR::Runtime::RecognizerSharedState::BEGIN@5";
+	"ANTLR::Runtime::RecognizerSharedState::new";
+	"ANTLR::Runtime::RecognizerSharedState::BUILD";
+	"ANTLR::Runtime::RecognizerSharedState::BEGIN@152";
+	"ANTLR::Runtime::RecognizerSharedState::BEGIN@3";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@6";
+}
+"ANTLR::Runtime::RecognizerSharedState::BEGIN@152" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "ANTLR::Runtime::RecognizerSharedState::BUILD";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@6" -> "ANTLR::Runtime::RecognizerSharedState::BEGIN@3";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@6" -> "ANTLR::Runtime::RecognizerSharedState::BEGIN@5";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "ANTLR::Runtime::RecognizerSharedState::__ANON__[ANTLR/Runtime/RecognizerSharedState.pm:13]";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@6" -> "ANTLR::Runtime::RecognizerSharedState::BEGIN@152";
+"ANTLR::Runtime::RecognizerSharedState::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}

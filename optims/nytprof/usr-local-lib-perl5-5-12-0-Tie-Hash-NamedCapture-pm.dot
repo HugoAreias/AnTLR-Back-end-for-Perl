@@ -1,0 +1,14 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_English {
+	label="English";
+	"English::BEGIN@148";
+}
+subgraph cluster_Tie_Hash_NamedCapture {
+	label="Tie::Hash::NamedCapture";
+	"Tie::Hash::NamedCapture::TIEHASH";
+	"Tie::Hash::NamedCapture::flags";
+}
+"English::BEGIN@148" -> "Tie::Hash::NamedCapture::flags";
+"English::BEGIN@148" -> "Tie::Hash::NamedCapture::TIEHASH";
+}

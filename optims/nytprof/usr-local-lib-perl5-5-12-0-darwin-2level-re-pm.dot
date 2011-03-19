@@ -1,0 +1,28 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@596";
+}
+subgraph cluster_re {
+	label="re";
+	"re::BEGIN@4";
+	"re::import";
+	"re::BEGIN@5";
+	"re::bits";
+}
+"Moose::Util::TypeConstraints::BEGIN@596" -> "re::BEGIN@5";
+"re::import" -> "re::bits";
+"re::BEGIN@5" -> "warnings::import";
+"re::BEGIN@4" -> "strict::import";
+"Moose::Util::TypeConstraints::BEGIN@596" -> "re::import";
+"Moose::Util::TypeConstraints::BEGIN@596" -> "re::BEGIN@4";
+}

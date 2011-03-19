@@ -1,0 +1,44 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::BEGIN@14";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Util_MetaRole {
+	label="Moose::Util::MetaRole";
+	"Moose::Util::MetaRole::BEGIN@11";
+	"Moose::Util::MetaRole::BEGIN@13";
+	"Moose::Util::MetaRole::BEGIN@5";
+	"Moose::Util::MetaRole::BEGIN@3";
+	"Moose::Util::MetaRole::BEGIN@4";
+	"Moose::Util::MetaRole::BEGIN@12";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+}
+"Moose::Util::MetaRole::BEGIN@5" -> "Exporter::import";
+"Moose::Util::MetaRole::BEGIN@12" -> "Exporter::import";
+"Moose::Util::MetaRole::BEGIN@11" -> "Exporter::import";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@4";
+"Moose::Util::MetaRole::BEGIN@13" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@5";
+"Moose::Util::MetaRole::BEGIN@4" -> "warnings::import";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@13";
+"Moose::Util::MetaRole::BEGIN@3" -> "strict::import";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@3";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@12";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@11";
+}

@@ -1,0 +1,84 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Object {
+	label="Class::MOP::Object";
+	"Class::MOP::Object::BEGIN@4";
+	"Class::MOP::Object::_new";
+	"Class::MOP::Object::BEGIN@7";
+	"Class::MOP::Object::BEGIN@5";
+	"Class::MOP::Object::meta";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::BEGIN@11";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::_construct_class_instance";
+	"Class::MOP::Class::_immutable_metaclass";
+	"Class::MOP::Class::initialize";
+	"Class::MOP::Class::new_object";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::class_of";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@19";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Registry {
+	label="Moose::Meta::TypeConstraint::Registry";
+	"Moose::Meta::TypeConstraint::Registry::new";
+}
+subgraph cluster_ANTLR_Runtime_CharStreamState {
+	label="ANTLR::Runtime::CharStreamState";
+	"ANTLR::Runtime::CharStreamState::BEGIN@3";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::new";
+}
+subgraph cluster_Moose_Meta_TypeCoercion {
+	label="Moose::Meta::TypeCoercion";
+	"Moose::Meta::TypeCoercion::BEGIN@8";
+}
+"Moose::Meta::TypeConstraint::Registry::new" -> "Class::MOP::Object::_new";
+"Class::MOP::Object::BEGIN@7" -> "Exporter::import";
+"Class::MOP::Object::meta" -> "Scalar::Util::blessed";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Object::meta";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::Object::meta";
+"Class::MOP::Class::_construct_class_instance" -> "Class::MOP::Object::meta";
+"Moose::BEGIN@19" -> "Class::MOP::Object::meta";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Class::MOP::Object::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Class::MOP::Object::meta";
+"Moose::Meta::Attribute::new" -> "Class::MOP::Object::meta";
+"Class::MOP::Object::_new" -> "Class::MOP::class_of";
+"Class::MOP::Object::BEGIN@5" -> "warnings::import";
+"Class::MOP::Object::_new" -> "Class::MOP::Class::new_object";
+"Class::MOP::Object::meta" -> "Class::MOP::Class::initialize";
+"Class::MOP::Object::BEGIN@4" -> "strict::import";
+"base::import" -> "Class::MOP::Object::BEGIN@7";
+"base::import" -> "Class::MOP::Object::BEGIN@5";
+"base::import" -> "Class::MOP::Object::BEGIN@4";
+}

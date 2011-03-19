@@ -1,0 +1,87 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Try_Tiny_ScopeGuard {
+	label="Try::Tiny::ScopeGuard";
+	"Try::Tiny::ScopeGuard::DESTROY";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::special";
+	"ANTLR::Runtime::DFA::transition";
+	"ANTLR::Runtime::DFA::unpack_encoded_string_to_unsigned_chars";
+	"ANTLR::Runtime::DFA::predict";
+	"ANTLR::Runtime::DFA::CORE:match";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]";
+	"ANTLR::Runtime::DFA::unpack_encoded_string";
+	"ANTLR::Runtime::DFA::eot";
+	"ANTLR::Runtime::DFA::max";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]";
+	"ANTLR::Runtime::DFA::unistr_to_signedXint";
+	"ANTLR::Runtime::DFA::BEGIN@252";
+	"ANTLR::Runtime::DFA::BEGIN@4";
+	"ANTLR::Runtime::DFA::BEGIN@6";
+	"ANTLR::Runtime::DFA::accept";
+	"ANTLR::Runtime::DFA::min";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::finally";
+	"Try::Tiny::try";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@9";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::m_tokens";
+	"Lavanda2Lexer::BEGIN@15";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::consume";
+	"ANTLR::Runtime::ANTLRStringStream::mark";
+	"ANTLR::Runtime::ANTLRStringStream::rewind";
+	"ANTLR::Runtime::ANTLRStringStream::LA";
+}
+"ANTLR::Runtime::DFA::BEGIN@252" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::DFA::predict" -> "Try::Tiny::try";
+"ANTLR::Runtime::DFA::BEGIN@4" -> "Exporter::import";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::accept";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::eot";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::min";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::transition";
+"Lavanda2Lexer::m_tokens" -> "ANTLR::Runtime::DFA::predict";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::special";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::max";
+"main::BEGIN@9" -> "ANTLR::Runtime::DFA::unpack_encoded_string";
+"ANTLR::Runtime::DFA::unpack_encoded_string_to_unsigned_chars" -> "ANTLR::Runtime::DFA::unpack_encoded_string";
+"main::BEGIN@9" -> "ANTLR::Runtime::DFA::unpack_encoded_string_to_unsigned_chars";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]" -> "ANTLR::Runtime::ANTLRStringStream::rewind";
+"ANTLR::Runtime::DFA::predict" -> "Try::Tiny::finally";
+"ANTLR::Runtime::DFA::predict" -> "ANTLR::Runtime::ANTLRStringStream::mark";
+"Try::Tiny::try" -> "ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]";
+"ANTLR::Runtime::DFA::unpack_encoded_string" -> "ANTLR::Runtime::DFA::unistr_to_signedXint";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::BEGIN@6";
+"ANTLR::Runtime::DFA::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::DFA::unpack_encoded_string" -> "ANTLR::Runtime::DFA::CORE:match";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "UNIVERSAL::isa";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::BEGIN@252";
+"Try::Tiny::ScopeGuard::DESTROY" -> "ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::BEGIN@4";
+}

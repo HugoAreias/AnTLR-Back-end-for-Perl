@@ -1,0 +1,33 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::__chk";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::unimport";
+}
+subgraph cluster_Carp {
+	label="Carp";
+	"Carp::trusts";
+	"Carp::trusts_directly";
+	"Carp::BEGIN@295";
+	"Carp::get_status";
+	"Carp::BEGIN@294";
+	"Carp::short_error_loc";
+}
+subgraph cluster_Data_Dumper {
+	label="Data::Dumper";
+	"Data::Dumper::BEGIN@20";
+}
+"Data::Dumper::BEGIN@20" -> "Carp::BEGIN@295";
+"Carp::BEGIN@294" -> "strict::unimport";
+"Carp::get_status" -> "Carp::trusts_directly";
+"warnings::__chk" -> "Carp::short_error_loc";
+"Carp::trusts" -> "Carp::get_status";
+"Carp::BEGIN@295" -> "warnings::unimport";
+"Data::Dumper::BEGIN@20" -> "Carp::BEGIN@294";
+"Carp::short_error_loc" -> "Carp::trusts";
+}

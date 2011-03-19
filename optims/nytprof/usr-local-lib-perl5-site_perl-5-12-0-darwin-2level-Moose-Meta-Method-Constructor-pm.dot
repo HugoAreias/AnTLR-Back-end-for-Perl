@@ -1,0 +1,176 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::_compile_code";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Instance {
+	label="Class::MOP::Instance";
+	"Class::MOP::Instance::inline_create_instance";
+	"Class::MOP::Instance::inline_set_slot_value";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::find_method_by_name";
+	"Class::MOP::Class::find_all_methods_by_name";
+	"Class::MOP::Class::_inline_constructor";
+}
+subgraph cluster_Class_MOP_Method_Constructor {
+	label="Class::MOP::Method::Constructor";
+	"Class::MOP::Method::Constructor::_attributes";
+	"Class::MOP::Method::Constructor::_generate_default_value";
+	"Class::MOP::Method::Constructor::options";
+	"Class::MOP::Method::Constructor::_meta_instance";
+}
+subgraph cluster_Moose_Meta_Method {
+	label="Moose::Meta::Method";
+	"Moose::Meta::Method::_inline_throw_error";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::BEGIN@4";
+	"Moose::Meta::Method::Constructor::_initialize_body";
+	"Moose::Meta::Method::Constructor::BEGIN@12";
+	"Moose::Meta::Method::Constructor::_generate_slot_initializers";
+	"Moose::Meta::Method::Constructor::BEGIN@5";
+	"Moose::Meta::Method::Constructor::_generate_BUILDARGS";
+	"Moose::Meta::Method::Constructor::_generate_type_constraint_check";
+	"Moose::Meta::Method::Constructor::_generate_triggers";
+	"Moose::Meta::Method::Constructor::BEGIN@7";
+	"Moose::Meta::Method::Constructor::_generate_slot_initializer";
+	"Moose::Meta::Method::Constructor::_generate_params";
+	"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion";
+	"Moose::Meta::Method::Constructor::_generate_instance";
+	"Moose::Meta::Method::Constructor::_generate_slot_assignment";
+	"Moose::Meta::Method::Constructor::new";
+	"Moose::Meta::Method::Constructor::_generate_BUILDALL";
+	"Moose::Meta::Method::Constructor::_generate_fallback_constructor";
+}
+subgraph cluster_Moose_Meta_Mixin_AttributeCore {
+	label="Moose::Meta::Mixin::AttributeCore";
+	"Moose::Meta::Mixin::AttributeCore::has_trigger";
+	"Moose::Meta::Mixin::AttributeCore::type_constraint";
+	"Moose::Meta::Mixin::AttributeCore::is_required";
+	"Moose::Meta::Mixin::AttributeCore::is_weak_ref";
+	"Moose::Meta::Mixin::AttributeCore::should_coerce";
+	"Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+	"Moose::Meta::Mixin::AttributeCore::is_lazy";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::weaken";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::name";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+	"UNIVERSAL::can";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::BEGIN@23";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::has_default";
+	"Class::MOP::Mixin::AttributeCore::default";
+	"Class::MOP::Mixin::AttributeCore::name";
+	"Class::MOP::Mixin::AttributeCore::init_arg";
+	"Class::MOP::Mixin::AttributeCore::has_builder";
+	"Class::MOP::Mixin::AttributeCore::has_initializer";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::associated_metaclass";
+	"Class::MOP::Method::body";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::_compiled_type_constraint";
+}
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_default";
+"Moose::Meta::Method::Constructor::_generate_BUILDALL" -> "Class::MOP::Class::find_all_methods_by_name";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::is_lazy";
+"Moose::Meta::Method::Constructor::BEGIN@7" -> "Exporter::import";
+"Moose::Meta::Class::BEGIN@23" -> "Moose::Meta::Method::Constructor::BEGIN@7";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Method::Constructor::_generate_params";
+"Moose::Meta::Method::Constructor::_generate_params" -> "Moose::Meta::Method::Constructor::_generate_BUILDARGS";
+"Moose::Meta::Class::BEGIN@23" -> "Moose::Meta::Method::Constructor::BEGIN@12";
+"Moose::Meta::Method::Constructor::_generate_slot_initializers" -> "Moose::Meta::Method::Constructor::_generate_slot_initializer";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Constructor::options";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Method::Constructor::_generate_BUILDALL";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_builder";
+"Moose::Meta::Method::Constructor::_generate_instance" -> "Class::MOP::Instance::inline_create_instance";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "UNIVERSAL::can";
+"Moose::Meta::Method::Constructor::_generate_triggers" -> "UNIVERSAL::can";
+"Moose::Meta::Method::Constructor::BEGIN@12" -> "base::import";
+"Moose::Meta::Method::Constructor::_generate_instance" -> "Class::MOP::Method::Constructor::_meta_instance";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Method::Constructor::_meta_instance";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Method::Constructor::_generate_triggers";
+"Moose::Meta::Method::Constructor::_generate_triggers" -> "Moose::Meta::Mixin::AttributeCore::has_trigger";
+"Moose::Meta::Method::Constructor::BEGIN@5" -> "warnings::import";
+"Class::MOP::Class::_inline_constructor" -> "Moose::Meta::Method::Constructor::new";
+"Moose::Meta::Method::Constructor::new" -> "Moose::Meta::Method::Constructor::_initialize_body";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::is_required";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Method::Constructor::_generate_type_constraint_check";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion" -> "Moose::Meta::Method::Constructor::_generate_type_constraint_check";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Package::name";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Method::Constructor::_generate_default_value";
+"Moose::Meta::Method::Constructor::BEGIN@4" -> "strict::import";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Constructor::_generate_BUILDALL" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::init_arg";
+"Moose::Meta::Class::BEGIN@23" -> "Moose::Meta::Method::Constructor::BEGIN@5";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Method::Constructor::_generate_slot_initializers";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Mixin::AttributeCore::type_constraint";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Mixin::AttributeCore::default";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_generate_slot_initializers" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_generate_triggers" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::new" -> "Scalar::Util::weaken";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Method::Constructor::_generate_instance";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Class::MOP::Class::find_method_by_name";
+"Moose::Meta::Class::BEGIN@23" -> "Moose::Meta::Method::Constructor::BEGIN@4";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Mixin::AttributeCore::has_initializer";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "UNIVERSAL::isa";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "UNIVERSAL::isa";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Method::Constructor::_generate_fallback_constructor";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_check" -> "Moose::Meta::Method::_inline_throw_error";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_check" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Instance::inline_set_slot_value";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Generated::_compile_code";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Moose::Meta::Mixin::AttributeCore::is_weak_ref";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Class::MOP::Method::body";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Method::Constructor::_generate_slot_assignment";
+}

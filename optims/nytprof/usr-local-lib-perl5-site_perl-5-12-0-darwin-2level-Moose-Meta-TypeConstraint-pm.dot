@@ -1,0 +1,197 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterizable {
+	label="Moose::Meta::TypeConstraint::Parameterizable";
+	"Moose::Meta::TypeConstraint::Parameterizable::_new";
+	"Moose::Meta::TypeConstraint::Parameterizable::parameterize";
+	"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::_create_type_constraint";
+	"Moose::Util::TypeConstraints::find_type_constraint";
+	"Moose::Util::TypeConstraints::find_or_create_does_type_constraint";
+	"Moose::Util::TypeConstraints::find_or_create_isa_type_constraint";
+	"Moose::Util::TypeConstraints::find_or_parse_type_constraint";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Role {
+	label="Moose::Meta::TypeConstraint::Role";
+	"Moose::Meta::TypeConstraint::Role::_new";
+	"Moose::Meta::TypeConstraint::Role::new";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@20";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterized {
+	label="Moose::Meta::TypeConstraint::Parameterized";
+	"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint";
+	"Moose::Meta::TypeConstraint::Parameterized::_new";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Registry {
+	label="Moose::Meta::TypeConstraint::Registry";
+	"Moose::Meta::TypeConstraint::Registry::add_type_constraint";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_Sub_Name {
+	label="Sub::Name";
+	"Sub::Name::subname";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::BEGIN@8";
+	"metaclass::BEGIN@14";
+	"metaclass::import";
+	"metaclass::BEGIN@5";
+	"metaclass::BEGIN@7";
+	"metaclass::BEGIN@4";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::refaddr";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Class {
+	label="Moose::Meta::TypeConstraint::Class";
+	"Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+	"Moose::Meta::TypeConstraint::Class::new";
+	"Moose::Meta::TypeConstraint::Class::_new";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::verify_against_type_constraint";
+	"Moose::Meta::Attribute::BEGIN@19";
+}
+subgraph cluster_Moose_Meta_Method_Accessor {
+	label="Moose::Meta::Method::Accessor";
+	"Moose::Meta::Method::Accessor::_eval_code";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+	"Moose::Meta::TypeConstraint::BEGIN@16";
+	"Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::check";
+	"Moose::Meta::TypeConstraint::_collect_all_parents";
+	"Moose::Meta::TypeConstraint::_compile_type";
+	"Moose::Meta::TypeConstraint::_has_compiled_type_constraint";
+	"Moose::Meta::TypeConstraint::_compiled_type_constraint";
+	"Moose::Meta::TypeConstraint::_compile_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::create_child_type";
+	"Moose::Meta::TypeConstraint::equals";
+	"Moose::Meta::TypeConstraint::BEGIN@8";
+	"Moose::Meta::TypeConstraint::new";
+	"Moose::Meta::TypeConstraint::_actually_compile_type_constraint";
+	"Moose::Meta::TypeConstraint::BEGIN@6";
+	"Moose::Meta::TypeConstraint::BEGIN@5";
+	"Moose::Meta::TypeConstraint::is_subtype_of";
+	"Moose::Meta::TypeConstraint::parent";
+	"Moose::Meta::TypeConstraint::_new";
+	"Moose::Meta::TypeConstraint::BEGIN@13";
+	"Moose::Meta::TypeConstraint::BEGIN@14";
+	"Moose::Meta::TypeConstraint::compile_type_constraint";
+	"Moose::Meta::TypeConstraint::_compile_subtype";
+	"Moose::Meta::TypeConstraint::name";
+	"Moose::Meta::TypeConstraint::has_parent";
+	"Moose::Meta::TypeConstraint::constraint";
+	"Moose::Meta::TypeConstraint::BEGIN@4";
+	"Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:8]";
+	"Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+}
+"Moose::Util::TypeConstraints::_create_type_constraint" -> "Moose::Meta::TypeConstraint::create_child_type";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@5";
+"Moose::Meta::TypeConstraint::BEGIN@14" -> "Exporter::import";
+"Moose::Meta::TypeConstraint::BEGIN@13" -> "Exporter::import";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::Parameterizable::_new";
+"Moose::Meta::TypeConstraint::is_subtype_of" -> "Moose::Util::TypeConstraints::find_type_constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Util::TypeConstraints::find_type_constraint";
+"Moose::Meta::TypeConstraint::is_subtype_of" -> "Moose::Meta::TypeConstraint::equals";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::BEGIN@6" -> "metaclass::BEGIN@7";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@16";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::_collect_all_parents";
+"Moose::Meta::TypeConstraint::BEGIN@6" -> "metaclass::import";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::_new";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::_compile_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::Parameterized::_new";
+"Moose::Meta::TypeConstraint::BEGIN@16" -> "base::import";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@8";
+"Moose::Meta::TypeConstraint::check" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"Moose::Meta::TypeConstraint::BEGIN@8" -> "overload::import";
+"Moose::Meta::TypeConstraint::compile_type_constraint" -> "Moose::Meta::TypeConstraint::_actually_compile_type_constraint";
+"Moose::Meta::TypeConstraint::BEGIN@5" -> "warnings::import";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@14";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::is_subtype_of";
+"Moose::Meta::TypeConstraint::compile_type_constraint" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Meta::TypeConstraint::check" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Meta::TypeConstraint::BEGIN@6" -> "metaclass::BEGIN@4";
+"Moose::Meta::TypeConstraint::BEGIN@4" -> "strict::import";
+"Moose::Meta::TypeConstraint::Parameterized::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::Role::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::Class::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::BEGIN@6" -> "metaclass::BEGIN@14";
+"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint" -> "Moose::Meta::TypeConstraint::compile_type_constraint";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::compile_type_constraint";
+"Moose::Meta::TypeConstraint::Class::new" -> "Moose::Meta::TypeConstraint::compile_type_constraint";
+"Moose::Meta::TypeConstraint::Role::new" -> "Moose::Meta::TypeConstraint::compile_type_constraint";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::_compile_type" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:8]";
+"Moose::Meta::Attribute::verify_against_type_constraint" -> "Moose::Meta::TypeConstraint::check";
+"Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:8]" -> "Scalar::Util::refaddr";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::_has_compiled_type_constraint";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Sub::Name::subname";
+"Moose::Meta::TypeConstraint::_compile_type" -> "Sub::Name::subname";
+"Moose::Meta::Attribute::BEGIN@19" -> "Moose::Meta::TypeConstraint::new";
+"Moose::Meta::TypeConstraint::create_child_type" -> "Moose::Meta::TypeConstraint::new";
+"Moose::Util::TypeConstraints::_create_type_constraint" -> "Moose::Meta::TypeConstraint::new";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::new";
+"Moose::Meta::TypeConstraint::BEGIN@6" -> "metaclass::BEGIN@5";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::_compile_subtype";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@6";
+"Moose::Util::TypeConstraints::_create_type_constraint" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::TypeConstraint::is_subtype_of" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::Method::Accessor::_eval_code" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::TypeConstraint::Registry::add_type_constraint" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Util::TypeConstraints::find_or_parse_type_constraint" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Util::TypeConstraints::find_or_create_isa_type_constraint" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Util::TypeConstraints::find_or_create_does_type_constraint" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::TypeConstraint::is_subtype_of" -> "Moose::Meta::TypeConstraint::parent";
+"Moose::Meta::TypeConstraint::_collect_all_parents" -> "Moose::Meta::TypeConstraint::parent";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::constraint";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::constraint";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@4";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::_compile_type";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::_compile_hand_optimized_type_constraint";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::BEGIN@13";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::has_parent";
+"Moose::Meta::TypeConstraint::BEGIN@6" -> "metaclass::BEGIN@8";
+}

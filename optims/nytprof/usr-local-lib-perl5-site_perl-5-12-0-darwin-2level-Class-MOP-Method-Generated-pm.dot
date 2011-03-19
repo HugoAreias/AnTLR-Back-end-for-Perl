@@ -1,0 +1,101 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Method_Accessor {
+	label="Class::MOP::Method::Accessor";
+	"Class::MOP::Method::Accessor::_generate_accessor_method_inline";
+	"Class::MOP::Method::Accessor::_generate_writer_method_inline";
+	"Class::MOP::Method::Accessor::_generate_reader_method_inline";
+	"Class::MOP::Method::Accessor::_generate_predicate_method_inline";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::_eval_closure";
+	"Class::MOP::Method::Generated::BEGIN@5";
+	"Class::MOP::Method::Generated::CORE:match";
+	"Class::MOP::Method::Generated::definition_context";
+	"Class::MOP::Method::Generated::_compile_code";
+	"Class::MOP::Method::Generated::BEGIN@15";
+	"Class::MOP::Method::Generated::BEGIN@7";
+	"Class::MOP::Method::Generated::BEGIN@13";
+	"Class::MOP::Method::Generated::_add_line_directive";
+	"Class::MOP::Method::Generated::BEGIN@4";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Method_Constructor {
+	label="Class::MOP::Method::Constructor";
+	"Class::MOP::Method::Constructor::_generate_constructor_method_inline";
+}
+subgraph cluster_constant {
+	label="constant";
+	"constant::import";
+	"constant::BEGIN@4";
+	"constant::BEGIN@3";
+	"constant::BEGIN@114";
+	"constant::BEGIN@25";
+	"constant::BEGIN@29";
+	"constant::BEGIN@52";
+	"constant::CORE:regcomp";
+	"constant::CORE:qr";
+	"constant::BEGIN@2";
+	"constant::BEGIN@6";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::_initialize_body";
+}
+subgraph cluster_Moose_Meta_Method_Destructor {
+	label="Moose::Meta::Method::Destructor";
+	"Moose::Meta::Method::Destructor::_initialize_body";
+}
+subgraph cluster_Moose_Meta_Method_Accessor {
+	label="Moose::Meta::Method::Accessor";
+	"Moose::Meta::Method::Accessor::_eval_code";
+}
+"Class::MOP::Method::Generated::BEGIN@7" -> "Exporter::import";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@25";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@114";
+"base::import" -> "Class::MOP::Method::Generated::BEGIN@4";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@29";
+"base::import" -> "Class::MOP::Method::Generated::BEGIN@15";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@4";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::import";
+"Class::MOP::Method::Generated::BEGIN@13" -> "base::import";
+"Class::MOP::Method::Generated::_eval_closure" -> "Class::MOP::Method::Generated::CORE:match";
+"Class::MOP::Method::Generated::BEGIN@5" -> "warnings::import";
+"base::import" -> "Class::MOP::Method::Generated::BEGIN@7";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@3";
+"Class::MOP::Method::Generated::_add_line_directive" -> "Class::MOP::Method::Generated::definition_context";
+"Class::MOP::Method::Generated::BEGIN@4" -> "strict::import";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::CORE:regcomp";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@52";
+"base::import" -> "Class::MOP::Method::Generated::BEGIN@5";
+"base::import" -> "Class::MOP::Method::Generated::BEGIN@13";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@2";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@6";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Generated::_compile_code" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Generated::_compile_code" -> "Class::MOP::Method::Generated::_add_line_directive";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Generated::_compile_code";
+"Moose::Meta::Method::Destructor::_initialize_body" -> "Class::MOP::Method::Generated::_compile_code";
+"Moose::Meta::Method::Accessor::_eval_code" -> "Class::MOP::Method::Generated::_compile_code";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::CORE:qr";
+}

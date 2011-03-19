@@ -1,0 +1,41 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Deprecated {
+	label="Class::MOP::Deprecated";
+	"Class::MOP::Deprecated::BEGIN@4";
+	"Class::MOP::Deprecated::BEGIN@3";
+	"Class::MOP::Deprecated::BEGIN@10";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::BEGIN@11";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::import";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::BEGIN@80";
+}
+"Class::MOP::Package::BEGIN@80" -> "Exporter::import";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Deprecated::BEGIN@4";
+"Class::MOP::Deprecated::BEGIN@4" -> "warnings::import";
+"Class::MOP::Deprecated::BEGIN@3" -> "strict::import";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Package::BEGIN@80";
+"Class::MOP::Deprecated::BEGIN@10" -> "Package::DeprecationManager::import";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Deprecated::BEGIN@3";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Deprecated::BEGIN@10";
+}

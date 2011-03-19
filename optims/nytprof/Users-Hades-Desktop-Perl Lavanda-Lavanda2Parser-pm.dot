@@ -1,0 +1,331 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_BitSet {
+	label="ANTLR::Runtime::BitSet";
+	"ANTLR::Runtime::BitSet::BEGIN@299";
+	"ANTLR::Runtime::BitSet::BEGIN@7";
+	"ANTLR::Runtime::BitSet::BEGIN@5";
+	"ANTLR::Runtime::BitSet::meta";
+	"ANTLR::Runtime::BitSet::BITS";
+	"ANTLR::Runtime::BitSet::BEGIN@4";
+	"ANTLR::Runtime::BitSet::BEGIN@11";
+	"ANTLR::Runtime::BitSet::BEGIN@8";
+	"ANTLR::Runtime::BitSet::BEGIN@3";
+}
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::_fsp";
+}
+subgraph cluster_English {
+	label="English";
+	"English::import";
+}
+subgraph cluster_sacos_return {
+	label="sacos_return";
+	"sacos_return::BEGIN@175";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::make_immutable";
+}
+subgraph cluster_Try_Tiny_ScopeGuard {
+	label="Try::Tiny::ScopeGuard";
+	"Try::Tiny::ScopeGuard::DESTROY";
+}
+subgraph cluster_ANTLR_Runtime_Parser {
+	label="ANTLR::Runtime::Parser";
+	"ANTLR::Runtime::Parser::input";
+}
+subgraph cluster_lote_return {
+	label="lote_return";
+	"lote_return::BEGIN@407";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::where";
+	"Moose::Util::TypeConstraints::subtype";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::has";
+}
+subgraph cluster_lotes_return {
+	label="lotes_return";
+	"lotes_return::BEGIN@321";
+}
+subgraph cluster_constant {
+	label="constant";
+	"constant::import";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::get_text";
+}
+subgraph cluster_feature {
+	label="feature";
+	"feature::import";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::finally";
+	"Try::Tiny::catch";
+	"Try::Tiny::try";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@10";
+	"main::RUNTIME";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::__ANON__[Data/Lock.pm:38]";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::LA";
+	"ANTLR::Runtime::CommonTokenStream::LT";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::state";
+	"ANTLR::Runtime::BaseRecognizer::match";
+	"ANTLR::Runtime::BaseRecognizer::push_follow";
+}
+subgraph cluster_ANTLR_Runtime_ParserRuleReturnScope {
+	label="ANTLR::Runtime::ParserRuleReturnScope";
+	"ANTLR::Runtime::ParserRuleReturnScope::new";
+	"ANTLR::Runtime::ParserRuleReturnScope::stop";
+	"ANTLR::Runtime::ParserRuleReturnScope::start";
+	"ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@17";
+	"Lavanda2Parser::tipo";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]";
+	"Lavanda2Parser::BEGIN@15";
+	"Lavanda2Parser::BEGIN@24";
+	"Lavanda2Parser::new";
+	"Lavanda2Parser::BEGIN@9";
+	"Lavanda2Parser::sacos";
+	"Lavanda2Parser::BEGIN@11";
+	"Lavanda2Parser::fio";
+	"Lavanda2Parser::BEGIN@6";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]";
+	"Lavanda2Parser::lote";
+	"Lavanda2Parser::classe";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:723]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:167]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:458]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:313]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]";
+	"Lavanda2Parser::BEGIN@10";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:256]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:399]";
+	"Lavanda2Parser::tinto";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:579]";
+	"Lavanda2Parser::BEGIN@740";
+	"Lavanda2Parser::BEGIN@14";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]";
+	"Lavanda2Parser::BEGIN@16";
+	"Lavanda2Parser::saco";
+	"Lavanda2Parser::lotes";
+	"Lavanda2Parser::cabec";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:514]";
+	"Lavanda2Parser::lavanda";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:644]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]";
+	"Lavanda2Parser::BEGIN@7";
+	"Lavanda2Parser::init_dfas";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:136]";
+	"Lavanda2Parser::BEGIN@8";
+	"Lavanda2Parser::BUILD";
+	"Lavanda2Parser::BEGIN@12";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]";
+}
+subgraph cluster_Exception_Class {
+	label="Exception::Class";
+	"Exception::Class::import";
+}
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "Lavanda2Parser::tipo";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@299";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]";
+"Lavanda2Parser::BEGIN@740" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Lavanda2Parser::tipo" -> "Try::Tiny::try";
+"Lavanda2Parser::sacos" -> "Try::Tiny::try";
+"Lavanda2Parser::lote" -> "Try::Tiny::try";
+"Lavanda2Parser::fio" -> "Try::Tiny::try";
+"Lavanda2Parser::classe" -> "Try::Tiny::try";
+"Lavanda2Parser::tinto" -> "Try::Tiny::try";
+"Lavanda2Parser::saco" -> "Try::Tiny::try";
+"Lavanda2Parser::lotes" -> "Try::Tiny::try";
+"Lavanda2Parser::cabec" -> "Try::Tiny::try";
+"Lavanda2Parser::lavanda" -> "Try::Tiny::try";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "Lavanda2Parser::classe";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:313]";
+"Lavanda2Parser::BEGIN@9" -> "Exporter::import";
+"Lavanda2Parser::BEGIN@10" -> "Exporter::import";
+"Lavanda2Parser::BEGIN@7" -> "Exporter::import";
+"Lavanda2Parser::BEGIN@14" -> "Moose::Util::TypeConstraints::where";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:644]";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@8";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:136]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@12";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "Lavanda2Parser::sacos";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "Lavanda2Parser::lote";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::BaseRecognizer::push_follow";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::BaseRecognizer::push_follow";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "ANTLR::Runtime::BaseRecognizer::push_follow";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::BaseRecognizer::push_follow";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::BaseRecognizer::push_follow";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::BaseRecognizer::push_follow";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:256]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@16";
+"Lavanda2Parser::BUILD" -> "Lavanda2Parser::init_dfas";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::CommonToken::get_text";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::CommonToken::get_text";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@4";
+"Lavanda2Parser::cabec" -> "Try::Tiny::catch";
+"Lavanda2Parser::tipo" -> "Try::Tiny::catch";
+"Lavanda2Parser::lote" -> "Try::Tiny::catch";
+"Lavanda2Parser::fio" -> "Try::Tiny::catch";
+"Lavanda2Parser::lavanda" -> "Try::Tiny::catch";
+"Lavanda2Parser::classe" -> "Try::Tiny::catch";
+"Lavanda2Parser::saco" -> "Try::Tiny::catch";
+"Lavanda2Parser::lotes" -> "Try::Tiny::catch";
+"Lavanda2Parser::sacos" -> "Try::Tiny::catch";
+"Lavanda2Parser::tinto" -> "Try::Tiny::catch";
+"Lavanda2Parser::BEGIN@14" -> "Moose::Util::TypeConstraints::subtype";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::ParserRuleReturnScope::new";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::ParserRuleReturnScope::new";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::ParserRuleReturnScope::new";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "Lavanda2Parser::tinto";
+"Lavanda2Parser::BEGIN@24" -> "constant::import";
+"main::BEGIN@10" -> "sacos_return::BEGIN@175";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "Lavanda2Parser::lotes";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@8";
+"Lavanda2Parser::new" -> "Lavanda2Parser::BUILD";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@15";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@740";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@3";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@17";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::ParserRuleReturnScope::start";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::ParserRuleReturnScope::start";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::ParserRuleReturnScope::start";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::meta";
+"Lavanda2Parser::BEGIN@14" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@5";
+"main::BEGIN@10" -> "lotes_return::BEGIN@321";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@9";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@11";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@6";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@14";
+"Lavanda2Parser::tipo" -> "Try::Tiny::finally";
+"Lavanda2Parser::saco" -> "Try::Tiny::finally";
+"Lavanda2Parser::lotes" -> "Try::Tiny::finally";
+"Lavanda2Parser::sacos" -> "Try::Tiny::finally";
+"Lavanda2Parser::cabec" -> "Try::Tiny::finally";
+"Lavanda2Parser::lote" -> "Try::Tiny::finally";
+"Lavanda2Parser::fio" -> "Try::Tiny::finally";
+"Lavanda2Parser::lavanda" -> "Try::Tiny::finally";
+"Lavanda2Parser::classe" -> "Try::Tiny::finally";
+"Lavanda2Parser::tinto" -> "Try::Tiny::finally";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "Lavanda2Parser::cabec";
+"main::BEGIN@10" -> "lote_return::BEGIN@407";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:514]";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@7";
+"Lavanda2Parser::BEGIN@14" -> "Class::MOP::Class::make_immutable";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@24";
+"Lavanda2Parser::BEGIN@14" -> "Moose::has";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "Lavanda2Parser::fio";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:723]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:458]";
+"Lavanda2Parser::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"sacos_return::BEGIN@175" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"lote_return::BEGIN@407" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"lotes_return::BEGIN@321" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Parser::BEGIN@11" -> "Exception::Class::import";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "Lavanda2Parser::saco";
+"main::RUNTIME" -> "Lavanda2Parser::lavanda";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BITS";
+"Lavanda2Parser::BEGIN@12" -> "feature::import";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::saco" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::lavanda" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@11";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:167]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@10";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:399]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:579]";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::ParserRuleReturnScope::stop";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::ParserRuleReturnScope::stop";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::ParserRuleReturnScope::stop";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::CommonTokenStream::LA";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]" -> "ANTLR::Runtime::CommonTokenStream::LA";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]" -> "ANTLR::Runtime::CommonTokenStream::LA";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::CommonTokenStream::LA";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]" -> "ANTLR::Runtime::CommonTokenStream::LA";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]";
+"main::BEGIN@10" -> "Lavanda2Parser::BEGIN@7";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::BaseRecognizer::match";
+"Lavanda2Parser::BEGIN@8" -> "English::import";
+}

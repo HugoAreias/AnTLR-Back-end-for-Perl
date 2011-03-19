@@ -1,0 +1,150 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::channel";
+	"ANTLR::Runtime::RecognizerSharedState::backtracking";
+	"ANTLR::Runtime::RecognizerSharedState::_fsp";
+	"ANTLR::Runtime::RecognizerSharedState::type";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+	"ANTLR::Runtime::RecognizerSharedState::new";
+	"ANTLR::Runtime::RecognizerSharedState::syntax_errors";
+	"ANTLR::Runtime::RecognizerSharedState::last_error_index";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_line";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:806]";
+	"Moose::Util::TypeConstraints::BEGIN@40";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:844]";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::decision_number";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::new";
+	"ANTLR::Runtime::CommonToken::index";
+	"ANTLR::Runtime::CommonToken::char_position_in_line";
+	"ANTLR::Runtime::CommonToken::line";
+}
+subgraph cluster_ArrayRef_ANTLR_Runtime {
+	label="ArrayRef[ANTLR::Runtime";
+	"ArrayRef[ANTLR::Runtime::BitSet]";
+	"ArrayRef[ANTLR::Runtime::Token]";
+}
+subgraph cluster_ArrayRef_Maybe_ANTLR_Runtime {
+	label="ArrayRef[Maybe[ANTLR::Runtime";
+	"ArrayRef[Maybe[ANTLR::Runtime::CharStreamState]]";
+}
+subgraph cluster_ANTLR_Runtime_CharStreamState {
+	label="ANTLR::Runtime::CharStreamState";
+	"ANTLR::Runtime::CharStreamState::new";
+	"ANTLR::Runtime::CharStreamState::p";
+	"ANTLR::Runtime::CharStreamState::line";
+	"ANTLR::Runtime::CharStreamState::char_position_in_line";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::p";
+	"ANTLR::Runtime::CommonTokenStream::new";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+}
+subgraph cluster_Moose_Util_TypeConstraints_OptimizedConstraints {
+	label="Moose::Util::TypeConstraints::OptimizedConstraints";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::CORE:match";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@7";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@6";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@3";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@4";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@8";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::length";
+	"ANTLR::Runtime::ANTLRStringStream::line";
+	"ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+	"ANTLR::Runtime::ANTLRStringStream::last_marker";
+	"ANTLR::Runtime::ANTLRStringStream::mark_depth";
+	"ANTLR::Runtime::ANTLRStringStream::p";
+	"ANTLR::Runtime::ANTLRStringStream::new";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::ArrayRef[Str]";
+	"Moose::Meta::TypeConstraint::ArrayRef[HashRef[Int]]";
+	"Moose::Meta::TypeConstraint::ArrayRef[Int]";
+	"Moose::Meta::TypeConstraint::__ANON__";
+	"Moose::Meta::TypeConstraint::ArrayRef[ArrayRef[Int]]";
+}
+"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@8" -> "Exporter::import";
+"Moose::Util::TypeConstraints::OptimizedConstraints::Int" -> "Moose::Util::TypeConstraints::OptimizedConstraints::CORE:match";
+"Moose::Util::TypeConstraints::BEGIN@40" -> "Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@6";
+"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@7" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Util::TypeConstraints::BEGIN@40" -> "Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@7";
+"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@4" -> "warnings::import";
+"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@3" -> "strict::import";
+"Moose::Util::TypeConstraints::BEGIN@40" -> "Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@4";
+"Moose::Meta::TypeConstraint::ArrayRef[Str]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"Moose::Meta::TypeConstraint::ArrayRef[HashRef[Int]]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"Moose::Meta::TypeConstraint::ArrayRef[Int]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"ArrayRef[Maybe[ANTLR::Runtime::CharStreamState]]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"ArrayRef[ANTLR::Runtime::Token]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"ArrayRef[ANTLR::Runtime::BitSet]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"Moose::Meta::TypeConstraint::ArrayRef[ArrayRef[Int]]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::ArrayRef";
+"Moose::Util::TypeConstraints::BEGIN@40" -> "Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@3";
+"Moose::Util::TypeConstraints::BEGIN@40" -> "Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@8";
+"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:806]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+"Moose::Meta::TypeConstraint::__ANON__" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:844]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+"ANTLR::Runtime::RecognizerSharedState::channel" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:806]" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonTokenStream::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::DFA::decision_number" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::p" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::syntax_errors" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::token_start_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonTokenStream::p" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::backtracking" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::p" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::_fsp" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::index" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::type" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::length" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::last_marker" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::mark_depth" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::last_error_index" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::token_start_char_index" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+}

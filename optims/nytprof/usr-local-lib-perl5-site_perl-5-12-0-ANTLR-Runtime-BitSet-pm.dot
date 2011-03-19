@@ -1,0 +1,67 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_BitSet {
+	label="ANTLR::Runtime::BitSet";
+	"ANTLR::Runtime::BitSet::CORE:unpack";
+	"ANTLR::Runtime::BitSet::BEGIN@299";
+	"ANTLR::Runtime::BitSet::BEGIN@7";
+	"ANTLR::Runtime::BitSet::trim_hex";
+	"ANTLR::Runtime::BitSet::BEGIN@4";
+	"ANTLR::Runtime::BitSet::BEGIN@11";
+	"ANTLR::Runtime::BitSet::bits";
+	"ANTLR::Runtime::BitSet::BEGIN@3";
+	"ANTLR::Runtime::BitSet::CORE:pack";
+	"ANTLR::Runtime::BitSet::CORE:match";
+	"ANTLR::Runtime::BitSet::__ANON__[ANTLR/Runtime/BitSet.pm:32]";
+	"ANTLR::Runtime::BitSet::CORE:subst";
+	"ANTLR::Runtime::BitSet::new";
+	"ANTLR::Runtime::BitSet::BEGIN@5";
+	"ANTLR::Runtime::BitSet::BITS";
+	"ANTLR::Runtime::BitSet::BEGIN@8";
+	"ANTLR::Runtime::BitSet::BUILD";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::__ANON__";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@14";
+}
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@299";
+"ANTLR::Runtime::BitSet::BEGIN@299" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::BitSet::BEGIN@4" -> "Exporter::import";
+"ANTLR::Runtime::BitSet::BEGIN@5" -> "Exporter::import";
+"ANTLR::Runtime::BitSet::BEGIN@3" -> "Exporter::import";
+"ANTLR::Runtime::BitSet::BUILD" -> "ANTLR::Runtime::BitSet::trim_hex";
+"Moose::Meta::TypeConstraint::__ANON__" -> "ANTLR::Runtime::BitSet::__ANON__[ANTLR/Runtime/BitSet.pm:32]";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@8";
+"ANTLR::Runtime::BitSet::trim_hex" -> "ANTLR::Runtime::BitSet::CORE:subst";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@4";
+"ANTLR::Runtime::BitSet::BUILD" -> "ANTLR::Runtime::BitSet::CORE:unpack";
+"ANTLR::Runtime::BitSet::BEGIN@11" -> "overload::import";
+"ANTLR::Runtime::BitSet::BUILD" -> "ANTLR::Runtime::BitSet::bits";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@3";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@5";
+"ANTLR::Runtime::BitSet::new" -> "ANTLR::Runtime::BitSet::BUILD";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@7";
+"ANTLR::Runtime::BitSet::BUILD" -> "ANTLR::Runtime::BitSet::CORE:pack";
+"ANTLR::Runtime::BitSet::__ANON__[ANTLR/Runtime/BitSet.pm:32]" -> "ANTLR::Runtime::BitSet::CORE:match";
+"ANTLR::Runtime::BitSet::BEGIN@7" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::BitSet::BEGIN@8" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BITS";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::BEGIN@11";
+}

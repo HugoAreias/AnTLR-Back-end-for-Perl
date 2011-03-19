@@ -1,0 +1,481 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::channel";
+	"ANTLR::Runtime::RecognizerSharedState::type";
+}
+subgraph cluster_English {
+	label="English";
+	"English::import";
+	"English::BEGIN@187";
+	"English::BEGIN@148";
+	"English::BEGIN@47";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::make_immutable";
+}
+subgraph cluster_Try_Tiny_ScopeGuard {
+	label="Try::Tiny::ScopeGuard";
+	"Try::Tiny::ScopeGuard::DESTROY";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::skip";
+	"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+	"ANTLR::Runtime::Lexer::match_range";
+	"ANTLR::Runtime::Lexer::input";
+	"ANTLR::Runtime::Lexer::match";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedSetException {
+	label="ANTLR::Runtime::MismatchedSetException";
+	"ANTLR::Runtime::MismatchedSetException::BEGIN@6";
+	"ANTLR::Runtime::MismatchedSetException::BEGIN@28";
+	"ANTLR::Runtime::MismatchedSetException::meta";
+	"ANTLR::Runtime::MismatchedSetException::BEGIN@3";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::special";
+	"ANTLR::Runtime::DFA::transition";
+	"ANTLR::Runtime::DFA::max";
+	"ANTLR::Runtime::DFA::eot";
+	"ANTLR::Runtime::DFA::meta";
+	"ANTLR::Runtime::DFA::predict";
+	"ANTLR::Runtime::DFA::BEGIN@4";
+	"ANTLR::Runtime::DFA::BEGIN@252";
+	"ANTLR::Runtime::DFA::BEGIN@6";
+	"ANTLR::Runtime::DFA::decision_number";
+	"ANTLR::Runtime::DFA::new";
+	"ANTLR::Runtime::DFA::eof";
+	"ANTLR::Runtime::DFA::accept";
+	"ANTLR::Runtime::DFA::min";
+	"ANTLR::Runtime::DFA::recognizer";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::with";
+	"Moose::has";
+	"Moose::extends";
+}
+subgraph cluster_constant {
+	label="constant";
+	"constant::import";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::HIDDEN_CHANNEL";
+	"ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::meta";
+	"ANTLR::Runtime::CommonToken::BEGIN@3";
+	"ANTLR::Runtime::CommonToken::BEGIN@7";
+	"ANTLR::Runtime::CommonToken::BEGIN@226";
+}
+subgraph cluster_ANTLR_Runtime_EarlyExitException {
+	label="ANTLR::Runtime::EarlyExitException";
+	"ANTLR::Runtime::EarlyExitException::BEGIN@3";
+	"ANTLR::Runtime::EarlyExitException::BEGIN@13";
+}
+subgraph cluster_feature {
+	label="feature";
+	"feature::import";
+}
+subgraph cluster_Lavanda2Lexer_DFA4 {
+	label="Lavanda2Lexer::DFA4";
+	"Lavanda2Lexer::DFA4::BUILD";
+	"Lavanda2Lexer::DFA4::BEGIN@779";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::finally";
+	"Try::Tiny::try";
+}
+subgraph cluster_ANTLR_Runtime_NoViableAltException {
+	label="ANTLR::Runtime::NoViableAltException";
+	"ANTLR::Runtime::NoViableAltException::meta";
+	"ANTLR::Runtime::NoViableAltException::BEGIN@39";
+	"ANTLR::Runtime::NoViableAltException::BEGIN@3";
+	"ANTLR::Runtime::NoViableAltException::BEGIN@6";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@9";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::__ANON__[Data/Lock.pm:38]";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@9";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@8";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@10";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@778";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@4";
+	"ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@3";
+	"ANTLR::Runtime::BaseRecognizer::meta";
+	"ANTLR::Runtime::BaseRecognizer::state";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@12";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@6";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@7";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@16";
+	"Lavanda2Lexer::m_T__11";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:280]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]";
+	"Lavanda2Lexer::BEGIN@9";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]";
+	"Lavanda2Lexer::m_T__17";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:98]";
+	"Lavanda2Lexer::m_T__16";
+	"Lavanda2Lexer::BEGIN@25";
+	"Lavanda2Lexer::BEGIN@13";
+	"Lavanda2Lexer::init_dfas";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:76]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:303]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:351]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:492]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:142]";
+	"Lavanda2Lexer::m_DIGIT";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]";
+	"Lavanda2Lexer::BEGIN@6";
+	"Lavanda2Lexer::BEGIN@7";
+	"Lavanda2Lexer::BEGIN@11";
+	"Lavanda2Lexer::BEGIN@10";
+	"Lavanda2Lexer::m_ID";
+	"Lavanda2Lexer::m_tokens";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:560]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:188]";
+	"Lavanda2Lexer::BEGIN@14";
+	"Lavanda2Lexer::m_T__13";
+	"Lavanda2Lexer::BEGIN@807";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:120]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]";
+	"Lavanda2Lexer::BEGIN@15";
+	"Lavanda2Lexer::new";
+	"Lavanda2Lexer::BEGIN@18";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:257]";
+	"Lavanda2Lexer::BEGIN@19";
+	"Lavanda2Lexer::m_T__12";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:461]";
+	"Lavanda2Lexer::m_T__19";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]";
+	"Lavanda2Lexer::m_LETTER";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:234]";
+	"Lavanda2Lexer::m_NUM";
+	"Lavanda2Lexer::m_DATA";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:211]";
+	"Lavanda2Lexer::dfa4";
+	"Lavanda2Lexer::m_T__18";
+	"Lavanda2Lexer::m_T__15";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+	"Lavanda2Lexer::BEGIN@8";
+	"Lavanda2Lexer::BUILD";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:333]";
+	"Lavanda2Lexer::m_WS";
+	"Lavanda2Lexer::BEGIN@17";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:165]";
+	"Lavanda2Lexer::m_T__14";
+	"Lavanda2Lexer::m_T__10";
+	"Lavanda2Lexer::m_T__20";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:406]";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::consume";
+	"ANTLR::Runtime::ANTLRStringStream::LA";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::execute";
+}
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]";
+"Lavanda2Lexer::BEGIN@807" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Lavanda2Lexer::BEGIN@16" -> "ANTLR::Runtime::NoViableAltException::BEGIN@3";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::meta";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::decision_number";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]";
+"Lavanda2Lexer::m_T__13" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__11" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__12" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__17" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__16" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__19" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_LETTER" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_NUM" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_DATA" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_DIGIT" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__18" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__15" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_WS" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__14" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_ID" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__10" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__20" -> "Try::Tiny::try";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__17";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:98]";
+"Lavanda2Lexer::BEGIN@9" -> "Exporter::import";
+"Lavanda2Lexer::BEGIN@7" -> "Exporter::import";
+"Lavanda2Lexer::BEGIN@10" -> "Exporter::import";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@13";
+"Lavanda2Lexer::BUILD" -> "Lavanda2Lexer::init_dfas";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::accept";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::Token::HIDDEN_CHANNEL";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:303]";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:142]";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "Lavanda2Lexer::m_DIGIT";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "Lavanda2Lexer::m_DIGIT";
+"Lavanda2Lexer::BEGIN@17" -> "ANTLR::Runtime::MismatchedSetException::meta";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@7";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::eot";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@6";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::min";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::transition";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::BEGIN@16" -> "ANTLR::Runtime::NoViableAltException::BEGIN@39";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@14";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::BaseRecognizer::DEFAULT_TOKEN_CHANNEL";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:120]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:257]";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__12";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_NUM";
+"Lavanda2Lexer::m_tokens" -> "ANTLR::Runtime::DFA::predict";
+"Lavanda2Lexer::BEGIN@16" -> "Moose::extends";
+"Lavanda2Lexer::BEGIN@17" -> "Moose::extends";
+"Lavanda2Lexer::BEGIN@18" -> "Moose::extends";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__18";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@17";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@10";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::BEGIN@226";
+"Lavanda2Lexer::BEGIN@25" -> "constant::import";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::special";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:492]";
+"Lavanda2Lexer::BEGIN@18" -> "ANTLR::Runtime::EarlyExitException::BEGIN@13";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@6";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::recognizer";
+"Lavanda2Lexer::BEGIN@8" -> "English::BEGIN@148";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::max";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@10";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@3";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "Lavanda2Lexer::m_tokens";
+"Lavanda2Lexer::BEGIN@17" -> "ANTLR::Runtime::MismatchedSetException::BEGIN@28";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__13";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@15";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@18";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__19";
+"Lavanda2Lexer::BEGIN@16" -> "ANTLR::Runtime::NoViableAltException::meta";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@7";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_WS";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__14";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:406]";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@16";
+"Lavanda2Lexer::BEGIN@8" -> "English::BEGIN@187";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:280]";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@9";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]";
+"Lavanda2Lexer::BEGIN@16" -> "ANTLR::Runtime::NoViableAltException::BEGIN@6";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::meta";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@25";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:351]";
+"Lavanda2Lexer::BEGIN@14" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Lavanda2Lexer::m_tokens" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]" -> "ANTLR::Runtime::Lexer::input";
+"main::BEGIN@9" -> "Lavanda2Lexer::DFA4::BEGIN@779";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::BEGIN@7";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@11";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@4";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_ID";
+"Class::MOP::Method::execute" -> "Lavanda2Lexer::DFA4::BUILD";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]";
+"Lavanda2Lexer::BEGIN@8" -> "English::BEGIN@47";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@19";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:461]";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::init_dfas" -> "ANTLR::Runtime::DFA::new";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]" -> "ANTLR::Runtime::Lexer::match_range";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::Lexer::skip";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@8";
+"Lavanda2Lexer::BEGIN@17" -> "ANTLR::Runtime::MismatchedSetException::BEGIN@6";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_DATA";
+"Lavanda2Lexer::m_T__13" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__11" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_NUM" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_DATA" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_DIGIT" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__18" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__15" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__12" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__17" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_WS" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__16" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__14" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__19" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_ID" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__10" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__20" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_LETTER" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__15";
+"Lavanda2Lexer::BEGIN@19" -> "Moose::with";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:165]";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__10";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::BEGIN@6";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__20";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::eof";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@778";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__11";
+"Lavanda2Lexer::BEGIN@16" -> "Class::MOP::Class::make_immutable";
+"Lavanda2Lexer::BEGIN@14" -> "Class::MOP::Class::make_immutable";
+"Lavanda2Lexer::BEGIN@15" -> "Class::MOP::Class::make_immutable";
+"Lavanda2Lexer::BEGIN@19" -> "Class::MOP::Class::make_immutable";
+"Lavanda2Lexer::BEGIN@17" -> "Class::MOP::Class::make_immutable";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]";
+"Lavanda2Lexer::BEGIN@16" -> "Moose::has";
+"Lavanda2Lexer::BEGIN@14" -> "Moose::has";
+"Lavanda2Lexer::BEGIN@15" -> "Moose::has";
+"Lavanda2Lexer::BEGIN@18" -> "Moose::has";
+"Lavanda2Lexer::BEGIN@19" -> "Moose::has";
+"Lavanda2Lexer::BEGIN@17" -> "Moose::has";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::m_T__16";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::meta";
+"Lavanda2Lexer::DFA4::BEGIN@779" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Lexer::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:76]";
+"Lavanda2Lexer::BEGIN@18" -> "ANTLR::Runtime::EarlyExitException::BEGIN@3";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]";
+"Lavanda2Lexer::BEGIN@17" -> "ANTLR::Runtime::MismatchedSetException::BEGIN@3";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@12";
+"Lavanda2Lexer::BEGIN@11" -> "feature::import";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:560]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:188]";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@807";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::BEGIN@252";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "Lavanda2Lexer::m_LETTER";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:234]";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::BEGIN@9";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:211]";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::dfa4";
+"Lavanda2Lexer::init_dfas" -> "Lavanda2Lexer::dfa4";
+"Lavanda2Lexer::new" -> "Lavanda2Lexer::BUILD";
+"main::BEGIN@9" -> "Lavanda2Lexer::BEGIN@8";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:333]";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::BEGIN@4";
+"Lavanda2Lexer::BEGIN@8" -> "English::import";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::BEGIN@3";
+}

@@ -1,0 +1,30 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_UnwantedTokenException {
+	label="ANTLR::Runtime::UnwantedTokenException";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@36";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@5";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@3";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@8";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@8";
+}
+"ANTLR::Runtime::UnwantedTokenException::BEGIN@36" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@8" -> "ANTLR::Runtime::UnwantedTokenException::BEGIN@8";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@8" -> "ANTLR::Runtime::UnwantedTokenException::BEGIN@3";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@8" -> "ANTLR::Runtime::UnwantedTokenException::BEGIN@36";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@8" -> "ANTLR::Runtime::UnwantedTokenException::BEGIN@5";
+"ANTLR::Runtime::UnwantedTokenException::BEGIN@8" -> "overload::import";
+"ANTLR::Runtime::UnwantedTokenException::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}

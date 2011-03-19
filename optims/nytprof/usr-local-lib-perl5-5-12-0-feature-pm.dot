@@ -1,0 +1,27 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::BEGIN@6";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::BEGIN@5";
+}
+subgraph cluster_feature {
+	label="feature";
+	"feature::import";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@11";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@12";
+}
+"Lavanda2Lexer::BEGIN@11" -> "feature::import";
+"ANTLR::Runtime::Lexer::BEGIN@6" -> "feature::import";
+"Lavanda2Parser::BEGIN@12" -> "feature::import";
+"ANTLR::Runtime::Token::BEGIN@5" -> "feature::import";
+}

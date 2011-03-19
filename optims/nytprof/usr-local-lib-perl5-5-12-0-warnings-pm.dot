@@ -1,0 +1,468 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Class_Immutable_Trait {
+	label="Class::MOP::Class::Immutable::Trait";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Method_Accessor {
+	label="Class::MOP::Method::Accessor";
+	"Class::MOP::Method::Accessor::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterizable {
+	label="Moose::Meta::TypeConstraint::Parameterizable";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_DuckType {
+	label="Moose::Meta::TypeConstraint::DuckType";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToRole {
+	label="Moose::Meta::Role::Application::ToRole";
+	"Moose::Meta::Role::Application::ToRole::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Class_Immutable_Trait {
+	label="Moose::Meta::Class::Immutable::Trait";
+	"Moose::Meta::Class::Immutable::Trait::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Object {
+	label="Class::MOP::Object";
+	"Class::MOP::Object::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Role_Composite {
+	label="Moose::Meta::Role::Composite";
+	"Moose::Meta::Role::Composite::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Method_Overridden {
+	label="Moose::Meta::Method::Overridden";
+	"Moose::Meta::Method::Overridden::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Deprecated {
+	label="Class::MOP::Deprecated";
+	"Class::MOP::Deprecated::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToInstance {
+	label="Moose::Meta::Role::Application::ToInstance";
+	"Moose::Meta::Role::Application::ToInstance::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Module {
+	label="Class::MOP::Module";
+	"Class::MOP::Module::BEGIN@5";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::CORE:regcomp";
+	"warnings::_error_loc";
+	"warnings::enabled";
+	"warnings::__chk";
+	"warnings::CORE:match";
+	"warnings::import";
+}
+subgraph cluster_English {
+	label="English";
+	"English::BEGIN@47";
+}
+subgraph cluster_Devel_StackTrace {
+	label="Devel::StackTrace";
+	"Devel::StackTrace::BEGIN@6";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::BEGIN@5";
+}
+subgraph cluster_Data_OptList {
+	label="Data::OptList";
+	"Data::OptList::BEGIN@4";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+	"Moose::Exporter::BEGIN@4";
+	"Moose::Exporter::import";
+	"Moose::Exporter::BEGIN@387";
+}
+subgraph cluster_Moose_Util {
+	label="Moose::Util";
+	"Moose::Util::BEGIN@4";
+}
+subgraph cluster_Devel_GlobalDestruction {
+	label="Devel::GlobalDestruction";
+	"Devel::GlobalDestruction::BEGIN@3";
+	"Devel::GlobalDestruction::BEGIN@6";
+}
+subgraph cluster_Class_MOP_Instance {
+	label="Class::MOP::Instance";
+	"Class::MOP::Instance::BEGIN@5";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::BEGIN@414";
+	"Class::MOP::Class::BEGIN@5";
+	"Class::MOP::Class::BEGIN@435";
+}
+subgraph cluster_attributes {
+	label="attributes";
+	"attributes::import";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Enum {
+	label="Moose::Meta::TypeConstraint::Enum";
+	"Moose::Meta::TypeConstraint::Enum::BEGIN@4";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::BEGIN@5";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::BEGIN@5";
+	"Moose::Meta::Role::BEGIN@533";
+	"Moose::Meta::Role::BEGIN@554";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@660";
+	"Moose::Util::TypeConstraints::BEGIN@649";
+	"Moose::Util::TypeConstraints::BEGIN@676";
+	"Moose::Util::TypeConstraints::BEGIN@655";
+}
+subgraph cluster_Moose_Error_Default {
+	label="Moose::Error::Default";
+	"Moose::Error::Default::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Method_Inlined {
+	label="Class::MOP::Method::Inlined";
+	"Class::MOP::Method::Inlined::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Method_Constructor {
+	label="Class::MOP::Method::Constructor";
+	"Class::MOP::Method::Constructor::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Role_Method {
+	label="Moose::Meta::Role::Method";
+	"Moose::Meta::Role::Method::BEGIN@5";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@3";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Role {
+	label="Moose::Meta::TypeConstraint::Role";
+	"Moose::Meta::TypeConstraint::Role::BEGIN@4";
+}
+subgraph cluster_Exporter_Heavy {
+	label="Exporter::Heavy";
+	"Exporter::Heavy::BEGIN@197";
+}
+subgraph cluster_Attribute_Handlers {
+	label="Attribute::Handlers";
+	"Attribute::Handlers::BEGIN@215";
+	"Attribute::Handlers::BEGIN@236";
+	"Attribute::Handlers::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_TypeCoercion_Union {
+	label="Moose::Meta::TypeCoercion::Union";
+	"Moose::Meta::TypeCoercion::Union::BEGIN@5";
+}
+subgraph cluster_Package_Stash {
+	label="Package::Stash";
+	"Package::Stash::BEGIN@106";
+	"Package::Stash::BEGIN@6";
+}
+subgraph cluster_Moose_Meta_Method {
+	label="Moose::Meta::Method";
+	"Moose::Meta::Method::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Method_Augmented {
+	label="Moose::Meta::Method::Augmented";
+	"Moose::Meta::Method::Augmented::BEGIN@4";
+}
+subgraph cluster_Carp {
+	label="Carp";
+	"Carp::BEGIN@295";
+	"Carp::short_error_loc";
+}
+subgraph cluster_Sub_Install {
+	label="Sub::Install";
+	"Sub::Install::BEGIN@3";
+}
+subgraph cluster_Moose_Meta_Role_Method_Conflicting {
+	label="Moose::Meta::Role::Method::Conflicting";
+	"Moose::Meta::Role::Method::Conflicting::BEGIN@5";
+}
+subgraph cluster_Devel_StackTraceFrame {
+	label="Devel::StackTraceFrame";
+	"Devel::StackTraceFrame::BEGIN@245";
+}
+subgraph cluster_Moose_Util_MetaRole {
+	label="Moose::Util::MetaRole";
+	"Moose::Util::MetaRole::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterized {
+	label="Moose::Meta::TypeConstraint::Parameterized";
+	"Moose::Meta::TypeConstraint::Parameterized::BEGIN@4";
+}
+subgraph cluster_mro {
+	label="mro";
+	"mro::BEGIN@11";
+}
+subgraph cluster_Moose_Meta_Role_Application_RoleSummation {
+	label="Moose::Meta::Role::Application::RoleSummation";
+	"Moose::Meta::Role::Application::RoleSummation::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Registry {
+	label="Moose::Meta::TypeConstraint::Registry";
+	"Moose::Meta::TypeConstraint::Registry::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Instance {
+	label="Moose::Meta::Instance";
+	"Moose::Meta::Instance::BEGIN@5";
+}
+subgraph cluster_Moose_Object {
+	label="Moose::Object";
+	"Moose::Object::BEGIN@94";
+	"Moose::Object::BEGIN@5";
+}
+subgraph cluster_Moose_Role {
+	label="Moose::Role";
+	"Moose::Role::BEGIN@3";
+}
+subgraph cluster_Moose_Meta_Mixin_AttributeCore {
+	label="Moose::Meta::Mixin::AttributeCore";
+	"Moose::Meta::Mixin::AttributeCore::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Role_Attribute {
+	label="Moose::Meta::Role::Attribute";
+	"Moose::Meta::Role::Attribute::BEGIN@4";
+}
+subgraph cluster_re {
+	label="re";
+	"re::BEGIN@5";
+}
+subgraph cluster_Sub_Name {
+	label="Sub::Name";
+	"Sub::Name::BEGIN@45";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::BEGIN@3";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@4";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::BEGIN@5";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::BEGIN@5";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::BEGIN@7";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Class {
+	label="Moose::Meta::TypeConstraint::Class";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@4";
+}
+subgraph cluster_Moose_Util_TypeConstraints_OptimizedConstraints {
+	label="Moose::Util::TypeConstraints::OptimizedConstraints";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Method_Wrapped {
+	label="Class::MOP::Method::Wrapped";
+	"Class::MOP::Method::Wrapped::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Method_Destructor {
+	label="Moose::Meta::Method::Destructor";
+	"Moose::Meta::Method::Destructor::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Role_Method_Required {
+	label="Moose::Meta::Role::Method::Required";
+	"Moose::Meta::Role::Method::Required::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::BEGIN@5";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@4";
+}
+subgraph cluster_MRO_Compat {
+	label="MRO::Compat";
+	"MRO::Compat::BEGIN@226";
+	"MRO::Compat::BEGIN@39";
+	"MRO::Compat::BEGIN@3";
+}
+subgraph cluster_Class_MOP_Mixin_HasAttributes {
+	label="Class::MOP::Mixin::HasAttributes";
+	"Class::MOP::Mixin::HasAttributes::BEGIN@4";
+}
+subgraph cluster_Moose_Deprecated {
+	label="Moose::Deprecated";
+	"Moose::Deprecated::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Method_Accessor {
+	label="Moose::Meta::Method::Accessor";
+	"Moose::Meta::Method::Accessor::BEGIN@5";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::BEGIN@5";
+}
+subgraph cluster_Exception_Class_Base {
+	label="Exception::Class::Base";
+	"Exception::Class::Base::BEGIN@7";
+}
+subgraph cluster_Moose_Meta_Method_Delegation {
+	label="Moose::Meta::Method::Delegation";
+	"Moose::Meta::Method::Delegation::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Union {
+	label="Moose::Meta::TypeConstraint::Union";
+	"Moose::Meta::TypeConstraint::Union::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_TypeCoercion {
+	label="Moose::Meta::TypeCoercion";
+	"Moose::Meta::TypeCoercion::BEGIN@5";
+}
+subgraph cluster_Moose_Meta_Role_Application {
+	label="Moose::Meta::Role::Application";
+	"Moose::Meta::Role::Application::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToClass {
+	label="Moose::Meta::Role::Application::ToClass";
+	"Moose::Meta::Role::Application::ToClass::BEGIN@4";
+}
+subgraph cluster_Class_MOP_Mixin {
+	label="Class::MOP::Mixin";
+	"Class::MOP::Mixin::BEGIN@4";
+}
+"main::BEGIN@4" -> "warnings::CORE:match";
+"Moose::Meta::Role::Method::Conflicting::BEGIN@5" -> "warnings::import";
+"Class::MOP::Method::Generated::BEGIN@5" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Union::BEGIN@5" -> "warnings::import";
+"Moose::Exporter::import" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Enum::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Role::Application::ToRole::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Method::Delegation::BEGIN@5" -> "warnings::import";
+"Devel::GlobalDestruction::BEGIN@3" -> "warnings::import";
+"Moose::Exporter::BEGIN@4" -> "warnings::import";
+"mro::BEGIN@11" -> "warnings::import";
+"Exception::Class::Base::BEGIN@7" -> "warnings::import";
+"Moose::Meta::TypeConstraint::BEGIN@5" -> "warnings::import";
+"Data::OptList::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Instance::BEGIN@5" -> "warnings::import";
+"Attribute::Handlers::BEGIN@4" -> "warnings::import";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "warnings::import";
+"Moose::Meta::Method::BEGIN@4" -> "warnings::import";
+"Moose::Error::Default::BEGIN@4" -> "warnings::import";
+"Devel::GlobalDestruction::BEGIN@6" -> "warnings::import";
+"Package::DeprecationManager::BEGIN@7" -> "warnings::import";
+"Class::MOP::Mixin::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Mixin::AttributeCore::BEGIN@4" -> "warnings::import";
+"Class::MOP::Mixin::AttributeCore::BEGIN@4" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Role::BEGIN@4" -> "warnings::import";
+"Sub::Install::BEGIN@3" -> "warnings::import";
+"Moose::Meta::Method::Constructor::BEGIN@5" -> "warnings::import";
+"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@4" -> "warnings::import";
+"Data::Lock::BEGIN@3" -> "warnings::import";
+"Moose::Meta::Role::Composite::BEGIN@4" -> "warnings::import";
+"Class::MOP::Object::BEGIN@5" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Registry::BEGIN@5" -> "warnings::import";
+"Class::MOP::Method::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Method::Accessor::BEGIN@5" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@4" -> "warnings::import";
+"Package::Stash::BEGIN@6" -> "warnings::import";
+"Moose::Meta::TypeCoercion::Union::BEGIN@5" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Class::BEGIN@4" -> "warnings::import";
+"Moose::BEGIN@3" -> "warnings::import";
+"Moose::Util::MetaRole::BEGIN@4" -> "warnings::import";
+"Moose::Meta::TypeCoercion::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Role::Attribute::BEGIN@4" -> "warnings::import";
+"Class::MOP::Class::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Role::Method::Required::BEGIN@5" -> "warnings::import";
+"re::BEGIN@5" -> "warnings::import";
+"Class::MOP::Class::Immutable::Trait::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Class::Immutable::Trait::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Role::Application::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Role::BEGIN@5" -> "warnings::import";
+"Class::MOP::Method::Wrapped::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Role::Application::RoleSummation::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Method::Overridden::BEGIN@4" -> "warnings::import";
+"Moose::Object::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Role::Application::ToInstance::BEGIN@4" -> "warnings::import";
+"MRO::Compat::BEGIN@3" -> "warnings::import";
+"Moose::Meta::Role::Application::ToClass::BEGIN@4" -> "warnings::import";
+"Class::MOP::Mixin::HasAttributes::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Class::BEGIN@5" -> "warnings::import";
+"Class::MOP::Method::Constructor::BEGIN@5" -> "warnings::import";
+"Class::MOP::Instance::BEGIN@5" -> "warnings::import";
+"Devel::StackTrace::BEGIN@6" -> "warnings::import";
+"Class::MOP::Attribute::BEGIN@5" -> "warnings::import";
+"Class::MOP::Method::Accessor::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Attribute::BEGIN@5" -> "warnings::import";
+"Class::MOP::Deprecated::BEGIN@4" -> "warnings::import";
+"Class::MOP::Mixin::HasMethods::BEGIN@4" -> "warnings::import";
+"Moose::Meta::Method::Augmented::BEGIN@4" -> "warnings::import";
+"Devel::StackTraceFrame::BEGIN@245" -> "warnings::import";
+"Moose::Meta::Role::Method::BEGIN@5" -> "warnings::import";
+"Class::MOP::Module::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Method::Destructor::BEGIN@5" -> "warnings::import";
+"Sub::Name::BEGIN@45" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@4" -> "warnings::import";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@4" -> "warnings::import";
+"Moose::Role::BEGIN@3" -> "warnings::import";
+"Class::MOP::Package::BEGIN@5" -> "warnings::import";
+"metaclass::BEGIN@5" -> "warnings::import";
+"Class::MOP::BEGIN@5" -> "warnings::import";
+"main::BEGIN@4" -> "warnings::import";
+"Moose::Deprecated::BEGIN@4" -> "warnings::import";
+"Class::MOP::Method::Inlined::BEGIN@4" -> "warnings::import";
+"Moose::Util::BEGIN@4" -> "warnings::import";
+"warnings::__chk" -> "warnings::_error_loc";
+"warnings::enabled" -> "warnings::__chk";
+"warnings::__chk" -> "Carp::short_error_loc";
+"Exporter::Heavy::BEGIN@197" -> "warnings::unimport";
+"Moose::Util::TypeConstraints::BEGIN@660" -> "warnings::unimport";
+"Package::Stash::BEGIN@106" -> "warnings::unimport";
+"Class::MOP::Class::BEGIN@414" -> "warnings::unimport";
+"MRO::Compat::BEGIN@39" -> "warnings::unimport";
+"Moose::Util::TypeConstraints::BEGIN@676" -> "warnings::unimport";
+"English::BEGIN@47" -> "warnings::unimport";
+"Moose::Meta::Role::BEGIN@554" -> "warnings::unimport";
+"MRO::Compat::BEGIN@226" -> "warnings::unimport";
+"Moose::Exporter::BEGIN@387" -> "warnings::unimport";
+"Moose::Object::BEGIN@94" -> "warnings::unimport";
+"Moose::Meta::Role::BEGIN@533" -> "warnings::unimport";
+"Carp::BEGIN@295" -> "warnings::unimport";
+"Attribute::Handlers::BEGIN@215" -> "warnings::unimport";
+"Class::MOP::Class::BEGIN@435" -> "warnings::unimport";
+"Moose::Util::TypeConstraints::BEGIN@649" -> "warnings::unimport";
+"Attribute::Handlers::BEGIN@236" -> "warnings::unimport";
+"Moose::Util::TypeConstraints::BEGIN@655" -> "warnings::unimport";
+"main::BEGIN@4" -> "warnings::CORE:regcomp";
+"attributes::import" -> "warnings::enabled";
+}

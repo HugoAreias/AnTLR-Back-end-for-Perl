@@ -1,0 +1,46 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Class_Immutable_Trait {
+	label="Class::MOP::Class::Immutable::Trait";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@4";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@8";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@3";
+	"Class::MOP::Class::Immutable::Trait::_get_mutable_metaclass_name";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@6";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@9";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@36";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::_real_ref_name";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+"Class::MOP::Class::Immutable::Trait::BEGIN@9" -> "Exporter::import";
+"Class::MOP::Class::Immutable::Trait::BEGIN@8" -> "Exporter::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@9";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@36";
+"Class::MOP::Class::Immutable::Trait::BEGIN@36" -> "strict::unimport";
+"Class::MOP::Class::_real_ref_name" -> "Class::MOP::Class::Immutable::Trait::_get_mutable_metaclass_name";
+"Class::MOP::Class::Immutable::Trait::BEGIN@4" -> "warnings::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@6";
+"Class::MOP::Class::Immutable::Trait::BEGIN@3" -> "strict::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@4";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@8";
+}

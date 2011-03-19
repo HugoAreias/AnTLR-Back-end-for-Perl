@@ -1,0 +1,522 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Class_Immutable_Trait {
+	label="Class::MOP::Class::Immutable::Trait";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@4";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@8";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@3";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@6";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@9";
+	"Class::MOP::Class::Immutable::Trait::BEGIN@36";
+}
+subgraph cluster_Moose_Meta_Role_Composite {
+	label="Moose::Meta::Role::Composite";
+	"Moose::Meta::Role::Composite::apply_params";
+	"Moose::Meta::Role::Composite::_new";
+}
+subgraph cluster_Class_MOP_Object {
+	label="Class::MOP::Object";
+	"Class::MOP::Object::_new";
+}
+subgraph cluster_Class_MOP_Module {
+	label="Class::MOP::Module";
+	"Class::MOP::Module::_instantiate_module";
+}
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::BEGIN@3";
+	"ANTLR::Runtime::CharStream::BEGIN@4";
+	"ANTLR::Runtime::CharStream::BEGIN@6";
+	"ANTLR::Runtime::CharStream::BEGIN@29";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_ANTLR_Runtime_RuleReturnScope {
+	label="ANTLR::Runtime::RuleReturnScope";
+	"ANTLR::Runtime::RuleReturnScope::meta";
+	"ANTLR::Runtime::RuleReturnScope::BEGIN@26";
+	"ANTLR::Runtime::RuleReturnScope::BEGIN@3";
+}
+subgraph cluster_Data_OptList {
+	label="Data::OptList";
+	"Data::OptList::BEGIN@3";
+	"Data::OptList::BEGIN@8";
+	"Data::OptList::BEGIN@214";
+	"Data::OptList::mkopt";
+	"Data::OptList::BEGIN@4";
+	"Data::OptList::BEGIN@131";
+	"Data::OptList::BEGIN@6";
+	"Data::OptList::BEGIN@7";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::_make_sub_exporter_params";
+	"Moose::Exporter::BEGIN@11";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+}
+subgraph cluster_Moose_Util {
+	label="Moose::Util";
+	"Moose::Util::_apply_all_roles";
+	"Moose::Util::find_meta";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::BEGIN@14";
+	"Class::MOP::Class::class_precedence_list";
+	"Class::MOP::Class::BEGIN@414";
+	"Class::MOP::Class::BEGIN@5";
+	"Class::MOP::Class::BEGIN@15";
+	"Class::MOP::Class::initialize";
+	"Class::MOP::Class::make_immutable";
+	"Class::MOP::Class::_inline_constructor";
+	"Class::MOP::Class::BEGIN@16";
+	"Class::MOP::Class::BEGIN@9";
+	"Class::MOP::Class::_construct_class_instance";
+	"Class::MOP::Class::_immutable_metaclass";
+	"Class::MOP::Class::BEGIN@23";
+	"Class::MOP::Class::BEGIN@17";
+	"Class::MOP::Class::BEGIN@7";
+	"Class::MOP::Class::BEGIN@13";
+	"Class::MOP::Class::_inline_destructor";
+	"Class::MOP::Class::BEGIN@448";
+	"Class::MOP::Class::_single_metaclass_is_compatible";
+	"Class::MOP::Class::BEGIN@10";
+	"Class::MOP::Class::_class_metaclass_is_compatible";
+	"Class::MOP::Class::BEGIN@435";
+	"Class::MOP::Class::BEGIN@4";
+	"Class::MOP::Class::BEGIN@12";
+	"Class::MOP::Class::BEGIN@8";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::BEGIN@16";
+	"Class::MOP::BEGIN@17";
+	"Class::MOP::get_metaclass_by_name";
+	"Class::MOP::__ANON__[Class/MOP.pm:275]";
+	"Class::MOP::BEGIN@14";
+	"Class::MOP::__ANON__[Class/MOP.pm:336]";
+	"Class::MOP::class_of";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+	"Class::MOP::_class_to_pmfile";
+	"Class::MOP::load_class";
+	"Class::MOP::is_class_loaded";
+	"Class::MOP::store_metaclass_by_name";
+	"Class::MOP::__ANON__";
+	"Class::MOP::__ANON__[Class/MOP.pm:320]";
+	"Class::MOP::CORE:match";
+	"Class::MOP::BEGIN@9";
+	"Class::MOP::CORE:subst";
+	"Class::MOP::__ANON__[Class/MOP.pm:509]";
+	"Class::MOP::__ANON__[Class/MOP.pm:301]";
+	"Class::MOP::BEGIN@4";
+	"Class::MOP::__ANON__[Class/MOP.pm:233]";
+	"Class::MOP::BEGIN@7";
+	"Class::MOP::BEGIN@23";
+	"Class::MOP::BEGIN@18";
+	"Class::MOP::BEGIN@19";
+	"Class::MOP::__ANON__[Class/MOP.pm:191]";
+	"Class::MOP::BEGIN@21";
+	"Class::MOP::BEGIN@20";
+	"Class::MOP::load_first_existing_class";
+	"Class::MOP::_is_valid_class_name";
+	"Class::MOP::BEGIN@11";
+	"Class::MOP::BEGIN@13";
+	"Class::MOP::BEGIN@5";
+	"Class::MOP::BEGIN@12";
+	"Class::MOP::get_code_info";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::BEGIN@14";
+	"Class::MOP::Mixin::HasMethods::BEGIN@12";
+	"Class::MOP::Mixin::HasMethods::_code_is_mine";
+	"Class::MOP::Mixin::HasMethods::BEGIN@11";
+	"Class::MOP::Mixin::HasMethods::BEGIN@4";
+	"Class::MOP::Mixin::HasMethods::add_method";
+	"Class::MOP::Mixin::HasMethods::BEGIN@3";
+	"Class::MOP::Mixin::HasMethods::BEGIN@10";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::_new";
+	"Moose::Meta::Role::apply";
+	"Moose::Meta::Role::initialize";
+}
+subgraph cluster_ANTLR_Runtime_RecognitionException {
+	label="ANTLR::Runtime::RecognitionException";
+	"ANTLR::Runtime::RecognitionException::BEGIN@138";
+	"ANTLR::Runtime::RecognitionException::BEGIN@3";
+	"ANTLR::Runtime::RecognitionException::meta";
+	"ANTLR::Runtime::RecognitionException::BEGIN@4";
+}
+subgraph cluster_ANTLR_Runtime_Parser {
+	label="ANTLR::Runtime::Parser";
+	"ANTLR::Runtime::Parser::BEGIN@3";
+	"ANTLR::Runtime::Parser::meta";
+	"ANTLR::Runtime::Parser::BEGIN@95";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::where";
+	"Moose::Util::TypeConstraints::subtype";
+	"Moose::Util::TypeConstraints::as";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::BEGIN@11";
+	"ANTLR::Runtime::Lexer::BEGIN@389";
+	"ANTLR::Runtime::Lexer::BEGIN@3";
+	"ANTLR::Runtime::Lexer::BEGIN@7";
+	"ANTLR::Runtime::Lexer::meta";
+	"ANTLR::Runtime::Lexer::BEGIN@8";
+	"ANTLR::Runtime::Lexer::BEGIN@13";
+	"ANTLR::Runtime::Lexer::BEGIN@12";
+	"ANTLR::Runtime::Lexer::BEGIN@9";
+	"ANTLR::Runtime::Lexer::BEGIN@5";
+	"ANTLR::Runtime::Lexer::BEGIN@15";
+	"ANTLR::Runtime::Lexer::BEGIN@6";
+	"ANTLR::Runtime::Lexer::BEGIN@17";
+	"ANTLR::Runtime::Lexer::BEGIN@14";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::with";
+	"Moose::init_meta";
+	"Moose::has";
+	"Moose::extends";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Exception {
+	label="ANTLR::Runtime::Exception";
+	"ANTLR::Runtime::Exception::BEGIN@5";
+	"ANTLR::Runtime::Exception::BEGIN@21";
+	"ANTLR::Runtime::Exception::BEGIN@3";
+	"ANTLR::Runtime::Exception::meta";
+}
+subgraph cluster_Sub_Install {
+	label="Sub::Install";
+	"Sub::Install::__ANON__[Sub/Install.pm:284]";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::INVALID_TOKEN_TYPE";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::BEGIN@7";
+	"Class::MOP::Attribute::BEGIN@11";
+	"Class::MOP::Attribute::BEGIN@17";
+	"Class::MOP::Attribute::BEGIN@9";
+	"Class::MOP::Attribute::BEGIN@10";
+	"Class::MOP::Attribute::BEGIN@5";
+	"Class::MOP::Attribute::BEGIN@4";
+}
+subgraph cluster_Moose_Object {
+	label="Moose::Object";
+	"Moose::Object::BUILDALL";
+}
+subgraph cluster_Moose_Role {
+	label="Moose::Role";
+	"Moose::Role::requires";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::BEGIN@6";
+	"Try::Tiny::catch";
+	"Try::Tiny::BEGIN@8";
+	"Try::Tiny::BEGIN@3";
+	"Try::Tiny::try";
+	"Try::Tiny::BEGIN@46";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::__ANON__[Data/Lock.pm:38]";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::initialize";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedTokenException {
+	label="ANTLR::Runtime::MismatchedTokenException";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@3";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@8";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@5";
+	"ANTLR::Runtime::MismatchedTokenException::meta";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@31";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::excludes_role";
+	"Moose::Meta::Class::initialize";
+	"Moose::Meta::Class::_get_ancestors_until";
+	"Moose::Meta::Class::does_role";
+	"Moose::Meta::Class::_find_common_base";
+	"Moose::Meta::Class::superclasses";
+}
+subgraph cluster_ANTLR_Runtime_TokenStream {
+	label="ANTLR::Runtime::TokenStream";
+	"ANTLR::Runtime::TokenStream::BEGIN@3";
+	"ANTLR::Runtime::TokenStream::BEGIN@27";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::BEGIN@19";
+	"Moose::Meta::Attribute::_new";
+}
+subgraph cluster_ANTLR_Runtime_ParserRuleReturnScope {
+	label="ANTLR::Runtime::ParserRuleReturnScope";
+	"ANTLR::Runtime::ParserRuleReturnScope::meta";
+	"ANTLR::Runtime::ParserRuleReturnScope::BEGIN@3";
+	"ANTLR::Runtime::ParserRuleReturnScope::BEGIN@27";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@4";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@12";
+	"Class::MOP::Mixin::AttributeCore::default";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@3";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@10";
+}
+subgraph cluster_MRO_Compat {
+	label="MRO::Compat";
+	"MRO::Compat::BEGIN@2";
+	"MRO::Compat::BEGIN@225";
+	"MRO::Compat::BEGIN@116";
+	"MRO::Compat::BEGIN@39";
+	"MRO::Compat::BEGIN@256";
+	"MRO::Compat::BEGIN@3";
+	"MRO::Compat::BEGIN@10";
+	"MRO::Compat::BEGIN@226";
+}
+subgraph cluster_Class_MOP_Mixin_HasAttributes {
+	label="Class::MOP::Mixin::HasAttributes";
+	"Class::MOP::Mixin::HasAttributes::BEGIN@13";
+	"Class::MOP::Mixin::HasAttributes::BEGIN@4";
+	"Class::MOP::Mixin::HasAttributes::BEGIN@10";
+	"Class::MOP::Mixin::HasAttributes::BEGIN@3";
+	"Class::MOP::Mixin::HasAttributes::BEGIN@11";
+}
+subgraph cluster_ANTLR_Runtime_IntStream {
+	label="ANTLR::Runtime::IntStream";
+	"ANTLR::Runtime::IntStream::BEGIN@3";
+	"ANTLR::Runtime::IntStream::BEGIN@84";
+}
+"Class::MOP::BEGIN@18" -> "Class::MOP::Mixin::HasMethods::BEGIN@14";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@17";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@12";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@14";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@10";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@6";
+"Class::MOP::load_first_existing_class" -> "Class::MOP::_class_to_pmfile";
+"Class::MOP::load_first_existing_class" -> "Try::Tiny::try";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@11";
+"Class::MOP::BEGIN@14" -> "Exporter::import";
+"Class::MOP::BEGIN@11" -> "Exporter::import";
+"Class::MOP::BEGIN@12" -> "Exporter::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::Util::TypeConstraints::where";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@10";
+"Class::MOP::BEGIN@17" -> "Class::MOP::Mixin::HasAttributes::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@7";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@10";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@435";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RuleReturnScope::BEGIN@3";
+"Class::MOP::BEGIN@17" -> "Class::MOP::Mixin::HasAttributes::BEGIN@11";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@9";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@214";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@5";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@36";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@31";
+"Try::Tiny::try" -> "Class::MOP::__ANON__[Class/MOP.pm:117]";
+"Class::MOP::class_of" -> "Scalar::Util::blessed";
+"Class::MOP::Class::class_precedence_list" -> "Class::MOP::__ANON__";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::Util::TypeConstraints::as";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@15";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::extends";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@15";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@21";
+"Class::MOP::load_class" -> "Class::MOP::load_first_existing_class";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Parser::meta";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RuleReturnScope::BEGIN@26";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@5";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::meta";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@116";
+"Class::MOP::Object::_new" -> "Class::MOP::class_of";
+"Moose::Meta::Attribute::BEGIN@19" -> "Class::MOP::class_of";
+"Moose::Meta::Class::excludes_role" -> "Class::MOP::class_of";
+"Moose::Meta::Class::does_role" -> "Class::MOP::class_of";
+"Moose::Meta::Class::_get_ancestors_until" -> "Class::MOP::class_of";
+"Moose::Meta::Class::superclasses" -> "Class::MOP::class_of";
+"Moose::Util::_apply_all_roles" -> "Class::MOP::class_of";
+"Moose::Object::BUILDALL" -> "Class::MOP::class_of";
+"Moose::Util::find_meta" -> "Class::MOP::class_of";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:256]" -> "Class::MOP::class_of";
+"Moose::Meta::Class::_find_common_base" -> "Class::MOP::class_of";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@17";
+"Class::MOP::load_first_existing_class" -> "Try::Tiny::catch";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@13";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::Util::TypeConstraints::subtype";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@389";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@10";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@3";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@7";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@6";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@11";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@4";
+"Class::MOP::BEGIN@5" -> "warnings::import";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@11";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::BEGIN@21";
+"Class::MOP::BEGIN@17" -> "Class::MOP::Mixin::HasAttributes::BEGIN@10";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@6";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@8";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@5";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@9";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@131";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@5";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Token::INVALID_TOKEN_TYPE";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@16";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:233]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:233]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:233]";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@20";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::TokenStream::BEGIN@27";
+"Class::MOP::BEGIN@18" -> "Class::MOP::Mixin::HasMethods::BEGIN@3";
+"Class::MOP::BEGIN@4" -> "strict::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::BEGIN@3";
+"Class::MOP::BEGIN@13" -> "Sub::Install::__ANON__[Sub/Install.pm:284]";
+"Class::MOP::Mixin::HasMethods::_code_is_mine" -> "Class::MOP::get_code_info";
+"Class::MOP::Mixin::HasMethods::add_method" -> "Class::MOP::get_code_info";
+"Moose::Exporter::_make_sub_exporter_params" -> "Class::MOP::get_code_info";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::Role::requires";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@3";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@14";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:336]";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@9";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::BEGIN@5";
+"Moose::Meta::Role::apply" -> "Class::MOP::load_class";
+"Class::MOP::Class::_inline_constructor" -> "Class::MOP::load_class";
+"Moose::Meta::Class::superclasses" -> "Class::MOP::load_class";
+"metaclass::import" -> "Class::MOP::load_class";
+"Moose::Util::_apply_all_roles" -> "Class::MOP::load_class";
+"Moose::Meta::Role::Composite::apply_params" -> "Class::MOP::load_class";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::load_class";
+"Class::MOP::Class::_inline_destructor" -> "Class::MOP::load_class";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::ParserRuleReturnScope::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@14";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:320]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:320]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:320]";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@4";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@9";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@8";
+"Class::MOP::_class_to_pmfile" -> "Class::MOP::CORE:subst";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@29";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@4";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Class::MOP::BEGIN@18" -> "Class::MOP::Mixin::HasMethods::BEGIN@12";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RuleReturnScope::meta";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@23";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@19";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::ParserRuleReturnScope::BEGIN@27";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@7";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@448";
+"Class::MOP::Module::_instantiate_module" -> "Class::MOP::_is_valid_class_name";
+"Class::MOP::load_first_existing_class" -> "Class::MOP::_is_valid_class_name";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::TokenStream::BEGIN@3";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@8";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@5";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:275]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:275]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:275]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@4";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@226";
+"Class::MOP::Package::initialize" -> "Class::MOP::store_metaclass_by_name";
+"Class::MOP::Class::_construct_class_instance" -> "Class::MOP::store_metaclass_by_name";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@8";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::meta";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::meta";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@3";
+"Class::MOP::BEGIN@18" -> "Class::MOP::Mixin::HasMethods::BEGIN@11";
+"Class::MOP::BEGIN@17" -> "Class::MOP::Mixin::HasAttributes::BEGIN@4";
+"Class::MOP::BEGIN@17" -> "Class::MOP::Mixin::HasAttributes::BEGIN@13";
+"Class::MOP::load_first_existing_class" -> "Data::OptList::mkopt";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@7";
+"Class::MOP::BEGIN@18" -> "Class::MOP::Mixin::HasMethods::BEGIN@4";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@4";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::with";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@13";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@12";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@12";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::make_immutable";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::meta";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::has";
+"Class::MOP::load_first_existing_class" -> "Class::MOP::is_class_loaded";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::is_class_loaded";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@13";
+"Class::MOP::BEGIN@13" -> "Data::OptList::BEGIN@7";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@6";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@17";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:301]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:301]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:301]";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@6";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@4";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@256";
+"Class::MOP::BEGIN@20" -> "Class::MOP::Attribute::BEGIN@17";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@4";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@18";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Parser::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::BEGIN@138";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@225";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::BEGIN@4";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@16";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@3";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@2";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::IntStream::BEGIN@3";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::get_metaclass_by_name";
+"Moose::init_meta" -> "Class::MOP::get_metaclass_by_name";
+"Class::MOP::Class::_class_metaclass_is_compatible" -> "Class::MOP::get_metaclass_by_name";
+"Moose::Meta::Class::initialize" -> "Class::MOP::get_metaclass_by_name";
+"Class::MOP::Class::initialize" -> "Class::MOP::get_metaclass_by_name";
+"Moose::Meta::Role::initialize" -> "Class::MOP::get_metaclass_by_name";
+"Class::MOP::Package::initialize" -> "Class::MOP::get_metaclass_by_name";
+"Class::MOP::Class::_construct_class_instance" -> "Class::MOP::get_metaclass_by_name";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@39";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@12";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Class::MOP::Class::Immutable::Trait::BEGIN@8";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@3";
+"Class::MOP::_is_valid_class_name" -> "Class::MOP::CORE:match";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@9";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@8";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:509]";
+"Moose::Meta::Attribute::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:509]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::ParserRuleReturnScope::meta";
+"Class::MOP::BEGIN@18" -> "Class::MOP::Mixin::HasMethods::BEGIN@10";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@414";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::IntStream::BEGIN@84";
+"Class::MOP::BEGIN@19" -> "Class::MOP::Class::BEGIN@23";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::BEGIN@3";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:191]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:191]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Parser::BEGIN@95";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@46";
+}

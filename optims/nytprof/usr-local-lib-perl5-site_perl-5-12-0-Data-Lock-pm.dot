@@ -1,0 +1,126 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Internals {
+	label="Internals";
+	"Internals::SvREADONLY";
+}
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::BEGIN@4";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_Attribute_Handlers {
+	label="Attribute::Handlers";
+	"Attribute::Handlers::_gen_handler_AH_";
+	"Attribute::Handlers::BEGIN@104";
+	"Attribute::Handlers::CORE:qr";
+	"Attribute::Handlers::BEGIN@2";
+	"Attribute::Handlers::BEGIN@148";
+	"Attribute::Handlers::BEGIN@110";
+	"Attribute::Handlers::import";
+	"Attribute::Handlers::BEGIN@199";
+	"Attribute::Handlers::BEGIN@17";
+	"Attribute::Handlers::BEGIN@6";
+	"Attribute::Handlers::BEGIN@3";
+	"Attribute::Handlers::BEGIN@215";
+	"Attribute::Handlers::BEGIN@4";
+	"Attribute::Handlers::BEGIN@5";
+	"Attribute::Handlers::BEGIN@15";
+	"Attribute::Handlers::BEGIN@124";
+	"Attribute::Handlers::BEGIN@236";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@9";
+	"main::BEGIN@10";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::BEGIN@2";
+	"Data::Lock::BEGIN@7";
+	"Data::Lock::__ANON__[Data/Lock.pm:38]";
+	"Data::Lock::BEGIN@8";
+	"Data::Lock::CORE:match";
+	"Data::Lock::BEGIN@10";
+	"Data::Lock::BEGIN@18";
+	"Data::Lock::BEGIN@3";
+	"Data::Lock::BEGIN@4";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@7";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::match";
+	"ANTLR::Runtime::BaseRecognizer::push_follow";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@14";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@14";
+}
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@18";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@2";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@3";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@199";
+"Data::Lock::__ANON__[Data/Lock.pm:38]" -> "Internals::SvREADONLY";
+"Data::Lock::__ANON__[Data/Lock.pm:38]" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@7";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@215";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@148";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@236";
+"Data::Lock::BEGIN@18" -> "strict::unimport";
+"Data::Lock::BEGIN@10" -> "base::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@104";
+"Data::Lock::BEGIN@3" -> "warnings::import";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@4";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@6";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@10";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@17";
+"Data::Lock::BEGIN@4" -> "strict::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::CORE:qr";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::import";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@110";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@3";
+"main::BEGIN@10" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Lavanda2Parser::BEGIN@14" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Lavanda2Lexer::BEGIN@14" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Data::Lock::__ANON__[Data/Lock.pm:38]" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"main::BEGIN@9" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"ANTLR::Runtime::BaseRecognizer::push_follow" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"ANTLR::Runtime::BaseRecognizer::match" -> "Data::Lock::__ANON__[Data/Lock.pm:38]";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::_gen_handler_AH_";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@4";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@2";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::CORE:match";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@5";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@15";
+"Data::Lock::BEGIN@7" -> "Attribute::Handlers::BEGIN@124";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@8";
+}

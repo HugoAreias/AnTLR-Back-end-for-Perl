@@ -1,0 +1,24 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_if {
+	label="if";
+	"if::CORE:subst";
+	"if::import";
+	"if::work";
+}
+subgraph cluster_Moose_Object {
+	label="Moose::Object";
+	"Moose::Object::BEGIN@13";
+	"Moose::Object::BEGIN@12";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::can";
+}
+"if::work" -> "if::CORE:subst";
+"if::work" -> "UNIVERSAL::can";
+"Moose::Object::BEGIN@12" -> "if::work";
+"Moose::Object::BEGIN@13" -> "if::work";
+"Moose::Object::BEGIN@12" -> "if::import";
+"Moose::Object::BEGIN@13" -> "if::import";
+}

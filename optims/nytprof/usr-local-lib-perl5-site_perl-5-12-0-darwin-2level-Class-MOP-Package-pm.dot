@@ -1,0 +1,1720 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Method_Accessor {
+	label="Class::MOP::Method::Accessor";
+	"Class::MOP::Method::Accessor::_generate_accessor_method_inline";
+	"Class::MOP::Method::Accessor::_generate_predicate_method";
+	"Class::MOP::Method::Accessor::_generate_writer_method_inline";
+	"Class::MOP::Method::Accessor::_generate_accessor_method";
+	"Class::MOP::Method::Accessor::_initialize_body";
+	"Class::MOP::Method::Accessor::accessor_type";
+	"Class::MOP::Method::Accessor::_generate_reader_method_inline";
+	"Class::MOP::Method::Accessor::_generate_reader_method";
+	"Class::MOP::Method::Accessor::_generate_writer_method";
+	"Class::MOP::Method::Accessor::associated_attribute";
+	"Class::MOP::Method::Accessor::new";
+	"Class::MOP::Method::Accessor::_generate_predicate_method_inline";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterizable {
+	label="Moose::Meta::TypeConstraint::Parameterizable";
+	"Moose::Meta::TypeConstraint::Parameterizable::_new";
+	"Moose::Meta::TypeConstraint::Parameterizable::constraint_generator";
+	"Moose::Meta::TypeConstraint::Parameterizable::parameterize";
+	"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for";
+	"Moose::Meta::TypeConstraint::Parameterizable::meta";
+	"Moose::Meta::TypeConstraint::Parameterizable::has_constraint_generator";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_DuckType {
+	label="Moose::Meta::TypeConstraint::DuckType";
+	"Moose::Meta::TypeConstraint::DuckType::meta";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToRole {
+	label="Moose::Meta::Role::Application::ToRole";
+	"Moose::Meta::Role::Application::ToRole::meta";
+}
+subgraph cluster_ANTLR_Runtime_BitSet {
+	label="ANTLR::Runtime::BitSet";
+	"ANTLR::Runtime::BitSet::meta";
+	"ANTLR::Runtime::BitSet::new";
+	"ANTLR::Runtime::BitSet::BUILD";
+	"ANTLR::Runtime::BitSet::bits";
+}
+subgraph cluster_ANTLR_Runtime_UnwantedTokenException {
+	label="ANTLR::Runtime::UnwantedTokenException";
+	"ANTLR::Runtime::UnwantedTokenException::meta";
+}
+subgraph cluster_Moose_Meta_Role_Composite {
+	label="Moose::Meta::Role::Composite";
+	"Moose::Meta::Role::Composite::new";
+	"Moose::Meta::Role::Composite::__ANON__[Moose/Meta/Role/Composite.pm:30]";
+	"Moose::Meta::Role::Composite::application_role_summation_class";
+	"Moose::Meta::Role::Composite::name";
+	"Moose::Meta::Role::Composite::meta";
+	"Moose::Meta::Role::Composite::add_method";
+	"Moose::Meta::Role::Composite::_method_map";
+	"Moose::Meta::Role::Composite::apply_params";
+	"Moose::Meta::Role::Composite::_get_local_methods";
+	"Moose::Meta::Role::Composite::_new";
+}
+subgraph cluster_List_MoreUtils {
+	label="List::MoreUtils";
+	"List::MoreUtils::all";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToInstance {
+	label="Moose::Meta::Role::Application::ToInstance";
+	"Moose::Meta::Role::Application::ToInstance::meta";
+}
+subgraph cluster_Class_MOP_Module {
+	label="Class::MOP::Module";
+	"Class::MOP::Module::_instantiate_module";
+}
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::channel";
+	"ANTLR::Runtime::RecognizerSharedState::meta";
+	"ANTLR::Runtime::RecognizerSharedState::rule_memo";
+	"ANTLR::Runtime::RecognizerSharedState::following";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+	"ANTLR::Runtime::RecognizerSharedState::failed";
+	"ANTLR::Runtime::RecognizerSharedState::new";
+	"ANTLR::Runtime::RecognizerSharedState::syntax_errors";
+	"ANTLR::Runtime::RecognizerSharedState::token";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_line";
+	"ANTLR::Runtime::RecognizerSharedState::error_recovery";
+	"ANTLR::Runtime::RecognizerSharedState::backtracking";
+	"ANTLR::Runtime::RecognizerSharedState::DESTROY";
+	"ANTLR::Runtime::RecognizerSharedState::_fsp";
+	"ANTLR::Runtime::RecognizerSharedState::type";
+	"ANTLR::Runtime::RecognizerSharedState::text";
+	"ANTLR::Runtime::RecognizerSharedState::__ANON__[ANTLR/Runtime/RecognizerSharedState.pm:13]";
+	"ANTLR::Runtime::RecognizerSharedState::BUILD";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+	"ANTLR::Runtime::RecognizerSharedState::last_error_index";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_ANTLR_Runtime_RuleReturnScope {
+	label="ANTLR::Runtime::RuleReturnScope";
+	"ANTLR::Runtime::RuleReturnScope::meta";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::_add_line_directive";
+	"Class::MOP::Method::Generated::is_inline";
+	"Class::MOP::Method::Generated::definition_context";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::build_import_methods";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Instance {
+	label="Class::MOP::Instance";
+	"Class::MOP::Instance::create_instance";
+	"Class::MOP::Instance::associated_metaclass";
+	"Class::MOP::Instance::_class_name";
+	"Class::MOP::Instance::new";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::linearized_isa";
+	"Class::MOP::Class::find_attribute_by_name";
+	"Class::MOP::Class::_check_metaclass_compatibility";
+	"Class::MOP::Class::class_precedence_list";
+	"Class::MOP::Class::is_anon_class";
+	"Class::MOP::Class::find_next_method_by_name";
+	"Class::MOP::Class::initialize";
+	"Class::MOP::Class::_inline_constructor";
+	"Class::MOP::Class::get_all_attributes";
+	"Class::MOP::Class::destructor_class";
+	"Class::MOP::Class::_immutable_metaclass";
+	"Class::MOP::Class::_real_ref_name";
+	"Class::MOP::Class::immutable_trait";
+	"Class::MOP::Class::_construct_instance";
+	"Class::MOP::Class::_inline_destructor";
+	"Class::MOP::Class::get_all_methods";
+	"Class::MOP::Class::_single_metaclass_is_compatible";
+	"Class::MOP::Class::_create_meta_instance";
+	"Class::MOP::Class::_superclasses_updated";
+	"Class::MOP::Class::constructor_class";
+	"Class::MOP::Class::__ANON__[Class/MOP/Class.pm:887]";
+	"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing";
+	"Class::MOP::Class::create";
+	"Class::MOP::Class::instance_metaclass";
+	"Class::MOP::Class::superclasses";
+	"Class::MOP::Class::constructor_name";
+	"Class::MOP::Class::new_object";
+	"Class::MOP::Class::_immutable_options";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Enum {
+	label="Moose::Meta::TypeConstraint::Enum";
+	"Moose::Meta::TypeConstraint::Enum::meta";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+	"Class::MOP::store_metaclass_by_name";
+	"Class::MOP::__ANON__[Class/MOP.pm:320]";
+	"Class::MOP::__ANON__[Class/MOP.pm:233]";
+	"Class::MOP::__ANON__[Class/MOP.pm:509]";
+	"Class::MOP::get_metaclass_by_name";
+	"Class::MOP::__ANON__[Class/MOP.pm:301]";
+	"Class::MOP::__ANON__[Class/MOP.pm:275]";
+	"Class::MOP::__ANON__[Class/MOP.pm:191]";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::_code_is_mine";
+	"Class::MOP::Mixin::HasMethods::get_method_list";
+	"Class::MOP::Mixin::HasMethods::add_method";
+	"Class::MOP::Mixin::HasMethods::_get_maybe_raw_method";
+	"Class::MOP::Mixin::HasMethods::method_metaclass";
+	"Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+	"Class::MOP::Mixin::HasMethods::wrap_method_body";
+	"Class::MOP::Mixin::HasMethods::_get_local_methods";
+}
+subgraph cluster_ANTLR_Runtime_RecognitionException {
+	label="ANTLR::Runtime::RecognitionException";
+	"ANTLR::Runtime::RecognitionException::meta";
+}
+subgraph cluster_ANTLR_Runtime_Parser {
+	label="ANTLR::Runtime::Parser";
+	"ANTLR::Runtime::Parser::input";
+	"ANTLR::Runtime::Parser::set_token_stream";
+	"ANTLR::Runtime::Parser::meta";
+	"ANTLR::Runtime::Parser::get_current_input_symbol";
+	"ANTLR::Runtime::Parser::BUILD";
+	"ANTLR::Runtime::Parser::reset";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::get_after_method_modifiers_map";
+	"Moose::Meta::Role::get_required_methods_map";
+	"Moose::Meta::Role::_new";
+	"Moose::Meta::Role::initialize";
+	"Moose::Meta::Role::BEGIN@20";
+	"Moose::Meta::Role::get_method_modifier_list";
+	"Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:261]";
+	"Moose::Meta::Role::get_override_method_modifiers_map";
+	"Moose::Meta::Role::add_required_methods";
+	"Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:85]";
+	"Moose::Meta::Role::method_metaclass";
+	"Moose::Meta::Role::get_required_method_list";
+	"Moose::Meta::Role::get_excluded_roles_list";
+	"Moose::Meta::Role::required_method_metaclass";
+	"Moose::Meta::Role::application_to_class_class";
+	"Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:357]";
+	"Moose::Meta::Role::meta";
+	"Moose::Meta::Role::BEGIN@19";
+	"Moose::Meta::Role::apply";
+	"Moose::Meta::Role::get_before_method_modifiers_map";
+	"Moose::Meta::Role::get_excluded_roles_map";
+	"Moose::Meta::Role::get_around_method_modifiers_map";
+	"Moose::Meta::Role::get_roles";
+	"Moose::Meta::Role::add_excluded_roles";
+	"Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:306]";
+	"Moose::Meta::Role::does_role";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@39";
+	"Moose::Util::TypeConstraints::BEGIN@33";
+	"Moose::Util::TypeConstraints::BEGIN@35";
+	"Moose::Util::TypeConstraints::list_all_type_constraints";
+	"Moose::Util::TypeConstraints::BEGIN@36";
+	"Moose::Util::TypeConstraints::BEGIN@30";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:807]";
+	"Moose::Util::TypeConstraints::BEGIN@34";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:845]";
+	"Moose::Util::TypeConstraints::BEGIN@31";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:828]";
+	"Moose::Util::TypeConstraints::register_type_constraint";
+}
+subgraph cluster_ANTLR_Runtime_MissingTokenException {
+	label="ANTLR::Runtime::MissingTokenException";
+	"ANTLR::Runtime::MissingTokenException::meta";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::skip";
+	"ANTLR::Runtime::Lexer::next_token";
+	"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+	"ANTLR::Runtime::Lexer::get_char_index";
+	"ANTLR::Runtime::Lexer::meta";
+	"ANTLR::Runtime::Lexer::input";
+	"ANTLR::Runtime::Lexer::match";
+	"ANTLR::Runtime::Lexer::emit";
+	"ANTLR::Runtime::Lexer::BEGIN@15";
+	"ANTLR::Runtime::Lexer::match_range";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedSetException {
+	label="ANTLR::Runtime::MismatchedSetException";
+	"ANTLR::Runtime::MismatchedSetException::meta";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::special";
+	"ANTLR::Runtime::DFA::transition";
+	"ANTLR::Runtime::DFA::max";
+	"ANTLR::Runtime::DFA::eot";
+	"ANTLR::Runtime::DFA::meta";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]";
+	"ANTLR::Runtime::DFA::CORE:match";
+	"ANTLR::Runtime::DFA::decision_number";
+	"ANTLR::Runtime::DFA::new";
+	"ANTLR::Runtime::DFA::eof";
+	"ANTLR::Runtime::DFA::accept";
+	"ANTLR::Runtime::DFA::unpack_encoded_string";
+	"ANTLR::Runtime::DFA::min";
+	"ANTLR::Runtime::DFA::recognizer";
+}
+subgraph cluster_Class_MOP_Method_Inlined {
+	label="Class::MOP::Method::Inlined";
+	"Class::MOP::Method::Inlined::_expected_method_class";
+	"Class::MOP::Method::Inlined::_uninlined_body";
+	"Class::MOP::Method::Inlined::can_be_inlined";
+}
+subgraph cluster_Class_MOP_Method_Constructor {
+	label="Class::MOP::Method::Constructor";
+	"Class::MOP::Method::Constructor::_generate_constructor_method_inline";
+	"Class::MOP::Method::Constructor::_attributes";
+	"Class::MOP::Method::Constructor::_initialize_body";
+	"Class::MOP::Method::Constructor::options";
+	"Class::MOP::Method::Constructor::associated_metaclass";
+	"Class::MOP::Method::Constructor::_meta_instance";
+	"Class::MOP::Method::Constructor::_generate_slot_initializer";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@27";
+	"Moose::BEGIN@29";
+	"Moose::BEGIN@20";
+	"Moose::BEGIN@31";
+	"Moose::BEGIN@30";
+	"Moose::BEGIN@21";
+	"Moose::BEGIN@33";
+	"Moose::BEGIN@28";
+}
+subgraph cluster_Moose_Meta_Role_Method {
+	label="Moose::Meta::Role::Method";
+	"Moose::Meta::Role::Method::_new";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Role {
+	label="Moose::Meta::TypeConstraint::Role";
+	"Moose::Meta::TypeConstraint::Role::__ANON__[Moose/Meta/TypeConstraint/Role.pm:36]";
+	"Moose::Meta::TypeConstraint::Role::_create_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::Role::_new";
+	"Moose::Meta::TypeConstraint::Role::new";
+	"Moose::Meta::TypeConstraint::Role::meta";
+	"Moose::Meta::TypeConstraint::Role::role";
+}
+subgraph cluster_Moose_Meta_TypeCoercion_Union {
+	label="Moose::Meta::TypeCoercion::Union";
+	"Moose::Meta::TypeCoercion::Union::meta";
+}
+subgraph cluster_Package_Stash {
+	label="Package::Stash";
+	"Package::Stash::BEGIN@10";
+	"Package::Stash::BEGIN@106";
+	"Package::Stash::new";
+	"Package::Stash::get_package_symbol";
+	"Package::Stash::BEGIN@9";
+	"Package::Stash::BEGIN@113";
+	"Package::Stash::add_package_symbol";
+	"Package::Stash::BEGIN@2";
+	"Package::Stash::BEGIN@105";
+	"Package::Stash::BEGIN@6";
+	"Package::Stash::BEGIN@5";
+	"Package::Stash::namespace";
+	"Package::Stash::BEGIN@33";
+	"Package::Stash::BEGIN@183";
+	"Package::Stash::has_package_symbol";
+}
+subgraph cluster_Moose_Meta_Method {
+	label="Moose::Meta::Method";
+	"Moose::Meta::Method::_new";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Exception {
+	label="ANTLR::Runtime::Exception";
+	"ANTLR::Runtime::Exception::meta";
+}
+subgraph cluster_Class_MOP_Class_Immutable_Moose_Meta_Class {
+	label="Class::MOP::Class::Immutable::Moose::Meta::Class";
+	"Class::MOP::Class::Immutable::Moose::Meta::Class::class_precedence_list";
+	"Class::MOP::Class::Immutable::Moose::Meta::Class::is_immutable";
+	"Class::MOP::Class::Immutable::Moose::Meta::Class::superclasses";
+	"Class::MOP::Class::Immutable::Moose::Meta::Class::linearized_isa";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterized {
+	label="Moose::Meta::TypeConstraint::Parameterized";
+	"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint";
+	"Moose::Meta::TypeConstraint::Parameterized::meta";
+	"Moose::Meta::TypeConstraint::Parameterized::_new";
+	"Moose::Meta::TypeConstraint::Parameterized::has_type_parameter";
+	"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9";
+	"Moose::Meta::TypeConstraint::Parameterized::type_parameter";
+}
+subgraph cluster_Maybe_ANTLR_Runtime {
+	label="Maybe[ANTLR::Runtime";
+	"Maybe[ANTLR::Runtime::CharStream]";
+	"Maybe[ANTLR::Runtime::TokenStream]";
+	"Maybe[ANTLR::Runtime::Token]";
+}
+subgraph cluster_Class_MOP_Class_Immutable_Class_MOP_Class {
+	label="Class::MOP::Class::Immutable::Class::MOP::Class";
+	"Class::MOP::Class::Immutable::Class::MOP::Class::get_meta_instance";
+	"Class::MOP::Class::Immutable::Class::MOP::Class::get_all_attributes";
+	"Class::MOP::Class::Immutable::Class::MOP::Class::is_immutable";
+	"Class::MOP::Class::Immutable::Class::MOP::Class::linearized_isa";
+}
+subgraph cluster_Moose_Meta_Role_Application_RoleSummation {
+	label="Moose::Meta::Role::Application::RoleSummation";
+	"Moose::Meta::Role::Application::RoleSummation::check_required_methods";
+	"Moose::Meta::Role::Application::RoleSummation::is_aliased_method";
+	"Moose::Meta::Role::Application::RoleSummation::get_method_aliases_for_role";
+	"Moose::Meta::Role::Application::RoleSummation::_new";
+	"Moose::Meta::Role::Application::RoleSummation::apply_attributes";
+	"Moose::Meta::Role::Application::RoleSummation::check_role_exclusions";
+	"Moose::Meta::Role::Application::RoleSummation::role_params";
+	"Moose::Meta::Role::Application::RoleSummation::apply_method_modifiers";
+	"Moose::Meta::Role::Application::RoleSummation::meta";
+	"Moose::Meta::Role::Application::RoleSummation::apply_override_method_modifiers";
+	"Moose::Meta::Role::Application::RoleSummation::apply_methods";
+	"Moose::Meta::Role::Application::RoleSummation::get_exclusions_for_role";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::EOF_TOKEN";
+	"ANTLR::Runtime::Token::SKIP_TOKEN";
+}
+subgraph cluster_ArrayRef_ANTLR_Runtime {
+	label="ArrayRef[ANTLR::Runtime";
+	"ArrayRef[ANTLR::Runtime::BitSet]";
+	"ArrayRef[ANTLR::Runtime::Token]";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::start";
+	"ANTLR::Runtime::CommonToken::set_text";
+	"ANTLR::Runtime::CommonToken::input";
+	"ANTLR::Runtime::CommonToken::line";
+	"ANTLR::Runtime::CommonToken::text";
+	"ANTLR::Runtime::CommonToken::stop";
+	"ANTLR::Runtime::CommonToken::get_type";
+	"ANTLR::Runtime::CommonToken::meta";
+	"ANTLR::Runtime::CommonToken::type";
+	"ANTLR::Runtime::CommonToken::set_char_position_in_line";
+	"ANTLR::Runtime::CommonToken::set_line";
+	"ANTLR::Runtime::CommonToken::index";
+	"ANTLR::Runtime::CommonToken::char_position_in_line";
+	"ANTLR::Runtime::CommonToken::BUILD";
+	"ANTLR::Runtime::CommonToken::DESTROY";
+	"ANTLR::Runtime::CommonToken::set_token_index";
+	"ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]";
+	"ANTLR::Runtime::CommonToken::new";
+	"ANTLR::Runtime::CommonToken::get_text";
+	"ANTLR::Runtime::CommonToken::channel";
+	"ANTLR::Runtime::CommonToken::not_eof";
+}
+subgraph cluster_Lavanda2Lexer_DFA4 {
+	label="Lavanda2Lexer::DFA4";
+	"Lavanda2Lexer::DFA4::BUILD";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]";
+	"Class::MOP::Attribute::_set_initial_slot_value";
+	"Class::MOP::Attribute::install_accessors";
+	"Class::MOP::Attribute::associated_methods";
+	"Class::MOP::Attribute::has_value";
+	"Class::MOP::Attribute::get_raw_value";
+	"Class::MOP::Attribute::_process_accessors";
+	"Class::MOP::Attribute::get_value";
+	"Class::MOP::Attribute::slots";
+	"Class::MOP::Attribute::new";
+	"Class::MOP::Attribute::associated_class";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::_initialize_body";
+	"Moose::Meta::Method::Constructor::_generate_slot_initializer";
+	"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion";
+	"Moose::Meta::Method::Constructor::_generate_slot_assignment";
+	"Moose::Meta::Method::Constructor::_generate_BUILDARGS";
+	"Moose::Meta::Method::Constructor::_generate_BUILDALL";
+	"Moose::Meta::Method::Constructor::_generate_triggers";
+	"Moose::Meta::Method::Constructor::_generate_type_constraint_check";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Registry {
+	label="Moose::Meta::TypeConstraint::Registry";
+	"Moose::Meta::TypeConstraint::Registry::type_constraints";
+	"Moose::Meta::TypeConstraint::Registry::has_type_constraint";
+	"Moose::Meta::TypeConstraint::Registry::meta";
+	"Moose::Meta::TypeConstraint::Registry::add_type_constraint";
+	"Moose::Meta::TypeConstraint::Registry::get_type_constraint";
+}
+subgraph cluster_Moose_Meta_Instance {
+	label="Moose::Meta::Instance";
+	"Moose::Meta::Instance::_new";
+}
+subgraph cluster_Moose_Object {
+	label="Moose::Object";
+	"Moose::Object::new";
+	"Moose::Object::DESTROY";
+}
+subgraph cluster_Moose_Meta_Mixin_AttributeCore {
+	label="Moose::Meta::Mixin::AttributeCore";
+	"Moose::Meta::Mixin::AttributeCore::has_trigger";
+	"Moose::Meta::Mixin::AttributeCore::should_auto_deref";
+	"Moose::Meta::Mixin::AttributeCore::type_constraint";
+	"Moose::Meta::Mixin::AttributeCore::is_required";
+	"Moose::Meta::Mixin::AttributeCore::should_coerce";
+	"Moose::Meta::Mixin::AttributeCore::has_handles";
+	"Moose::Meta::Mixin::AttributeCore::is_lazy";
+	"Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+	"Moose::Meta::Mixin::AttributeCore::is_weak_ref";
+}
+subgraph cluster_ArrayRef_Maybe_ANTLR_Runtime {
+	label="ArrayRef[Maybe[ANTLR::Runtime";
+	"ArrayRef[Maybe[ANTLR::Runtime::CharStreamState]]";
+}
+subgraph cluster_ANTLR_Runtime_NoViableAltException {
+	label="ANTLR::Runtime::NoViableAltException";
+	"ANTLR::Runtime::NoViableAltException::meta";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedRangeException {
+	label="ANTLR::Runtime::MismatchedRangeException";
+	"ANTLR::Runtime::MismatchedRangeException::meta";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@9";
+	"main::BEGIN@10";
+	"main::BEGIN@7";
+	"main::NULL";
+	"main::BEGIN@8";
+	"main::RUNTIME";
+}
+subgraph cluster_ANTLR_Runtime_CharStreamState {
+	label="ANTLR::Runtime::CharStreamState";
+	"ANTLR::Runtime::CharStreamState::set_char_position_in_line";
+	"ANTLR::Runtime::CharStreamState::p";
+	"ANTLR::Runtime::CharStreamState::meta";
+	"ANTLR::Runtime::CharStreamState::line";
+	"ANTLR::Runtime::CharStreamState::char_position_in_line";
+	"ANTLR::Runtime::CharStreamState::get_line";
+	"ANTLR::Runtime::CharStreamState::get_p";
+	"ANTLR::Runtime::CharStreamState::set_p";
+	"ANTLR::Runtime::CharStreamState::new";
+	"ANTLR::Runtime::CharStreamState::get_char_position_in_line";
+	"ANTLR::Runtime::CharStreamState::set_line";
+	"ANTLR::Runtime::CharStreamState::BEGIN@3";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::channel";
+	"ANTLR::Runtime::CommonTokenStream::new";
+	"ANTLR::Runtime::CommonTokenStream::__ANON__[ANTLR/Runtime/CommonTokenStream.pm:29]";
+	"ANTLR::Runtime::CommonTokenStream::consume";
+	"ANTLR::Runtime::CommonTokenStream::discard_off_channel_tokens";
+	"ANTLR::Runtime::CommonTokenStream::meta";
+	"ANTLR::Runtime::CommonTokenStream::LT";
+	"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels_reverse";
+	"ANTLR::Runtime::CommonTokenStream::p";
+	"ANTLR::Runtime::CommonTokenStream::fill_buffer";
+	"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels";
+	"ANTLR::Runtime::CommonTokenStream::token_source";
+	"ANTLR::Runtime::CommonTokenStream::discard_set";
+	"ANTLR::Runtime::CommonTokenStream::tokens";
+	"ANTLR::Runtime::CommonTokenStream::channel_override_map";
+	"ANTLR::Runtime::CommonTokenStream::DESTROY";
+	"ANTLR::Runtime::CommonTokenStream::LB";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@9";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@8";
+	"ANTLR::Runtime::BaseRecognizer::__ANON__[ANTLR/Runtime/BaseRecognizer.pm:41]";
+	"ANTLR::Runtime::BaseRecognizer::meta";
+	"ANTLR::Runtime::BaseRecognizer::state";
+	"ANTLR::Runtime::BaseRecognizer::reset";
+	"ANTLR::Runtime::BaseRecognizer::match";
+	"ANTLR::Runtime::BaseRecognizer::push_follow";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@6";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::namespace";
+	"Class::MOP::Package::get_package_symbol";
+	"Class::MOP::Package::_new";
+	"Class::MOP::Package::BEGIN@7";
+	"Class::MOP::Package::add_package_symbol";
+	"Class::MOP::Package::BEGIN@5";
+	"Class::MOP::Package::initialize";
+	"Class::MOP::Package::_package_stash";
+	"Class::MOP::Package::BEGIN@8";
+	"Class::MOP::Package::name";
+	"Class::MOP::Package::BEGIN@15";
+	"Class::MOP::Package::has_package_symbol";
+	"Class::MOP::Package::BEGIN@9";
+	"Class::MOP::Package::BEGIN@4";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Class {
+	label="Moose::Meta::TypeConstraint::Class";
+	"Moose::Meta::TypeConstraint::Class::meta";
+	"Moose::Meta::TypeConstraint::Class::class";
+	"Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+	"Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::Class::new";
+	"Moose::Meta::TypeConstraint::Class::_new";
+}
+subgraph cluster_Moose_Util_TypeConstraints_OptimizedConstraints {
+	label="Moose::Util::TypeConstraints::OptimizedConstraints";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+}
+subgraph cluster_Class_MOP_Method_Wrapped {
+	label="Class::MOP::Method::Wrapped";
+	"Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+	"Class::MOP::Method::Wrapped::add_around_modifier";
+	"Class::MOP::Method::Wrapped::wrap";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedTokenException {
+	label="ANTLR::Runtime::MismatchedTokenException";
+	"ANTLR::Runtime::MismatchedTokenException::meta";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]";
+	"Lavanda2Lexer::BEGIN@16";
+	"Lavanda2Lexer::BEGIN@14";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]";
+	"Lavanda2Lexer::BEGIN@15";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]";
+	"Lavanda2Lexer::dfa4";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]";
+	"Lavanda2Lexer::new";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]";
+	"Lavanda2Lexer::BEGIN@19";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]";
+	"Lavanda2Lexer::BUILD";
+	"Lavanda2Lexer::BEGIN@17";
+	"Lavanda2Lexer::m_tokens";
+	"Lavanda2Lexer::meta";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]";
+	"Lavanda2Lexer::init_dfas";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::add_role";
+	"Moose::Meta::Class::_process_new_attribute";
+	"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation";
+	"Moose::Meta::Class::new_object";
+	"Moose::Meta::Class::immutable_trait";
+	"Moose::Meta::Class::initialize";
+	"Moose::Meta::Class::_get_ancestors_until";
+	"Moose::Meta::Class::error_class";
+	"Moose::Meta::Class::excludes_role";
+	"Moose::Meta::Class::roles";
+	"Moose::Meta::Class::add_role_application";
+	"Moose::Meta::Class::does_role";
+	"Moose::Meta::Class::superclasses";
+	"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation";
+	"Moose::Meta::Class::constructor_class";
+	"Moose::Meta::Class::destructor_class";
+	"Moose::Meta::Class::_get_role_applications";
+	"Moose::Meta::Class::_find_common_base";
+}
+subgraph cluster_Moose_Meta_Method_Destructor {
+	label="Moose::Meta::Method::Destructor";
+	"Moose::Meta::Method::Destructor::_initialize_body";
+}
+subgraph cluster_Moose_Meta_Role_Method_Required {
+	label="Moose::Meta::Role::Method::Required";
+	"Moose::Meta::Role::Method::Required::name";
+	"Moose::Meta::Role::Method::Required::_new";
+	"Moose::Meta::Role::Method::Required::new";
+	"Moose::Meta::Role::Method::Required::meta";
+}
+subgraph cluster_ANTLR_Runtime_ParserRuleReturnScope {
+	label="ANTLR::Runtime::ParserRuleReturnScope";
+	"ANTLR::Runtime::ParserRuleReturnScope::new";
+	"ANTLR::Runtime::ParserRuleReturnScope::stop";
+	"ANTLR::Runtime::ParserRuleReturnScope::start";
+	"ANTLR::Runtime::ParserRuleReturnScope::meta";
+	"ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::verify_against_type_constraint";
+	"Moose::Meta::Attribute::initialize_instance_slot";
+	"Moose::Meta::Attribute::_new";
+	"Moose::Meta::Attribute::_set_initial_slot_value";
+	"Moose::Meta::Attribute::new";
+	"Moose::Meta::Attribute::_process_accessors";
+	"Moose::Meta::Attribute::_check_associated_methods";
+	"Moose::Meta::Attribute::_coerce_and_verify";
+	"Moose::Meta::Attribute::install_accessors";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::definition_context";
+	"Class::MOP::Mixin::AttributeCore::_set_insertion_order";
+	"Class::MOP::Mixin::AttributeCore::has_writer";
+	"Class::MOP::Mixin::AttributeCore::predicate";
+	"Class::MOP::Mixin::AttributeCore::reader";
+	"Class::MOP::Mixin::AttributeCore::accessor";
+	"Class::MOP::Mixin::AttributeCore::has_builder";
+	"Class::MOP::Mixin::AttributeCore::has_initializer";
+	"Class::MOP::Mixin::AttributeCore::has_clearer";
+	"Class::MOP::Mixin::AttributeCore::has_default";
+	"Class::MOP::Mixin::AttributeCore::has_accessor";
+	"Class::MOP::Mixin::AttributeCore::has_predicate";
+	"Class::MOP::Mixin::AttributeCore::writer";
+	"Class::MOP::Mixin::AttributeCore::name";
+	"Class::MOP::Mixin::AttributeCore::init_arg";
+	"Class::MOP::Mixin::AttributeCore::has_reader";
+}
+subgraph cluster_Class_MOP_Mixin_HasAttributes {
+	label="Class::MOP::Mixin::HasAttributes";
+	"Class::MOP::Mixin::HasAttributes::get_attribute_list";
+	"Class::MOP::Mixin::HasAttributes::get_attribute";
+	"Class::MOP::Mixin::HasAttributes::_attribute_map";
+	"Class::MOP::Mixin::HasAttributes::add_attribute";
+	"Class::MOP::Mixin::HasAttributes::has_attribute";
+	"Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+	"ANTLR::Runtime::ANTLRStringStream::markers";
+	"ANTLR::Runtime::ANTLRStringStream::meta";
+	"ANTLR::Runtime::ANTLRStringStream::rewind";
+	"ANTLR::Runtime::ANTLRStringStream::consume";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@5";
+	"ANTLR::Runtime::ANTLRStringStream::mark";
+	"ANTLR::Runtime::ANTLRStringStream::line";
+	"ANTLR::Runtime::ANTLRStringStream::index";
+	"ANTLR::Runtime::ANTLRStringStream::p";
+	"ANTLR::Runtime::ANTLRStringStream::new";
+	"ANTLR::Runtime::ANTLRStringStream::get_line";
+	"ANTLR::Runtime::ANTLRStringStream::substring";
+	"ANTLR::Runtime::ANTLRStringStream::input";
+	"ANTLR::Runtime::ANTLRStringStream::release";
+	"ANTLR::Runtime::ANTLRStringStream::LA";
+	"ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line";
+	"ANTLR::Runtime::ANTLRStringStream::length";
+	"ANTLR::Runtime::ANTLRStringStream::BUILD";
+	"ANTLR::Runtime::ANTLRStringStream::seek";
+	"ANTLR::Runtime::ANTLRStringStream::last_marker";
+	"ANTLR::Runtime::ANTLRStringStream::__ANON__[ANTLR/Runtime/ANTLRStringStream.pm:60]";
+	"ANTLR::Runtime::ANTLRStringStream::mark_depth";
+}
+subgraph cluster_Moose_Meta_Method_Accessor {
+	label="Moose::Meta::Method::Accessor";
+	"Moose::Meta::Method::Accessor::_generate_reader_method_inline";
+	"Moose::Meta::Method::Accessor::_inline_auto_deref";
+	"Moose::Meta::Method::Accessor::_inline_check_coercion";
+	"Moose::Meta::Method::Accessor::_generate_accessor_method_inline";
+	"Moose::Meta::Method::Accessor::_eval_code";
+	"Moose::Meta::Method::Accessor::_instance_is_inlinable";
+	"Moose::Meta::Method::Accessor::_inline_check_lazy";
+	"Moose::Meta::Method::Accessor::_new";
+	"Moose::Meta::Method::Accessor::_inline_check_required";
+	"Moose::Meta::Method::Accessor::_inline_get";
+	"Moose::Meta::Method::Accessor::_inline_trigger";
+	"Moose::Meta::Method::Accessor::_inline_store";
+	"Moose::Meta::Method::Accessor::_inline_check_constraint";
+	"Moose::Meta::Method::Accessor::_inline_get_old_value_for_trigger";
+	"Moose::Meta::Method::Accessor::_value_needs_copy";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::clone";
+	"Class::MOP::Method::body";
+	"Class::MOP::Method::wrap";
+	"Class::MOP::Method::package_name";
+	"Class::MOP::Method::name";
+	"Class::MOP::Method::associated_metaclass";
+	"Class::MOP::Method::execute";
+	"Class::MOP::Method::_set_original_method";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::meta";
+	"Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::check";
+	"Moose::Meta::TypeConstraint::_collect_all_parents";
+	"Moose::Meta::TypeConstraint::_compile_type";
+	"Moose::Meta::TypeConstraint::_set_constraint";
+	"Moose::Meta::TypeConstraint::_has_compiled_type_constraint";
+	"Moose::Meta::TypeConstraint::Maybe[Str]";
+	"Moose::Meta::TypeConstraint::_compiled_type_constraint";
+	"Moose::Meta::TypeConstraint::_compile_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::equals";
+	"Moose::Meta::TypeConstraint::ArrayRef[Int]";
+	"Moose::Meta::TypeConstraint::__ANON__";
+	"Moose::Meta::TypeConstraint::_actually_compile_type_constraint";
+	"Moose::Meta::TypeConstraint::new";
+	"Moose::Meta::TypeConstraint::ArrayRef[Str]";
+	"Moose::Meta::TypeConstraint::has_coercion";
+	"Moose::Meta::TypeConstraint::is_subtype_of";
+	"Moose::Meta::TypeConstraint::_new";
+	"Moose::Meta::TypeConstraint::parent";
+	"Moose::Meta::TypeConstraint::Maybe[ArrayRef[HashRef[Int]]]";
+	"Moose::Meta::TypeConstraint::compile_type_constraint";
+	"Moose::Meta::TypeConstraint::_compile_subtype";
+	"Moose::Meta::TypeConstraint::name";
+	"Moose::Meta::TypeConstraint::has_parent";
+	"Moose::Meta::TypeConstraint::constraint";
+	"Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::ArrayRef[ArrayRef[Int]]";
+	"Moose::Meta::TypeConstraint::Bool";
+	"Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@14";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]";
+	"Lavanda2Parser::DESTROY";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]";
+	"Lavanda2Parser::meta";
+	"Lavanda2Parser::saco";
+	"Lavanda2Parser::lotes";
+	"Lavanda2Parser::new";
+	"Lavanda2Parser::sacos";
+	"Lavanda2Parser::lote";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]";
+	"Lavanda2Parser::lavanda";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]";
+	"Lavanda2Parser::BUILD";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Union {
+	label="Moose::Meta::TypeConstraint::Union";
+	"Moose::Meta::TypeConstraint::Union::meta";
+}
+subgraph cluster_Moose_Meta_TypeCoercion {
+	label="Moose::Meta::TypeCoercion";
+	"Moose::Meta::TypeCoercion::meta";
+}
+subgraph cluster_Moose_Meta_Role_Application {
+	label="Moose::Meta::Role::Application";
+	"Moose::Meta::Role::Application::new";
+	"Moose::Meta::Role::Application::is_method_excluded";
+	"Moose::Meta::Role::Application::get_method_aliases";
+	"Moose::Meta::Role::Application::is_method_aliased";
+	"Moose::Meta::Role::Application::__ANON__[Moose/Meta/Role/Application.pm:20]";
+	"Moose::Meta::Role::Application::get_method_exclusions";
+	"Moose::Meta::Role::Application::__ANON__[Moose/Meta/Role/Application.pm:14]";
+	"Moose::Meta::Role::Application::meta";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToClass {
+	label="Moose::Meta::Role::Application::ToClass";
+	"Moose::Meta::Role::Application::ToClass::meta";
+	"Moose::Meta::Role::Application::ToClass::check_required_methods";
+	"Moose::Meta::Role::Application::ToClass::_new";
+	"Moose::Meta::Role::Application::ToClass::check_role_exclusions";
+	"Moose::Meta::Role::Application::ToClass::apply_methods";
+	"Moose::Meta::Role::Application::ToClass::apply_attributes";
+}
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::start";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@106";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_default";
+"Moose::Meta::Attribute::initialize_instance_slot" -> "Class::MOP::Mixin::AttributeCore::has_default";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_default";
+"Moose::Meta::Role::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:261]";
+"Moose::Meta::Role::Composite::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:261]";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::meta";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::CharStreamState::new";
+"ANTLR::Runtime::CommonToken::get_type" -> "ANTLR::Runtime::CommonToken::type";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonToken::type";
+"ANTLR::Runtime::CommonToken::not_eof" -> "ANTLR::Runtime::CommonToken::type";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::decision_number";
+"main::RUNTIME" -> "Lavanda2Parser::new";
+"Class::MOP::Class::find_attribute_by_name" -> "Class::MOP::Class::Immutable::Class::MOP::Class::linearized_isa";
+"Class::MOP::Class::get_all_attributes" -> "Class::MOP::Class::Immutable::Class::MOP::Class::linearized_isa";
+"Moose::Meta::Class::_get_ancestors_until" -> "Class::MOP::Class::Immutable::Class::MOP::Class::linearized_isa";
+"Moose::Meta::Class::_find_common_base" -> "Class::MOP::Class::Immutable::Class::MOP::Class::linearized_isa";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token_start_line";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token_start_line";
+"Class::MOP::Mixin::HasAttributes::add_attribute" -> "Class::MOP::Mixin::AttributeCore::_set_insertion_order";
+"main::BEGIN@10" -> "ANTLR::Runtime::BitSet::new";
+"Moose::Meta::Role::Composite::add_method" -> "Class::MOP::Method::package_name";
+"Class::MOP::Mixin::HasMethods::add_method" -> "Class::MOP::Method::package_name";
+"ANTLR::Runtime::CharStreamState::get_p" -> "ANTLR::Runtime::CharStreamState::p";
+"ANTLR::Runtime::CharStreamState::set_p" -> "ANTLR::Runtime::CharStreamState::p";
+"Class::MOP::Package::_package_stash" -> "Package::Stash::new";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::is_lazy";
+"Moose::Meta::Attribute::initialize_instance_slot" -> "Moose::Meta::Mixin::AttributeCore::is_lazy";
+"Moose::Meta::Method::Accessor::_inline_check_lazy" -> "Moose::Meta::Mixin::AttributeCore::is_lazy";
+"Class::MOP::Package::BEGIN@7" -> "Exporter::import";
+"Class::MOP::Package::BEGIN@8" -> "Exporter::import";
+"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels_reverse" -> "ANTLR::Runtime::CommonTokenStream::tokens";
+"ANTLR::Runtime::CommonTokenStream::consume" -> "ANTLR::Runtime::CommonTokenStream::tokens";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonTokenStream::tokens";
+"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels" -> "ANTLR::Runtime::CommonTokenStream::tokens";
+"ANTLR::Runtime::CommonTokenStream::LB" -> "ANTLR::Runtime::CommonTokenStream::tokens";
+"ANTLR::Runtime::CommonTokenStream::LT" -> "ANTLR::Runtime::CommonTokenStream::tokens";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::Class::instance_metaclass";
+"List::MoreUtils::all" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Class::_create_meta_instance" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Moose::Meta::Method::Accessor::_instance_is_inlinable" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Attribute::_process_accessors" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Class::MOP::Class::instance_metaclass";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::Parameterizable::_new";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@5";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::accept";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::accept";
+"ANTLR::Runtime::DFA::transition" -> "Moose::Meta::TypeConstraint::ArrayRef[ArrayRef[Int]]";
+"Moose::BEGIN@21" -> "Moose::Meta::TypeCoercion::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::TypeCoercion::meta";
+"Class::MOP::Class::_immutable_options" -> "Class::MOP::Class::constructor_name";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@10";
+"Class::MOP::Class::superclasses" -> "Class::MOP::Class::_check_metaclass_compatibility";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@6" -> "ANTLR::Runtime::RecognizerSharedState::meta";
+"Moose::Meta::Role::Composite::add_method" -> "Moose::Meta::Role::Composite::_method_map";
+"Moose::Meta::Role::Composite::_get_local_methods" -> "Moose::Meta::Role::Composite::_method_map";
+"Lavanda2Lexer::BEGIN@17" -> "ANTLR::Runtime::MismatchedSetException::meta";
+"Moose::Meta::Role::Application::is_method_excluded" -> "Moose::Meta::Role::Application::get_method_exclusions";
+"base::import" -> "Class::MOP::Package::BEGIN@9";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::eot";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::eot";
+"Class::MOP::Class::superclasses" -> "Class::MOP::Class::_superclasses_updated";
+"ANTLR::Runtime::CommonTokenStream::new" -> "ArrayRef[ANTLR::Runtime::Token]";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@2";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::has_clearer";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"List::MoreUtils::all" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"Class::MOP::Mixin::HasMethods::wrap_method_body" -> "Class::MOP::Mixin::HasMethods::method_metaclass";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "ANTLR::Runtime::RecognizerSharedState::BUILD";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::has_hand_optimized_type_constraint";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::min";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::min";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::Parser::input";
+"ANTLR::Runtime::Parser::get_current_input_symbol" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]" -> "ANTLR::Runtime::Parser::input";
+"ANTLR::Runtime::Parser::reset" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::Parser::input";
+"ANTLR::Runtime::Parser::set_token_stream" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::Parser::input";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::transition";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::transition";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"Moose::Util::TypeConstraints::BEGIN@35" -> "Moose::Meta::TypeConstraint::Enum::meta";
+"Moose::Util::TypeConstraints::BEGIN@30" -> "Moose::Meta::TypeConstraint::Union::meta";
+"Moose::Meta::Role::Composite::apply_params" -> "Moose::Meta::Role::Composite::application_role_summation_class";
+"ANTLR::Runtime::CommonToken::set_text" -> "ANTLR::Runtime::CommonToken::text";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::text";
+"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint" -> "Moose::Meta::TypeConstraint::Parameterized::has_type_parameter";
+"Moose::BEGIN@30" -> "Moose::Meta::Role::Application::RoleSummation::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Application::RoleSummation::meta";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::stop";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::failed";
+"ANTLR::Runtime::BaseRecognizer::match" -> "ANTLR::Runtime::RecognizerSharedState::failed";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::RecognizerSharedState::failed";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::RecognizerSharedState::failed";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::seek" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::index" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::CharStreamState::new" -> "Scalar::Util::blessed";
+"Lavanda2Parser::new" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::BitSet::new" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeCoercion::Union::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Application::ToClass::meta" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::CommonTokenStream::DESTROY" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::ParserRuleReturnScope::new" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeCoercion::meta" -> "Scalar::Util::blessed";
+"Lavanda2Parser::DESTROY" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::CommonTokenStream::new" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Parameterizable::meta" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::CommonToken::DESTROY" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Method::Required::meta" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::ParserRuleReturnScope::DESTROY" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Enum::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Union::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Application::RoleSummation::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Composite::meta" -> "Scalar::Util::blessed";
+"Lavanda2Lexer::new" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Role::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Parameterized::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Class::meta" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::CommonToken::new" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::DFA::new" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::Registry::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Application::ToRole::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Application::meta" -> "Scalar::Util::blessed";
+"ANTLR::Runtime::RecognizerSharedState::DESTROY" -> "Scalar::Util::blessed";
+"Moose::Meta::TypeConstraint::DuckType::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Application::ToInstance::meta" -> "Scalar::Util::blessed";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"List::MoreUtils::all" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"Class::MOP::Class::__ANON__[Class/MOP/Class.pm:887]" -> "Class::MOP::Mixin::HasMethods::wrapped_method_metaclass";
+"Moose::Meta::Role::Composite::new" -> "Moose::Meta::Role::Composite::_new";
+"Class::MOP::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Generated::is_inline";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Generated::is_inline";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@8" -> "ANTLR::Runtime::UnwantedTokenException::meta";
+"Moose::Meta::Role::Application::ToClass::check_role_exclusions" -> "Moose::Meta::Role::get_excluded_roles_list";
+"Moose::Meta::Role::Application::RoleSummation::check_role_exclusions" -> "Moose::Meta::Role::get_excluded_roles_list";
+"Moose::Meta::Role::Method::Required::new" -> "Moose::Meta::Role::Method::Required::_new";
+"Moose::Util::TypeConstraints::BEGIN@31" -> "Moose::Meta::TypeConstraint::Parameterized::meta";
+"ANTLR::Runtime::CommonToken::new" -> "ANTLR::Runtime::CommonToken::BUILD";
+"Moose::Meta::TypeConstraint::Class::new" -> "Moose::Meta::TypeConstraint::Class::_new";
+"Moose::Meta::Role::get_excluded_roles_list" -> "Moose::Meta::Role::get_excluded_roles_map";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "ANTLR::Runtime::ANTLRStringStream::__ANON__[ANTLR/Runtime/ANTLRStringStream.pm:60]";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Class::MOP::Class::superclasses";
+"Class::MOP::Class::create" -> "Class::MOP::Class::superclasses";
+"Moose::Meta::Class::superclasses" -> "Class::MOP::Class::superclasses";
+"Class::MOP::Package::namespace" -> "Package::Stash::namespace";
+"Moose::BEGIN@20" -> "Moose::Meta::TypeConstraint::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Application::ToRole::meta";
+"ANTLR::Runtime::CommonToken::text" -> "Moose::Meta::TypeConstraint::Maybe[Str]";
+"ANTLR::Runtime::RecognizerSharedState::text" -> "Moose::Meta::TypeConstraint::Maybe[Str]";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@183";
+"Moose::Meta::TypeConstraint::Role::_create_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::Role::role";
+"Class::MOP::Class::find_next_method_by_name" -> "Class::MOP::Class::Immutable::Moose::Meta::Class::linearized_isa";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::options";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Constructor::options";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::reader";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Parser::meta";
+"Moose::Meta::Role::apply" -> "Moose::Meta::Role::application_to_class_class";
+"Class::MOP::Attribute::new" -> "Moose::Meta::Attribute::_new";
+"ANTLR::Runtime::RecognizerSharedState::rule_memo" -> "Moose::Meta::TypeConstraint::Maybe[ArrayRef[HashRef[Int]]]";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::meta";
+"base::import" -> "Class::MOP::Package::BEGIN@5";
+"ANTLR::Runtime::ParserRuleReturnScope::stop" -> "Moose::Meta::TypeConstraint::Role::__ANON__[Moose/Meta/TypeConstraint/Role.pm:36]";
+"ANTLR::Runtime::ParserRuleReturnScope::start" -> "Moose::Meta::TypeConstraint::Role::__ANON__[Moose/Meta/TypeConstraint/Role.pm:36]";
+"ANTLR::Runtime::CommonTokenStream::new" -> "Moose::Meta::TypeConstraint::Role::__ANON__[Moose/Meta/TypeConstraint/Role.pm:36]";
+"ANTLR::Runtime::CommonToken::new" -> "ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Moose::Meta::Class::constructor_class";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Moose::Meta::Class::constructor_class";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Moose::Meta::Class::constructor_class";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Moose::Meta::Class::constructor_class";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Moose::Meta::Class::constructor_class";
+"Class::MOP::Class::_immutable_options" -> "Moose::Meta::Class::constructor_class";
+"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels_reverse" -> "ANTLR::Runtime::CommonToken::channel";
+"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels" -> "ANTLR::Runtime::CommonToken::channel";
+"ANTLR::Runtime::Parser::input" -> "Maybe[ANTLR::Runtime::TokenStream]";
+"Lavanda2Parser::new" -> "Maybe[ANTLR::Runtime::TokenStream]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::meta";
+"ANTLR::Runtime::RecognizerSharedState::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::BitSet::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::MismatchedTokenException::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::ANTLRStringStream::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::CharStreamState::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::Exception::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::RuleReturnScope::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::MismatchedSetException::meta" -> "Moose::Meta::Class::initialize";
+"Lavanda2Parser::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::CommonToken::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::CommonTokenStream::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::MissingTokenException::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::UnwantedTokenException::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::Parser::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::DFA::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::Lexer::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::RecognitionException::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::BaseRecognizer::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::NoViableAltException::meta" -> "Moose::Meta::Class::initialize";
+"Lavanda2Lexer::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::MismatchedRangeException::meta" -> "Moose::Meta::Class::initialize";
+"ANTLR::Runtime::ParserRuleReturnScope::meta" -> "Moose::Meta::Class::initialize";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_builder";
+"Moose::Meta::Attribute::initialize_instance_slot" -> "Class::MOP::Mixin::AttributeCore::has_builder";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_builder";
+"main::BEGIN@10" -> "Lavanda2Parser::meta";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"Class::MOP::Method::Constructor::_attributes" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"Class::MOP::Method::Constructor::_meta_instance" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"Class::MOP::Method::Inlined::can_be_inlined" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"main::RUNTIME" -> "ANTLR::Runtime::ANTLRStringStream::new";
+"Moose::Exporter::build_import_methods" -> "Class::MOP::Package::has_package_symbol";
+"Moose::Meta::Attribute::_process_accessors" -> "Class::MOP::Package::has_package_symbol";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@33";
+"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint" -> "Moose::Meta::TypeConstraint::Parameterized::type_parameter";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::Parameterized::type_parameter";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::error_recovery";
+"ANTLR::Runtime::BaseRecognizer::match" -> "ANTLR::Runtime::RecognizerSharedState::error_recovery";
+"ANTLR::Runtime::CommonTokenStream::consume" -> "ANTLR::Runtime::CommonTokenStream::p";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonTokenStream::p";
+"ANTLR::Runtime::CommonTokenStream::LB" -> "ANTLR::Runtime::CommonTokenStream::p";
+"ANTLR::Runtime::CommonTokenStream::LT" -> "ANTLR::Runtime::CommonTokenStream::p";
+"ANTLR::Runtime::ParserRuleReturnScope::DESTROY" -> "Moose::Object::DESTROY";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::_new";
+"Class::MOP::Instance::_class_name" -> "Class::MOP::Instance::associated_metaclass";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::Method::name";
+"Moose::Meta::Role::Application::ToClass::apply_methods" -> "Class::MOP::Method::name";
+"Class::MOP::Method::Inlined::_uninlined_body" -> "Class::MOP::Method::name";
+"Class::MOP::Method::Inlined::can_be_inlined" -> "Class::MOP::Method::name";
+"Class::MOP::Class::get_all_methods" -> "Class::MOP::Method::name";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::ParserRuleReturnScope::new";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::ParserRuleReturnScope::new";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::ParserRuleReturnScope::new";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "ArrayRef[ANTLR::Runtime::BitSet]";
+"ANTLR::Runtime::CommonToken::new" -> "Maybe[ANTLR::Runtime::CharStream]";
+"Lavanda2Lexer::new" -> "Maybe[ANTLR::Runtime::CharStream]";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::special";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::special";
+"main::BEGIN@7" -> "ANTLR::Runtime::ANTLRStringStream::meta";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::_compile_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::Role::_create_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::Parameterized::_new";
+"Class::MOP::Package::BEGIN@15" -> "base::import";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::has_accessor";
+"Moose::Meta::Role::get_method_modifier_list" -> "Moose::Meta::Role::get_override_method_modifiers_map";
+"Lavanda2Lexer::new" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"Lavanda2Parser::new" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"ANTLR::Runtime::DFA::recognizer" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::recognizer";
+"ANTLR::Runtime::ANTLRStringStream::BUILD" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::substring" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"Moose::Meta::Class::new_object" -> "Moose::Meta::Mixin::AttributeCore::has_trigger";
+"Moose::Meta::Method::Accessor::_inline_trigger" -> "Moose::Meta::Mixin::AttributeCore::has_trigger";
+"Moose::Meta::Method::Accessor::_inline_get_old_value_for_trigger" -> "Moose::Meta::Mixin::AttributeCore::has_trigger";
+"Moose::Meta::Method::Constructor::_generate_triggers" -> "Moose::Meta::Mixin::AttributeCore::has_trigger";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::max";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::DFA::max";
+"Class::MOP::Package::BEGIN@5" -> "warnings::import";
+"ANTLR::Runtime::CommonToken::set_char_position_in_line" -> "ANTLR::Runtime::CommonToken::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "ANTLR::Runtime::ANTLRStringStream::BUILD";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "ANTLR::Runtime::RecognizerSharedState::__ANON__[ANTLR/Runtime/RecognizerSharedState.pm:13]";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonTokenStream::channel_override_map";
+"Lavanda2Parser::new" -> "Lavanda2Parser::BUILD";
+"Moose::Meta::Role::Application::RoleSummation::check_role_exclusions" -> "Moose::Meta::Role::add_excluded_roles";
+"Class::MOP::Instance::create_instance" -> "Class::MOP::Instance::_class_name";
+"Class::MOP::Mixin::HasMethods::_get_maybe_raw_method" -> "Class::MOP::Package::get_package_symbol";
+"Class::MOP::Class::superclasses" -> "Class::MOP::Package::get_package_symbol";
+"Class::MOP::Package::initialize" -> "Moose::Meta::Role::_new";
+"Moose::Meta::Role::get_required_method_list" -> "Moose::Meta::Role::get_required_methods_map";
+"Moose::Meta::Role::add_required_methods" -> "Moose::Meta::Role::get_required_methods_map";
+"Moose::Meta::TypeConstraint::Role::new" -> "Moose::Meta::TypeConstraint::Role::_new";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@9";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::is_required";
+"Moose::Meta::Method::Accessor::_inline_check_required" -> "Moose::Meta::Mixin::AttributeCore::is_required";
+"Moose::Meta::Attribute::initialize_instance_slot" -> "Moose::Meta::Mixin::AttributeCore::is_required";
+"Class::MOP::Instance::new" -> "Moose::Meta::Instance::_new";
+"ANTLR::Runtime::BitSet::BUILD" -> "ANTLR::Runtime::BitSet::bits";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonTokenStream::discard_off_channel_tokens";
+"Moose::Meta::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_check_coercion" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_eval_code" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_check_lazy" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_instance_is_inlinable" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_check_required" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_reader_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_trigger" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_store" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_value_needs_copy" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_predicate_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_accessor_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_auto_deref" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_get" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_writer_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_check_constraint" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::Method::Accessor::_inline_get_old_value_for_trigger" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::Parameterizable::has_constraint_generator";
+"Moose::Meta::Role::Application::RoleSummation::_new" -> "Moose::Meta::Role::Application::__ANON__[Moose/Meta/Role/Application.pm:20]";
+"Moose::Meta::Role::Application::ToClass::_new" -> "Moose::Meta::Role::Application::__ANON__[Moose/Meta/Role/Application.pm:20]";
+"ANTLR::Runtime::CommonToken::set_token_index" -> "ANTLR::Runtime::CommonToken::index";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Moose::Meta::Class::_process_new_attribute" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"List::MoreUtils::all" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Moose::Meta::Role::Application::ToClass::apply_attributes" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Class::MOP::Mixin::HasAttributes::add_attribute" -> "Class::MOP::Mixin::HasAttributes::attribute_metaclass";
+"Class::MOP::Package::add_package_symbol" -> "Package::Stash::add_package_symbol";
+"ANTLR::Runtime::ANTLRStringStream::BUILD" -> "ANTLR::Runtime::ANTLRStringStream::length";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::length";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::ANTLRStringStream::length";
+"Lavanda2Lexer::BEGIN@16" -> "ANTLR::Runtime::NoViableAltException::meta";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Package::name";
+"Class::MOP::Class::linearized_isa" -> "Class::MOP::Package::name";
+"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Composite::new" -> "Class::MOP::Package::name";
+"Class::MOP::Class::class_precedence_list" -> "Class::MOP::Package::name";
+"Class::MOP::Instance::_class_name" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Application::ToClass::check_role_exclusions" -> "Class::MOP::Package::name";
+"Moose::Meta::Method::Destructor::_initialize_body" -> "Class::MOP::Package::name";
+"Class::MOP::Class::is_anon_class" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Application::RoleSummation::check_role_exclusions" -> "Class::MOP::Package::name";
+"Class::MOP::Class::_inline_constructor" -> "Class::MOP::Package::name";
+"Class::MOP::Module::_instantiate_module" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Application::RoleSummation::get_exclusions_for_role" -> "Class::MOP::Package::name";
+"Class::MOP::Mixin::HasMethods::wrap_method_body" -> "Class::MOP::Package::name";
+"Class::MOP::Class::_inline_destructor" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Application::RoleSummation::get_method_aliases_for_role" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Application::RoleSummation::is_aliased_method" -> "Class::MOP::Package::name";
+"Class::MOP::Class::__ANON__[Class/MOP/Class.pm:887]" -> "Class::MOP::Package::name";
+"Class::MOP::Mixin::HasMethods::_code_is_mine" -> "Class::MOP::Package::name";
+"Class::MOP::Attribute::_process_accessors" -> "Class::MOP::Package::name";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Package::name";
+"Class::MOP::Package::_package_stash" -> "Class::MOP::Package::name";
+"Class::MOP::Mixin::HasMethods::add_method" -> "Class::MOP::Package::name";
+"Class::MOP::Class::superclasses" -> "Class::MOP::Package::name";
+"Class::MOP::Method::Inlined::can_be_inlined" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::does_role" -> "Class::MOP::Package::name";
+"Class::MOP::Class::new_object" -> "Class::MOP::Package::name";
+"Moose::Meta::Class::add_role_application" -> "Moose::Meta::Class::_get_role_applications";
+"ANTLR::Runtime::RecognizerSharedState::error_recovery" -> "Moose::Meta::TypeConstraint::Bool";
+"ANTLR::Runtime::RecognizerSharedState::failed" -> "Moose::Meta::TypeConstraint::Bool";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "Moose::Meta::TypeConstraint::Bool";
+"ANTLR::Runtime::CommonTokenStream::new" -> "Moose::Meta::TypeConstraint::Bool";
+"Moose::Meta::Attribute::_check_associated_methods" -> "Class::MOP::Attribute::associated_methods";
+"ANTLR::Runtime::RecognizerSharedState::token" -> "Maybe[ANTLR::Runtime::Token]";
+"Moose::Meta::TypeConstraint::Enum::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::Union::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Application::RoleSummation::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Composite::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::Role::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeCoercion::Union::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::Parameterized::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Application::ToClass::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::Class::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeCoercion::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::Registry::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Application::ToRole::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Application::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::Parameterizable::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::TypeConstraint::DuckType::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Application::ToInstance::meta" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Role::Method::Required::meta" -> "Class::MOP::Class::initialize";
+"Class::MOP::Method::Generated::_add_line_directive" -> "Class::MOP::Method::Generated::definition_context";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:233]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:233]";
+"Moose::Meta::TypeConstraint::compile_type_constraint" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:845]" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Meta::TypeConstraint::check" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Meta::Method::Accessor::_eval_code" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:807]" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:828]" -> "Moose::Meta::TypeConstraint::_compiled_type_constraint";
+"main::BEGIN@8" -> "ANTLR::Runtime::CommonTokenStream::meta";
+"ANTLR::Runtime::BitSet::bits" -> "Moose::Meta::TypeConstraint::__ANON__";
+"Class::MOP::Package::has_package_symbol" -> "Package::Stash::has_package_symbol";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::accessor";
+"main::NULL" -> "ANTLR::Runtime::RecognizerSharedState::DESTROY";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonTokenStream::token_source";
+"Moose::Meta::Attribute::install_accessors" -> "Moose::Meta::Mixin::AttributeCore::has_handles";
+"Class::MOP::Method::Accessor::new" -> "Moose::Meta::Method::Accessor::_new";
+"Moose::BEGIN@33" -> "Moose::Meta::Role::Application::ToInstance::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Application::ToInstance::meta";
+"Class::MOP::Package::BEGIN@4" -> "strict::import";
+"Moose::Meta::TypeConstraint::Parameterized::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::Role::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"Moose::Meta::TypeConstraint::Class::_new" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:32]";
+"base::import" -> "Class::MOP::Package::BEGIN@4";
+"Moose::Meta::TypeConstraint::Registry::has_type_constraint" -> "Moose::Meta::TypeConstraint::Registry::type_constraints";
+"Moose::Util::TypeConstraints::list_all_type_constraints" -> "Moose::Meta::TypeConstraint::Registry::type_constraints";
+"Moose::Meta::TypeConstraint::Registry::add_type_constraint" -> "Moose::Meta::TypeConstraint::Registry::type_constraints";
+"Moose::Meta::TypeConstraint::Registry::get_type_constraint" -> "Moose::Meta::TypeConstraint::Registry::type_constraints";
+"Class::MOP::Mixin::HasMethods::get_method_list" -> "Class::MOP::Package::namespace";
+"Class::MOP::Mixin::HasMethods::_get_local_methods" -> "Class::MOP::Package::namespace";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::predicate";
+"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels_reverse" -> "ANTLR::Runtime::CommonTokenStream::channel";
+"ANTLR::Runtime::CommonTokenStream::skip_off_token_channels" -> "ANTLR::Runtime::CommonTokenStream::channel";
+"Class::MOP::Class::_immutable_metaclass" -> "Moose::Meta::Class::immutable_trait";
+"Class::MOP::Class::_immutable_options" -> "Moose::Meta::Class::immutable_trait";
+"Moose::Meta::Mixin::AttributeCore::has_handles" -> "Class::MOP::Attribute::has_value";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Destructor::_initialize_body" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Constructor::_generate_BUILDALL" -> "Class::MOP::Method::associated_metaclass";
+"Class::MOP::Method::Constructor::_attributes" -> "Class::MOP::Method::associated_metaclass";
+"Class::MOP::Method::Constructor::_meta_instance" -> "Class::MOP::Method::associated_metaclass";
+"Class::MOP::Method::Inlined::can_be_inlined" -> "Class::MOP::Method::associated_metaclass";
+"Class::MOP::Method::Inlined::_uninlined_body" -> "Class::MOP::Method::associated_metaclass";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Attribute::verify_against_type_constraint" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Attribute::_coerce_and_verify" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Method::Accessor::_inline_check_constraint" -> "Moose::Meta::Mixin::AttributeCore::has_type_constraint";
+"Moose::Meta::Role::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:85]";
+"Moose::Meta::Role::Composite::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:85]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:320]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:320]";
+"Lavanda2Lexer::BEGIN@15" -> "ANTLR::Runtime::DFA::meta";
+"Lavanda2Parser::lote" -> "ANTLR::Runtime::ParserRuleReturnScope::start";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::ParserRuleReturnScope::start";
+"Lavanda2Parser::sacos" -> "ANTLR::Runtime::ParserRuleReturnScope::start";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonTokenStream::discard_set";
+"base::import" -> "Class::MOP::Package::BEGIN@7";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::has_predicate";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::Registry::add_type_constraint" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::_compile_type" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Util::TypeConstraints::register_type_constraint" -> "Moose::Meta::TypeConstraint::name";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "ANTLR::Runtime::MismatchedRangeException::meta";
+"Class::MOP::Class::class_precedence_list" -> "Class::MOP::Class::Immutable::Moose::Meta::Class::superclasses";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::init_arg";
+"Moose::Meta::Attribute::initialize_instance_slot" -> "Class::MOP::Mixin::AttributeCore::init_arg";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::init_arg";
+"Moose::Meta::Attribute::new" -> "Class::MOP::Mixin::AttributeCore::init_arg";
+"Lavanda2Parser::BEGIN@14" -> "ANTLR::Runtime::BitSet::meta";
+"ANTLR::Runtime::ParserRuleReturnScope::new" -> "Moose::Object::new";
+"ANTLR::Runtime::DFA::new" -> "Moose::Object::new";
+"main::NULL" -> "Lavanda2Parser::DESTROY";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::get_char_index" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::m_tokens" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::Lexer::input";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::CommonToken::set_line" -> "ANTLR::Runtime::CommonToken::line";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RuleReturnScope::meta";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::Class::destructor_class";
+"List::MoreUtils::all" -> "Class::MOP::Class::destructor_class";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Class::MOP::Class::destructor_class";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Class::destructor_class";
+"Class::MOP::Class::_immutable_options" -> "Class::MOP::Class::destructor_class";
+"Class::MOP::Class::class_precedence_list" -> "Class::MOP::Class::Immutable::Moose::Meta::Class::class_precedence_list";
+"Moose::Meta::Class::does_role" -> "Class::MOP::Class::Immutable::Moose::Meta::Class::class_precedence_list";
+"Moose::Meta::Role::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:357]";
+"Moose::Meta::Class::add_role" -> "Moose::Meta::Class::roles";
+"Moose::Meta::Class::excludes_role" -> "Moose::Meta::Class::roles";
+"Moose::Meta::Class::does_role" -> "Moose::Meta::Class::roles";
+"Moose::BEGIN@27" -> "Moose::Meta::Role::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::meta";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::meta";
+"Moose::Meta::Role::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:306]";
+"Moose::Meta::Role::Composite::_new" -> "Moose::Meta::Role::__ANON__[Moose/Meta/Role.pm:306]";
+"ANTLR::Runtime::BitSet::new" -> "ANTLR::Runtime::BitSet::BUILD";
+"Moose::Meta::Role::BEGIN@20" -> "Moose::Meta::Role::Method::Required::meta";
+"Moose::Meta::Role::BEGIN@19" -> "Moose::Meta::Role::Method::Required::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Method::Required::meta";
+"Class::MOP::Method::wrap" -> "Moose::Meta::Method::_new";
+"Lavanda2Lexer::new" -> "ANTLR::Runtime::BaseRecognizer::__ANON__[ANTLR/Runtime/BaseRecognizer.pm:41]";
+"Lavanda2Parser::new" -> "ANTLR::Runtime::BaseRecognizer::__ANON__[ANTLR/Runtime/BaseRecognizer.pm:41]";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::input";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:275]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:275]";
+"ANTLR::Runtime::BaseRecognizer::push_follow" -> "ANTLR::Runtime::RecognizerSharedState::following";
+"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint" -> "Moose::Meta::TypeConstraint::_set_constraint";
+"Moose::Meta::TypeConstraint::new" -> "Moose::Meta::TypeConstraint::_has_compiled_type_constraint";
+"base::import" -> "Class::MOP::Package::BEGIN@8";
+"Moose::Util::TypeConstraints::BEGIN@34" -> "Moose::Meta::TypeConstraint::Role::meta";
+"Class::MOP::Attribute::_process_accessors" -> "Class::MOP::Mixin::AttributeCore::definition_context";
+"Moose::Meta::Role::Application::new" -> "Moose::Meta::Role::Application::RoleSummation::_new";
+"Class::MOP::Mixin::HasMethods::wrap_method_body" -> "Moose::Meta::Role::method_metaclass";
+"Class::MOP::Package::initialize" -> "Class::MOP::store_metaclass_by_name";
+"Moose::Meta::Role::Composite::_new" -> "Moose::Meta::Role::Composite::__ANON__[Moose/Meta/Role/Composite.pm:30]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::meta";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::meta";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::meta";
+"main::BEGIN@9" -> "Lavanda2Lexer::meta";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::skip" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::BaseRecognizer::push_follow" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::BaseRecognizer::match" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::writer";
+"Lavanda2Lexer::init_dfas" -> "ANTLR::Runtime::DFA::new";
+"Lavanda2Parser::new" -> "ANTLR::Runtime::Parser::BUILD";
+"Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::Class::class";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Moose::Meta::Mixin::AttributeCore::type_constraint";
+"Moose::Meta::Attribute::verify_against_type_constraint" -> "Moose::Meta::Mixin::AttributeCore::type_constraint";
+"Moose::Meta::Method::Accessor::_eval_code" -> "Moose::Meta::Mixin::AttributeCore::type_constraint";
+"Moose::Meta::Role::Composite::add_method" -> "Moose::Meta::Role::Composite::name";
+"Moose::Meta::Role::Application::ToClass::check_role_exclusions" -> "Moose::Meta::Role::Composite::name";
+"Moose::Meta::Role::does_role" -> "Moose::Meta::Role::Composite::name";
+"Moose::Exporter::build_import_methods" -> "Class::MOP::Package::initialize";
+"Moose::Meta::Role::initialize" -> "Class::MOP::Package::initialize";
+"Class::MOP::Class::_real_ref_name" -> "Class::MOP::Class::Immutable::Moose::Meta::Class::is_immutable";
+"Moose::BEGIN@29" -> "Moose::Meta::Role::Application::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Application::meta";
+"Moose::Meta::Role::Application::new" -> "Moose::Meta::Role::Application::ToClass::_new";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::accessor_type";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::text";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::text";
+"Class::MOP::Method::wrap" -> "Moose::Meta::Role::Method::_new";
+"Class::MOP::Class::_construct_instance" -> "Class::MOP::Class::Immutable::Class::MOP::Class::get_all_attributes";
+"Moose::Meta::Attribute::new" -> "Class::MOP::Class::Immutable::Class::MOP::Class::get_all_attributes";
+"base::import" -> "Class::MOP::Package::BEGIN@15";
+"Lavanda2Lexer::DFA4::BUILD" -> "ANTLR::Runtime::DFA::eof";
+"Class::MOP::Class::_real_ref_name" -> "Class::MOP::Class::Immutable::Class::MOP::Class::is_immutable";
+"ANTLR::Runtime::CharStreamState::set_char_position_in_line" -> "ANTLR::Runtime::CharStreamState::char_position_in_line";
+"ANTLR::Runtime::CharStreamState::get_char_position_in_line" -> "ANTLR::Runtime::CharStreamState::char_position_in_line";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::meta";
+"ANTLR::Runtime::CommonTokenStream::new" -> "ANTLR::Runtime::CommonTokenStream::__ANON__[ANTLR/Runtime/CommonTokenStream.pm:29]";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Moose::Meta::Class::error_class";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Moose::Meta::Class::error_class";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Moose::Meta::Class::error_class";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Moose::Meta::Class::error_class";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Moose::Meta::Class::error_class";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::Class::immutable_trait";
+"Class::MOP::Class::_immutable_options" -> "Class::MOP::Class::immutable_trait";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::syntax_errors";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::has_writer";
+"Moose::Meta::Role::add_required_methods" -> "Moose::Meta::Role::required_method_metaclass";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::TypeCoercion::Union::meta";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"ANTLR::Runtime::BaseRecognizer::push_follow" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::RecognizerSharedState::_fsp";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::Parameterizable::constraint_generator";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::BaseRecognizer::meta";
+"Class::MOP::Mixin::HasMethods::add_method" -> "Class::MOP::Package::add_package_symbol";
+"Moose::Exporter::build_import_methods" -> "Class::MOP::Package::add_package_symbol";
+"Moose::BEGIN@31" -> "Moose::Meta::Role::Application::ToClass::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Application::ToClass::meta";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@105";
+"main::NULL" -> "ANTLR::Runtime::CommonTokenStream::DESTROY";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Str";
+"Moose::Meta::Role::Application::RoleSummation::check_required_methods" -> "Moose::Meta::Role::Method::Required::name";
+"Moose::Meta::Role::Application::ToClass::check_required_methods" -> "Moose::Meta::Role::Method::Required::name";
+"Moose::Meta::Role::add_required_methods" -> "Moose::Meta::Role::Method::Required::name";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::last_error_index";
+"Class::MOP::Method::Inlined::can_be_inlined" -> "Class::MOP::Method::Inlined::_expected_method_class";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:301]";
+"Moose::Meta::Role::Composite::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:301]";
+"main::RUNTIME" -> "ANTLR::Runtime::CommonTokenStream::new";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::rule_memo";
+"Class::MOP::Attribute::_set_initial_slot_value" -> "Class::MOP::Mixin::AttributeCore::has_initializer";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Mixin::AttributeCore::has_initializer";
+"Moose::Meta::Attribute::_set_initial_slot_value" -> "Class::MOP::Mixin::AttributeCore::has_initializer";
+"Moose::Meta::Role::Application::is_method_aliased" -> "Moose::Meta::Role::Application::get_method_aliases";
+"ANTLR::Runtime::DFA::unpack_encoded_string" -> "ANTLR::Runtime::DFA::CORE:match";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::ANTLRStringStream::get_line" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"Class::MOP::Class::superclasses" -> "UNIVERSAL::isa";
+"ANTLR::Runtime::DFA::special" -> "Moose::Meta::TypeConstraint::ArrayRef[Int]";
+"ANTLR::Runtime::DFA::eot" -> "Moose::Meta::TypeConstraint::ArrayRef[Int]";
+"ANTLR::Runtime::DFA::eof" -> "Moose::Meta::TypeConstraint::ArrayRef[Int]";
+"ANTLR::Runtime::DFA::accept" -> "Moose::Meta::TypeConstraint::ArrayRef[Int]";
+"ANTLR::Runtime::BaseRecognizer::__ANON__[ANTLR/Runtime/BaseRecognizer.pm:41]" -> "ANTLR::Runtime::RecognizerSharedState::new";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@9" -> "ANTLR::Runtime::MissingTokenException::meta";
+"ANTLR::Runtime::ANTLRStringStream::char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::channel" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonTokenStream::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::DFA::decision_number" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::syntax_errors" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::p" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::token_start_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonTokenStream::p" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::backtracking" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::p" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::index" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::_fsp" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CharStreamState::line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::char_position_in_line" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::type" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::length" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::CommonToken::new" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::last_marker" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::token_start_char_index" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::RecognizerSharedState::last_error_index" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"ANTLR::Runtime::ANTLRStringStream::mark_depth" -> "Moose::Util::TypeConstraints::OptimizedConstraints::Int";
+"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Attribute::associated_class";
+"Moose::Meta::Method::Accessor::_instance_is_inlinable" -> "Class::MOP::Attribute::associated_class";
+"Moose::Meta::Attribute::_process_accessors" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Attribute::_process_accessors" -> "Class::MOP::Attribute::associated_class";
+"Moose::Meta::Method::Accessor::_inline_get" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Moose::Meta::Method::Accessor::_inline_store" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Attribute::install_accessors" -> "Class::MOP::Mixin::AttributeCore::has_reader";
+"ANTLR::Runtime::DFA::max" -> "Moose::Meta::TypeConstraint::ArrayRef[Str]";
+"ANTLR::Runtime::DFA::min" -> "Moose::Meta::TypeConstraint::ArrayRef[Str]";
+"Class::MOP::Class::Immutable::Class::MOP::Class::get_all_attributes" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Moose::Meta::Class::class_precedence_list" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Class::MOP::Class::get_meta_instance" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Class::MOP::Class::linearized_isa" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Class::MOP::Class::is_immutable" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Moose::Meta::Class::superclasses" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Moose::Meta::Class::is_immutable" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::Immutable::Moose::Meta::Class::linearized_isa" -> "Class::MOP::Method::Wrapped::__ANON__[Class/MOP/Method/Wrapped.pm:159]";
+"Class::MOP::Class::_construct_instance" -> "Class::MOP::Class::Immutable::Class::MOP::Class::get_meta_instance";
+"Class::MOP::Attribute::has_value" -> "Class::MOP::Class::Immutable::Class::MOP::Class::get_meta_instance";
+"Class::MOP::Attribute::get_raw_value" -> "Class::MOP::Class::Immutable::Class::MOP::Class::get_meta_instance";
+"Moose::Meta::Role::Application::RoleSummation::check_required_methods" -> "Moose::Meta::Role::get_required_method_list";
+"Moose::Meta::Role::Application::ToClass::check_required_methods" -> "Moose::Meta::Role::get_required_method_list";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::has_coercion";
+"Moose::Meta::TypeConstraint::is_subtype_of" -> "Moose::Meta::TypeConstraint::parent";
+"Moose::Meta::TypeConstraint::_collect_all_parents" -> "Moose::Meta::TypeConstraint::parent";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::parent";
+"ANTLR::Runtime::CharStreamState::get_line" -> "ANTLR::Runtime::CharStreamState::line";
+"ANTLR::Runtime::CharStreamState::set_line" -> "ANTLR::Runtime::CharStreamState::line";
+"Moose::Meta::Role::get_method_modifier_list" -> "Moose::Meta::Role::get_before_method_modifiers_map";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Class::MOP::Class::constructor_class";
+"List::MoreUtils::all" -> "Class::MOP::Class::constructor_class";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Class::MOP::Class::constructor_class";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Class::MOP::Class::constructor_class";
+"Class::MOP::Class::_immutable_options" -> "Class::MOP::Class::constructor_class";
+"main::NULL" -> "ANTLR::Runtime::CommonToken::DESTROY";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@6";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Moose::Meta::TypeConstraint::constraint";
+"Moose::Meta::TypeConstraint::equals" -> "Moose::Meta::TypeConstraint::constraint";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::constraint";
+"Moose::Meta::Role::Application::ToClass::_new" -> "Moose::Meta::Role::Application::__ANON__[Moose/Meta/Role/Application.pm:14]";
+"Moose::Meta::Role::Application::RoleSummation::_new" -> "Moose::Meta::Role::Application::__ANON__[Moose/Meta/Role/Application.pm:14]";
+"Moose::Meta::Class::_can_fix_metaclass_incompatibility_by_role_reconciliation" -> "Moose::Meta::Class::destructor_class";
+"Class::MOP::Class::_check_metaclass_compatibility" -> "Moose::Meta::Class::destructor_class";
+"Class::MOP::Class::_single_metaclass_is_compatible" -> "Moose::Meta::Class::destructor_class";
+"Class::MOP::Class::_can_fix_single_metaclass_incompatibility_by_subclassing" -> "Moose::Meta::Class::destructor_class";
+"Moose::Meta::Class::_can_fix_single_metaclass_incompatibility_by_role_reconciliation" -> "Moose::Meta::Class::destructor_class";
+"Class::MOP::Class::_immutable_options" -> "Moose::Meta::Class::destructor_class";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::saco" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::lotes" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"Lavanda2Parser::lavanda" -> "ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"Class::MOP::Mixin::HasAttributes::get_attribute" -> "Class::MOP::Mixin::HasAttributes::_attribute_map";
+"Class::MOP::Mixin::HasAttributes::get_attribute_list" -> "Class::MOP::Mixin::HasAttributes::_attribute_map";
+"Class::MOP::Class::get_all_attributes" -> "Class::MOP::Mixin::HasAttributes::_attribute_map";
+"Class::MOP::Mixin::HasAttributes::add_attribute" -> "Class::MOP::Mixin::HasAttributes::_attribute_map";
+"Class::MOP::Mixin::HasAttributes::has_attribute" -> "Class::MOP::Mixin::HasAttributes::_attribute_map";
+"Class::MOP::Package::initialize" -> "Class::MOP::get_metaclass_by_name";
+"Class::MOP::Package::get_package_symbol" -> "Package::Stash::get_package_symbol";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_and_coercion" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::Meta::Attribute::_coerce_and_verify" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::Meta::Method::Accessor::_inline_check_coercion" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::Meta::Method::Accessor::_value_needs_copy" -> "Moose::Meta::Mixin::AttributeCore::should_coerce";
+"Moose::BEGIN@28" -> "Moose::Meta::Role::Composite::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Meta::Role::Composite::meta";
+"main::RUNTIME" -> "Lavanda2Lexer::new";
+"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Attribute::_set_initial_slot_value" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Attribute::has_value" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Attribute::_set_initial_slot_value" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Attribute::get_raw_value" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Accessor::_inline_check_required" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Attribute::slots" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Mixin::HasAttributes::add_attribute" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Accessor::_inline_check_constraint" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Moose::Meta::Method::Constructor::_generate_type_constraint_check" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::name";
+"ANTLR::Runtime::Lexer::skip" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::BaseRecognizer::reset" -> "ANTLR::Runtime::RecognizerSharedState::backtracking";
+"Class::MOP::Package::initialize" -> "Class::MOP::Package::_new";
+"Moose::Meta::TypeConstraint::_actually_compile_type_constraint" -> "Moose::Meta::TypeConstraint::has_parent";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::last_marker";
+"ANTLR::Runtime::Token::EOF_TOKEN" -> "ANTLR::Runtime::CommonToken::new";
+"ANTLR::Runtime::Token::SKIP_TOKEN" -> "ANTLR::Runtime::CommonToken::new";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::new";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::mark_depth";
+"ANTLR::Runtime::ANTLRStringStream::release" -> "ANTLR::Runtime::ANTLRStringStream::mark_depth";
+"Moose::Meta::Attribute::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:509]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::ParserRuleReturnScope::meta";
+"Class::MOP::Method::clone" -> "Class::MOP::Method::_set_original_method";
+"Moose::Meta::Attribute::initialize_instance_slot" -> "Moose::Meta::Mixin::AttributeCore::is_weak_ref";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Moose::Meta::Mixin::AttributeCore::is_weak_ref";
+"Moose::Meta::Method::Accessor::_inline_store" -> "Moose::Meta::Mixin::AttributeCore::is_weak_ref";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]" -> "ANTLR::Runtime::ParserRuleReturnScope::stop";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::ParserRuleReturnScope::stop";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]" -> "ANTLR::Runtime::ParserRuleReturnScope::stop";
+"Moose::Util::TypeConstraints::BEGIN@39" -> "Moose::Meta::TypeConstraint::Registry::meta";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::markers";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::markers";
+"Moose::Meta::Method::Accessor::_inline_auto_deref" -> "Moose::Meta::Mixin::AttributeCore::should_auto_deref";
+"Moose::Meta::Role::get_method_modifier_list" -> "Moose::Meta::Role::get_after_method_modifiers_map";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@5" -> "ANTLR::Runtime::CharStreamState::meta";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@113";
+"Lavanda2Lexer::m_tokens" -> "Lavanda2Lexer::dfa4";
+"Lavanda2Lexer::init_dfas" -> "Lavanda2Lexer::dfa4";
+"Moose::Meta::Mixin::AttributeCore::should_auto_deref" -> "Class::MOP::Attribute::get_value";
+"Moose::Meta::Mixin::AttributeCore::type_constraint" -> "Class::MOP::Attribute::get_value";
+"Moose::Meta::Mixin::AttributeCore::is_lazy" -> "Class::MOP::Attribute::get_value";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "ArrayRef[Maybe[ANTLR::Runtime::CharStreamState]]";
+"Moose::Meta::Role::_new" -> "Class::MOP::__ANON__[Class/MOP.pm:191]";
+"Lavanda2Lexer::new" -> "Lavanda2Lexer::BUILD";
+"Class::MOP::Method::Wrapped::add_around_modifier" -> "Class::MOP::Method::body";
+"Class::MOP::Method::Wrapped::wrap" -> "Class::MOP::Method::body";
+"Moose::Meta::Method::Constructor::_generate_BUILDARGS" -> "Class::MOP::Method::body";
+"Moose::Meta::Role::Composite::add_method" -> "Class::MOP::Method::body";
+"Class::MOP::Mixin::HasMethods::add_method" -> "Class::MOP::Method::body";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::Method::body";
+"Class::MOP::Mixin::HasMethods::_get_maybe_raw_method" -> "Class::MOP::Method::body";
+"Class::MOP::Method::execute" -> "Class::MOP::Method::body";
+"Class::MOP::Method::Inlined::_uninlined_body" -> "Class::MOP::Method::body";
+"Moose::Meta::Role::Application::RoleSummation::get_method_aliases_for_role" -> "Moose::Meta::Role::Application::RoleSummation::role_params";
+"Moose::Meta::Role::Application::RoleSummation::get_exclusions_for_role" -> "Moose::Meta::Role::Application::RoleSummation::role_params";
+"Class::MOP::Package::namespace" -> "Class::MOP::Package::_package_stash";
+"Class::MOP::Package::add_package_symbol" -> "Class::MOP::Package::_package_stash";
+"Class::MOP::Package::get_package_symbol" -> "Class::MOP::Package::_package_stash";
+"Class::MOP::Package::has_package_symbol" -> "Class::MOP::Package::_package_stash";
+"Moose::Meta::Role::get_method_modifier_list" -> "Moose::Meta::Role::get_around_method_modifiers_map";
+"Moose::Meta::Role::Application::RoleSummation::check_required_methods" -> "Moose::Meta::Role::get_roles";
+"Moose::Meta::Role::Application::RoleSummation::apply_override_method_modifiers" -> "Moose::Meta::Role::get_roles";
+"Moose::Meta::Role::Application::RoleSummation::apply_attributes" -> "Moose::Meta::Role::get_roles";
+"Moose::Meta::Role::Application::RoleSummation::apply_methods" -> "Moose::Meta::Role::get_roles";
+"Moose::Meta::Role::Application::RoleSummation::check_role_exclusions" -> "Moose::Meta::Role::get_roles";
+"Moose::Meta::Role::Application::RoleSummation::apply_method_modifiers" -> "Moose::Meta::Role::get_roles";
+"Moose::Meta::Role::does_role" -> "Moose::Meta::Role::get_roles";
+}

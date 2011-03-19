@@ -1,0 +1,48 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_ANTLR_Runtime_Exception {
+	label="ANTLR::Runtime::Exception";
+	"ANTLR::Runtime::Exception::BEGIN@5";
+	"ANTLR::Runtime::Exception::BEGIN@21";
+	"ANTLR::Runtime::Exception::BEGIN@3";
+}
+subgraph cluster_Exception_Class {
+	label="Exception::Class";
+	"Exception::Class::BEGIN@10";
+	"Exception::Class::BEGIN@176";
+	"Exception::Class::BEGIN@14";
+	"Exception::Class::BEGIN@8";
+	"Exception::Class::BEGIN@2";
+	"Exception::Class::import";
+	"Exception::Class::BEGIN@46";
+	"Exception::Class::BEGIN@79";
+	"Exception::Class::BEGIN@168";
+	"Exception::Class::BEGIN@11";
+	"Exception::Class::BEGIN@6";
+}
+"ANTLR::Runtime::Exception::BEGIN@21" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@2";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@6";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@8";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@11";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@14";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::BEGIN@21";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@176";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Exception::BEGIN@5";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@10";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@79";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@168";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@46";
+"ANTLR::Runtime::Exception::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::import";
+}

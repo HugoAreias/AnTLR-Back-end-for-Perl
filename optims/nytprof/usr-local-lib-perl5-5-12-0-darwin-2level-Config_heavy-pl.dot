@@ -1,0 +1,19 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Config {
+	label="Config";
+	"Config::BEGIN@5";
+	"Config::fetch_string";
+	"Config::launcher";
+	"Config::AUTOLOAD";
+	"Config::FETCH";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+"Config::FETCH" -> "Config::fetch_string";
+"Config::FETCH" -> "Config::launcher";
+"Config::AUTOLOAD" -> "Config::BEGIN@5";
+"Config::BEGIN@5" -> "strict::import";
+}

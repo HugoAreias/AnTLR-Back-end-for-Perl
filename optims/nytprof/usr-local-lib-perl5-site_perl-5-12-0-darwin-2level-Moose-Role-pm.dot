@@ -1,0 +1,100 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Sub_Exporter {
+	label="Sub::Exporter";
+	"Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+	"Moose::Exporter::import";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::add_method";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::add_required_methods";
+	"Moose::Meta::Role::initialize";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::find_type_constraint";
+	"Moose::Util::TypeConstraints::role_type";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Role {
+	label="Moose::Role";
+	"Moose::Role::BEGIN@2";
+	"Moose::Role::BEGIN@6";
+	"Moose::Role::BEGIN@3";
+	"Moose::Role::BEGIN@17";
+	"Moose::Role::BEGIN@15";
+	"Moose::Role::BEGIN@18";
+	"Moose::Role::BEGIN@5";
+	"Moose::Role::BEGIN@8";
+	"Moose::Role::BEGIN@14";
+	"Moose::Role::init_meta";
+	"Moose::Role::BEGIN@19";
+	"Moose::Role::requires";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@8";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@7";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::can";
+}
+subgraph cluster_ANTLR_Runtime_IntStream {
+	label="ANTLR::Runtime::IntStream";
+	"ANTLR::Runtime::IntStream::BEGIN@3";
+}
+"Moose::Role::init_meta" -> "Moose::Util::TypeConstraints::role_type";
+"Moose::Role::BEGIN@17" -> "Moose::Exporter::import";
+"Moose::Role::BEGIN@6" -> "Exporter::import";
+"Moose::Role::BEGIN@5" -> "Exporter::import";
+"Moose::Role::init_meta" -> "Moose::Util::TypeConstraints::find_type_constraint";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@5";
+"Moose::Role::requires" -> "Moose::Meta::Role::add_required_methods";
+"Moose::Role::init_meta" -> "UNIVERSAL::can";
+"Moose::Role::BEGIN@8" -> "Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+"Moose::Role::BEGIN@3" -> "warnings::import";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@8";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@15";
+"Moose::Role::requires" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+"Moose::Role::BEGIN@2" -> "strict::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "Moose::Role::requires";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@8" -> "Moose::Role::requires";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "Moose::Role::requires";
+"Moose::Role::requires" -> "Moose::Role::requires";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@14";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@2";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@18";
+"Moose::Role::init_meta" -> "Moose::Meta::Role::initialize";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@3";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@17";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@19";
+"Moose::Role::BEGIN@19" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::Role::init_meta";
+"Moose::Role::init_meta" -> "Class::MOP::Mixin::HasMethods::add_method";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@6";
+}

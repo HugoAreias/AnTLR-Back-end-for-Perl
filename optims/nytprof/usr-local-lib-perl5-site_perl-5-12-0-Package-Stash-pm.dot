@@ -1,0 +1,85 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Package_Stash {
+	label="Package::Stash";
+	"Package::Stash::BEGIN@10";
+	"Package::Stash::BEGIN@106";
+	"Package::Stash::get_package_symbol";
+	"Package::Stash::_deconstruct_variable_name";
+	"Package::Stash::BEGIN@9";
+	"Package::Stash::BEGIN@113";
+	"Package::Stash::name";
+	"Package::Stash::BEGIN@33";
+	"Package::Stash::BEGIN@183";
+	"Package::Stash::has_package_symbol";
+	"Package::Stash::new";
+	"Package::Stash::BEGIN@2";
+	"Package::Stash::add_package_symbol";
+	"Package::Stash::BEGIN@105";
+	"Package::Stash::BEGIN@5";
+	"Package::Stash::BEGIN@6";
+	"Package::Stash::_valid_for_type";
+	"Package::Stash::namespace";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::add_package_symbol";
+	"Class::MOP::Package::namespace";
+	"Class::MOP::Package::_package_stash";
+	"Class::MOP::Package::get_package_symbol";
+	"Class::MOP::Package::has_package_symbol";
+	"Class::MOP::Package::BEGIN@9";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::reftype";
+}
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@106";
+"Class::MOP::Package::_package_stash" -> "Package::Stash::new";
+"Package::Stash::BEGIN@10" -> "Exporter::import";
+"Package::Stash::BEGIN@9" -> "Exporter::import";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@5";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@10";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@2";
+"Class::MOP::Package::namespace" -> "Package::Stash::namespace";
+"Package::Stash::get_package_symbol" -> "Package::Stash::namespace";
+"Package::Stash::has_package_symbol" -> "Package::Stash::namespace";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@183";
+"Package::Stash::add_package_symbol" -> "Package::Stash::_valid_for_type";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@33";
+"Package::Stash::BEGIN@33" -> "strict::unimport";
+"Package::Stash::BEGIN@105" -> "strict::unimport";
+"Package::Stash::BEGIN@113" -> "strict::unimport";
+"Package::Stash::BEGIN@183" -> "strict::unimport";
+"Package::Stash::BEGIN@6" -> "warnings::import";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@9";
+"Class::MOP::Package::add_package_symbol" -> "Package::Stash::add_package_symbol";
+"Package::Stash::get_package_symbol" -> "Package::Stash::add_package_symbol";
+"Class::MOP::Package::has_package_symbol" -> "Package::Stash::has_package_symbol";
+"Package::Stash::BEGIN@5" -> "strict::import";
+"Package::Stash::BEGIN@106" -> "warnings::unimport";
+"Package::Stash::namespace" -> "Package::Stash::name";
+"Package::Stash::add_package_symbol" -> "Package::Stash::name";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@105";
+"Package::Stash::_valid_for_type" -> "Scalar::Util::reftype";
+"Package::Stash::has_package_symbol" -> "Scalar::Util::reftype";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@6";
+"Class::MOP::Package::get_package_symbol" -> "Package::Stash::get_package_symbol";
+"Package::Stash::add_package_symbol" -> "Package::Stash::_deconstruct_variable_name";
+"Package::Stash::has_package_symbol" -> "Package::Stash::_deconstruct_variable_name";
+"Class::MOP::Package::BEGIN@9" -> "Package::Stash::BEGIN@113";
+}

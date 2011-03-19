@@ -1,0 +1,28 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Devel_StackTrace {
+	label="Devel::StackTrace";
+	"Devel::StackTrace::BEGIN@8";
+}
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_File_Spec_Unix {
+	label="File::Spec::Unix";
+	"File::Spec::Unix::BEGIN@4";
+	"File::Spec::Unix::BEGIN@3";
+	"File::Spec::Unix::BEGIN@149";
+}
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::Unix::BEGIN@149";
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::Unix::BEGIN@3";
+"File::Spec::Unix::BEGIN@149" -> "strict::unimport";
+"File::Spec::Unix::BEGIN@4" -> "vars::import";
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::Unix::BEGIN@4";
+"File::Spec::Unix::BEGIN@3" -> "strict::import";
+}

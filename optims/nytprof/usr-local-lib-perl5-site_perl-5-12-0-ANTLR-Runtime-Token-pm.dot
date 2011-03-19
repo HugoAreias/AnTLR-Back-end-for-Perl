@@ -1,0 +1,88 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::EOF";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::next_token";
+	"ANTLR::Runtime::Lexer::skip";
+	"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::EOF_TOKEN";
+	"ANTLR::Runtime::Token::HIDDEN_CHANNEL";
+	"ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+	"ANTLR::Runtime::Token::INVALID_TOKEN_TYPE";
+	"ANTLR::Runtime::Token::SKIP_TOKEN";
+	"ANTLR::Runtime::Token::BEGIN@7";
+	"ANTLR::Runtime::Token::EOF";
+	"ANTLR::Runtime::Token::BEGIN@3";
+	"ANTLR::Runtime::Token::BEGIN@5";
+	"ANTLR::Runtime::Token::BEGIN@87";
+	"ANTLR::Runtime::Token::BEGIN@10";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]";
+	"ANTLR::Runtime::CommonToken::new";
+	"ANTLR::Runtime::CommonToken::not_eof";
+}
+subgraph cluster_feature {
+	label="feature";
+	"feature::import";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@8";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::LT";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@7";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@14";
+}
+"ANTLR::Runtime::Token::BEGIN@87" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Token::BEGIN@3" -> "Exporter::import";
+"ANTLR::Runtime::Lexer::skip" -> "ANTLR::Runtime::Token::SKIP_TOKEN";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::Token::SKIP_TOKEN";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::Token::HIDDEN_CHANNEL";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"Lavanda2Lexer::BEGIN@14" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"main::BEGIN@8" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"ANTLR::Runtime::Token::EOF_TOKEN" -> "ANTLR::Runtime::Token::EOF";
+"ANTLR::Runtime::CommonToken::not_eof" -> "ANTLR::Runtime::Token::EOF";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::Token::EOF_TOKEN";
+"ANTLR::Runtime::CommonTokenStream::LT" -> "ANTLR::Runtime::Token::EOF_TOKEN";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "ANTLR::Runtime::Token::BEGIN@7";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Token::INVALID_TOKEN_TYPE";
+"ANTLR::Runtime::Token::SKIP_TOKEN" -> "ANTLR::Runtime::Token::INVALID_TOKEN_TYPE";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "ANTLR::Runtime::Token::BEGIN@3";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "ANTLR::Runtime::Token::BEGIN@10";
+"ANTLR::Runtime::Token::EOF" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "ANTLR::Runtime::Token::BEGIN@5";
+"ANTLR::Runtime::Token::BEGIN@10" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Token::BEGIN@5" -> "feature::import";
+"ANTLR::Runtime::Token::EOF_TOKEN" -> "ANTLR::Runtime::CommonToken::new";
+"ANTLR::Runtime::Token::SKIP_TOKEN" -> "ANTLR::Runtime::CommonToken::new";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@7" -> "ANTLR::Runtime::Token::BEGIN@87";
+}

@@ -1,0 +1,90 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterizable {
+	label="Moose::Meta::TypeConstraint::Parameterizable";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@13";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@4";
+	"Moose::Meta::TypeConstraint::Parameterizable::constraint_generator";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@5";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@3";
+	"Moose::Meta::TypeConstraint::Parameterizable::parameterize";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@12";
+	"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@11";
+	"Moose::Meta::TypeConstraint::Parameterizable::_parse_type_parameter";
+	"Moose::Meta::TypeConstraint::Parameterizable::has_constraint_generator";
+	"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:845]";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:807]";
+	"Moose::Util::TypeConstraints::_create_parameterized_type_constraint";
+	"Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:828]";
+	"Moose::Util::TypeConstraints::find_or_create_isa_type_constraint";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Parameterized {
+	label="Moose::Meta::TypeConstraint::Parameterized";
+	"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint";
+	"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9";
+	"Moose::Meta::TypeConstraint::Parameterized::type_parameter";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+	"UNIVERSAL::can";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+	"Moose::Meta::TypeConstraint::name";
+	"Moose::Meta::TypeConstraint::has_coercion";
+	"Moose::Meta::TypeConstraint::is_subtype_of";
+	"Moose::Meta::TypeConstraint::parent";
+	"Moose::Meta::TypeConstraint::new";
+}
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:845]";
+"Moose::Meta::TypeConstraint::Parameterizable::_parse_type_parameter" -> "Moose::Util::TypeConstraints::find_or_create_isa_type_constraint";
+"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@5" -> "metaclass::import";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::BEGIN@5";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::Parameterized::type_parameter";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "UNIVERSAL::can";
+"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@11" -> "base::import";
+"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@4" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::Parameterizable::has_constraint_generator";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::BEGIN@13";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::is_subtype_of";
+"Moose::Util::TypeConstraints::_create_parameterized_type_constraint" -> "Moose::Meta::TypeConstraint::Parameterizable::parameterize";
+"Moose::Meta::TypeConstraint::Parameterizable::BEGIN@3" -> "strict::import";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::name";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:807]";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::new";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::BEGIN@12";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Util::TypeConstraints::__ANON__[Moose/Util/TypeConstraints.pm:828]";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::BEGIN@4";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::BEGIN@3";
+"Moose::Meta::TypeConstraint::Parameterized::compile_type_constraint" -> "Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::Parameterizable::constraint_generator";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::__ANON__[Moose/Meta/TypeConstraint.pm:10]";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "UNIVERSAL::isa";
+"Moose::Meta::TypeConstraint::Parameterizable::generate_constraint_for" -> "Moose::Meta::TypeConstraint::has_coercion";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::parent";
+"Moose::Meta::TypeConstraint::Parameterizable::parameterize" -> "Moose::Meta::TypeConstraint::Parameterizable::_parse_type_parameter";
+"Moose::Meta::TypeConstraint::Parameterized::BEGIN@9" -> "Moose::Meta::TypeConstraint::Parameterizable::BEGIN@11";
+}

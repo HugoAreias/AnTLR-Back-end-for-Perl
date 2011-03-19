@@ -1,0 +1,62 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_DynaLoader {
+	label="DynaLoader";
+	"DynaLoader::bootstrap";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:264]";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::add_around_method_modifier";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::add_method";
+	"Class::MOP::Mixin::HasMethods::BEGIN@12";
+}
+subgraph cluster_Sub_Name {
+	label="Sub::Name";
+	"Sub::Name::BEGIN@45";
+	"Sub::Name::subname";
+	"Sub::Name::BEGIN@44";
+	"Sub::Name::BEGIN@42";
+	"Sub::Name::bootstrap";
+	"Sub::Name::BEGIN@49";
+	"Sub::Name::BEGIN@50";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::_compile_subtype";
+	"Moose::Meta::TypeConstraint::_compile_type";
+}
+"Class::MOP::Mixin::HasMethods::BEGIN@12" -> "Sub::Name::BEGIN@44";
+"Class::MOP::Mixin::HasMethods::BEGIN@12" -> "Sub::Name::BEGIN@50";
+"Sub::Name::BEGIN@49" -> "base::import";
+"Sub::Name::BEGIN@50" -> "base::import";
+"Sub::Name::BEGIN@45" -> "warnings::import";
+"Class::MOP::Mixin::HasMethods::BEGIN@12" -> "Sub::Name::BEGIN@45";
+"Sub::Name::BEGIN@44" -> "strict::import";
+"Moose::Meta::TypeConstraint::_compile_subtype" -> "Sub::Name::subname";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:264]" -> "Sub::Name::subname";
+"Class::MOP::Mixin::HasMethods::add_method" -> "Sub::Name::subname";
+"Class::MOP::Class::add_around_method_modifier" -> "Sub::Name::subname";
+"Moose::Meta::TypeConstraint::_compile_type" -> "Sub::Name::subname";
+"Class::MOP::Mixin::HasMethods::BEGIN@12" -> "Sub::Name::BEGIN@49";
+"Class::MOP::Mixin::HasMethods::BEGIN@12" -> "Sub::Name::BEGIN@42";
+"DynaLoader::bootstrap" -> "Sub::Name::bootstrap";
+}

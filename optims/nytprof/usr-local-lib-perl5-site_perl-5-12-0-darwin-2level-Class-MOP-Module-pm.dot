@@ -1,0 +1,57 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Module {
+	label="Class::MOP::Module";
+	"Class::MOP::Module::_instantiate_module";
+	"Class::MOP::Module::BEGIN@8";
+	"Class::MOP::Module::BEGIN@14";
+	"Class::MOP::Module::BEGIN@7";
+	"Class::MOP::Module::BEGIN@64";
+	"Class::MOP::Module::BEGIN@5";
+	"Class::MOP::Module::BEGIN@4";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::create";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::_is_valid_class_name";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::name";
+}
+"Class::MOP::Module::BEGIN@8" -> "Exporter::import";
+"Class::MOP::Module::BEGIN@7" -> "Exporter::import";
+"base::import" -> "Class::MOP::Module::BEGIN@8";
+"base::import" -> "Class::MOP::Module::BEGIN@64";
+"Class::MOP::Module::BEGIN@64" -> "strict::unimport";
+"Class::MOP::Module::BEGIN@14" -> "base::import";
+"Class::MOP::Module::BEGIN@5" -> "warnings::import";
+"Class::MOP::Module::_instantiate_module" -> "Class::MOP::Package::name";
+"base::import" -> "Class::MOP::Module::BEGIN@7";
+"Class::MOP::Module::BEGIN@4" -> "strict::import";
+"Class::MOP::Module::_instantiate_module" -> "Class::MOP::_is_valid_class_name";
+"Class::MOP::Class::create" -> "Class::MOP::Module::_instantiate_module";
+"base::import" -> "Class::MOP::Module::BEGIN@14";
+"base::import" -> "Class::MOP::Module::BEGIN@4";
+"base::import" -> "Class::MOP::Module::BEGIN@5";
+}

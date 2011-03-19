@@ -1,0 +1,59 @@
+
+%strict
+%token NUM
+%token PAL
+%start lisp
+
+%%
+
+lisp : sExp
+       { return $_[1] }
+     ;
+
+sExp : NUM
+       { return $_[1] }
+     | PAL
+       { return $_[1] }
+     | '(' sExp * ')'
+       { return $_[2] }
+     ;
+
+%%
+
+package main;
+use Data::Dumper;
+my $File;
+my $t = Run();
+
+sub lexical_analyse {
+	my $pal = qr/[A-Za-z]+/;
+	my $num = qr/\d+/;
+	my $par = qr/[\(\)]/;
+	for ($File) {
+		s/^\s+//;
+		s/^($par)// and return ($1,$1);
+		s/^($pal)// and return ('PAL',$1);
+		s/^($num)// and return ('NUM',$1);
+		return ('',undef);
+	}
+}
+
+sub yyerror {
+	my $parser = shift;
+	my $expected = $parser->YYExpect;
+	my $got = $parser->YYCurtok;
+	die "Parse Error: Expected $expected, got $got\n";
+}
+
+sub Run {
+	my $parser = new lispeyapp();
+	init_lex();
+	my $value = $parser->YYParse( yylex => \&lexical_analyse, yyerror => \&yyerror );
+	print Dumper $value;
+}
+
+sub init_lex{
+	local $/;
+    undef $/;
+	$File = <>;
+}

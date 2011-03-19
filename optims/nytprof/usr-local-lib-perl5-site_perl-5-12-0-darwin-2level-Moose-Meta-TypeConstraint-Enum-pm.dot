@@ -1,0 +1,40 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Enum {
+	label="Moose::Meta::TypeConstraint::Enum";
+	"Moose::Meta::TypeConstraint::Enum::BEGIN@3";
+	"Moose::Meta::TypeConstraint::Enum::BEGIN@5";
+	"Moose::Meta::TypeConstraint::Enum::BEGIN@4";
+	"Moose::Meta::TypeConstraint::Enum::BEGIN@13";
+	"Moose::Meta::TypeConstraint::Enum::BEGIN@7";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@35";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+"Moose::Util::TypeConstraints::BEGIN@35" -> "Moose::Meta::TypeConstraint::Enum::BEGIN@7";
+"Moose::Meta::TypeConstraint::Enum::BEGIN@5" -> "metaclass::import";
+"Moose::Meta::TypeConstraint::Enum::BEGIN@13" -> "base::import";
+"Moose::Meta::TypeConstraint::Enum::BEGIN@4" -> "warnings::import";
+"Moose::Util::TypeConstraints::BEGIN@35" -> "Moose::Meta::TypeConstraint::Enum::BEGIN@13";
+"Moose::Meta::TypeConstraint::Enum::BEGIN@3" -> "strict::import";
+"Moose::Util::TypeConstraints::BEGIN@35" -> "Moose::Meta::TypeConstraint::Enum::BEGIN@3";
+"Moose::Util::TypeConstraints::BEGIN@35" -> "Moose::Meta::TypeConstraint::Enum::BEGIN@4";
+"Moose::Util::TypeConstraints::BEGIN@35" -> "Moose::Meta::TypeConstraint::Enum::BEGIN@5";
+}

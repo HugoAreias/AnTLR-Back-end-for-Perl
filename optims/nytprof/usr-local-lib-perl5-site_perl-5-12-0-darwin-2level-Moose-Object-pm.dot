@@ -1,0 +1,128 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_if {
+	label="if";
+	"if::import";
+	"if::work";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Devel_GlobalDestruction {
+	label="Devel::GlobalDestruction";
+	"Devel::GlobalDestruction::in_global_destruction";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::find_all_methods_by_name";
+	"Class::MOP::Class::initialize";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::class_of";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::new";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@25";
+}
+subgraph cluster_Moose_Object {
+	label="Moose::Object";
+	"Moose::Object::BEGIN@94";
+	"Moose::Object::BEGIN@76";
+	"Moose::Object::new";
+	"Moose::Object::__ANON__[Moose/Object.pm:90]";
+	"Moose::Object::DESTROY";
+	"Moose::Object::BEGIN@13";
+	"Moose::Object::BEGIN@12";
+	"Moose::Object::BEGIN@102";
+	"Moose::Object::BEGIN@5";
+	"Moose::Object::BEGIN@9";
+	"Moose::Object::DEMOLISHALL";
+	"Moose::Object::BUILDARGS";
+	"Moose::Object::BEGIN@8";
+	"Moose::Object::BUILDALL";
+	"Moose::Object::BEGIN@4";
+	"Moose::Object::BEGIN@7";
+	"Moose::Object::BEGIN@10";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::catch";
+	"Try::Tiny::try";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::can";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::new_object";
+}
+subgraph cluster_ANTLR_Runtime_ParserRuleReturnScope {
+	label="ANTLR::Runtime::ParserRuleReturnScope";
+	"ANTLR::Runtime::ParserRuleReturnScope::new";
+	"ANTLR::Runtime::ParserRuleReturnScope::DESTROY";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::execute";
+}
+"Moose::Object::DESTROY" -> "Try::Tiny::try";
+"Moose::Object::BUILDALL" -> "Class::MOP::Class::find_all_methods_by_name";
+"Moose::Object::new" -> "Moose::Object::BUILDARGS";
+"Moose::Object::new" -> "Scalar::Util::blessed";
+"Moose::Object::BEGIN@13" -> "metaclass::import";
+"Moose::Object::BUILDALL" -> "Class::MOP::class_of";
+"Moose::Object::DESTROY" -> "Try::Tiny::catch";
+"ANTLR::Runtime::ParserRuleReturnScope::DESTROY" -> "Moose::Object::DESTROY";
+"Moose::Object::BUILDALL" -> "UNIVERSAL::can";
+"Moose::Object::BEGIN@102" -> "UNIVERSAL::can";
+"Moose::Object::DEMOLISHALL" -> "UNIVERSAL::can";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@10";
+"Moose::Object::BEGIN@76" -> "strict::unimport";
+"Moose::Object::BEGIN@5" -> "warnings::import";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@8";
+"Moose::Object::new" -> "Moose::Meta::Class::new_object";
+"Try::Tiny::try" -> "Moose::Object::__ANON__[Moose/Object.pm:90]";
+"Moose::Object::new" -> "Class::MOP::Class::initialize";
+"Moose::Meta::Class::new_object" -> "Moose::Object::BUILDALL";
+"Moose::Object::BEGIN@4" -> "strict::import";
+"Moose::Object::__ANON__[Moose/Object.pm:90]" -> "Moose::Object::DEMOLISHALL";
+"Moose::Object::BEGIN@94" -> "warnings::unimport";
+"ANTLR::Runtime::ParserRuleReturnScope::new" -> "Moose::Object::new";
+"ANTLR::Runtime::DFA::new" -> "Moose::Object::new";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@102";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@12";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@5";
+"Moose::Object::BEGIN@12" -> "if::work";
+"Moose::Object::BEGIN@13" -> "if::work";
+"Moose::Object::BUILDALL" -> "Class::MOP::Method::execute";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@13";
+"Moose::Object::__ANON__[Moose/Object.pm:90]" -> "Devel::GlobalDestruction::in_global_destruction";
+"Moose::Object::BEGIN@12" -> "if::import";
+"Moose::Object::BEGIN@13" -> "if::import";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@7";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@9";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@4";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@76";
+"Moose::BEGIN@25" -> "Moose::Object::BEGIN@94";
+}

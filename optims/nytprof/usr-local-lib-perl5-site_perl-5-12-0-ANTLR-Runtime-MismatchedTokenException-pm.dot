@@ -1,0 +1,30 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedTokenException {
+	label="ANTLR::Runtime::MismatchedTokenException";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@3";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@8";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@5";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@31";
+}
+"ANTLR::Runtime::MismatchedTokenException::BEGIN@31" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@31";
+"ANTLR::Runtime::MismatchedTokenException::BEGIN@8" -> "overload::import";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@5";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@8";
+"ANTLR::Runtime::MismatchedTokenException::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::MismatchedTokenException::BEGIN@3";
+}

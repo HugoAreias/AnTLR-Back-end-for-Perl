@@ -1,0 +1,31 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@23";
+}
+subgraph cluster_Moose_Meta_Instance {
+	label="Moose::Meta::Instance";
+	"Moose::Meta::Instance::BEGIN@4";
+	"Moose::Meta::Instance::BEGIN@11";
+	"Moose::Meta::Instance::BEGIN@5";
+}
+"Moose::BEGIN@23" -> "Moose::Meta::Instance::BEGIN@5";
+"Moose::BEGIN@23" -> "Moose::Meta::Instance::BEGIN@11";
+"Moose::Meta::Instance::BEGIN@11" -> "base::import";
+"Moose::Meta::Instance::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Instance::BEGIN@4" -> "strict::import";
+"Moose::BEGIN@23" -> "Moose::Meta::Instance::BEGIN@4";
+}

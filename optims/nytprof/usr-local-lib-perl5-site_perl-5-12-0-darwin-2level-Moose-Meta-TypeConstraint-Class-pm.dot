@@ -1,0 +1,93 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::create_class_type_constraint";
+	"Moose::Util::TypeConstraints::BEGIN@33";
+	"Moose::Util::TypeConstraints::find_type_constraint";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::recognizer";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Class {
+	label="Moose::Meta::TypeConstraint::Class";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@5";
+	"Moose::Meta::TypeConstraint::Class::class";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@3";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@14";
+	"Moose::Meta::TypeConstraint::Class::new";
+	"Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::Class::_new";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@7";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@8";
+	"Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+	"Moose::Meta::TypeConstraint::Class::BEGIN@4";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::new";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::compile_type_constraint";
+	"Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+	"Moose::Meta::TypeConstraint::check";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::new";
+}
+"Moose::Meta::TypeConstraint::Class::BEGIN@7" -> "Exporter::import";
+"Moose::Meta::TypeConstraint::Class::new" -> "Moose::Util::TypeConstraints::find_type_constraint";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::BEGIN@4";
+"Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]" -> "Scalar::Util::blessed";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::BEGIN@5";
+"Moose::Meta::TypeConstraint::Class::new" -> "Moose::Meta::TypeConstraint::Class::_new";
+"Moose::Meta::TypeConstraint::Class::BEGIN@5" -> "metaclass::import";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::BEGIN@3";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::BEGIN@14";
+"Moose::Meta::TypeConstraint::Class::new" -> "Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::hand_optimized_type_constraint";
+"Moose::Meta::TypeConstraint::Class::BEGIN@14" -> "base::import";
+"Lavanda2Parser::new" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"Lavanda2Lexer::new" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"Moose::Meta::TypeConstraint::check" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"ANTLR::Runtime::DFA::recognizer" -> "Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]";
+"Moose::Meta::TypeConstraint::Class::BEGIN@4" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Class::BEGIN@3" -> "strict::import";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::BEGIN@8";
+"Moose::Meta::TypeConstraint::Class::new" -> "Moose::Meta::TypeConstraint::compile_type_constraint";
+"Moose::Meta::TypeConstraint::Class::_create_hand_optimized_type_constraint" -> "Moose::Meta::TypeConstraint::Class::class";
+"Moose::Util::TypeConstraints::BEGIN@33" -> "Moose::Meta::TypeConstraint::Class::BEGIN@7";
+"Moose::Meta::TypeConstraint::Class::__ANON__[Moose/Meta/TypeConstraint/Class.pm:38]" -> "UNIVERSAL::isa";
+"Moose::Util::TypeConstraints::create_class_type_constraint" -> "Moose::Meta::TypeConstraint::Class::new";
+}

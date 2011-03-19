@@ -1,0 +1,39 @@
+Class/Interface                        Java                        Perl                        Revistos
+
+ANTLRFileStream                          x                           x                             x
+ANTLRInputStream                         x                           -                             -
+ANTLRReaderStream                        x                           -                             -
+ANTLRStringStream                        x                           x                             x
+BaseRecognizer                           x                           x                             x
+BitSet                                   x                           x                             x
+CharStream                               x                           x                             x
+CharStreamState                          x                           x                             x
+ClassicToken                             x                           -                             -
+CommonToken                              x                           x                             x
+CommonTokenStream                        x                           x                             x
+DFA                                      x                           x                             x
+EarlyExitException                       x                           x                             x
+FailedPredicateException                 x                           x                             x
+IntStream                                x                           x                             x
+Lexer                                    x                           x                             x
+MismatchedNotSetException                x                           x                             x
+MismatchedRangeException                 x                           x                             x
+MismatchedSetException                   x                           x                             x
+MismatchedTokenException                 x                           x                             x
+MismatchedTreeNodeException              x                           -                             -
+MissingTokenException                    x                           x                             x
+NoViableAltException                     x                           x                             x
+Parser                                   x                           x                             x
+ParserRuleReturnScope                    x                           x                             x
+RecognitionException                     x                           x                             x
+RecognizerSharedState                    x                           x                             x
+RuleReturnScope                          x                           x                             x
+SerializedGrammar                        x                           -                             -
+Token                                    x                           x                             x
+TokenRewriteStream                       x                           -                             -
+TokenSource                              x                           x                             x
+TokenStream                              x                           x                             x
+UnwantedTokenException                   x                           x                             x
+
+Exception                                                            x
+Stream                                                               x

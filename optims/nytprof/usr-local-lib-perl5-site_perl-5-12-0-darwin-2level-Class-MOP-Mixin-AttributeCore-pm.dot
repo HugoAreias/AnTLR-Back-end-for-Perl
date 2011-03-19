@@ -1,0 +1,95 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::BEGIN@3";
+	"base::BEGIN@4";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::_immutable_metaclass";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:336]";
+	"Class::MOP::__ANON__[Class/MOP.pm:320]";
+	"Class::MOP::__ANON__[Class/MOP.pm:233]";
+	"Class::MOP::BEGIN@16";
+	"Class::MOP::__ANON__[Class/MOP.pm:509]";
+	"Class::MOP::__ANON__[Class/MOP.pm:301]";
+	"Class::MOP::__ANON__[Class/MOP.pm:275]";
+	"Class::MOP::__ANON__[Class/MOP.pm:191]";
+}
+subgraph cluster_Class_MOP_Method_Constructor {
+	label="Class::MOP::Method::Constructor";
+	"Class::MOP::Method::Constructor::_generate_constructor_method_inline";
+	"Class::MOP::Method::Constructor::_generate_default_value";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::initialize_instance_slot";
+	"Class::MOP::Attribute::new";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::_initialize_body";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Registry {
+	label="Moose::Meta::TypeConstraint::Registry";
+	"Moose::Meta::TypeConstraint::Registry::__ANON__[Moose/Meta/TypeConstraint/Registry.pm:24]";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::__ANON__[Moose/Meta/Class.pm:35]";
+	"Moose::Meta::Class::__ANON__[Moose/Meta/Class.pm:30]";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@4";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@12";
+	"Class::MOP::Mixin::AttributeCore::default";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@3";
+	"Class::MOP::Mixin::AttributeCore::BEGIN@10";
+	"Class::MOP::Mixin::AttributeCore::is_default_a_coderef";
+}
+"Class::MOP::Mixin::AttributeCore::BEGIN@10" -> "Exporter::import";
+"Class::MOP::Method::Constructor::_generate_default_value" -> "Class::MOP::Mixin::AttributeCore::is_default_a_coderef";
+"Class::MOP::Attribute::new" -> "Class::MOP::Mixin::AttributeCore::is_default_a_coderef";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::Mixin::AttributeCore::is_default_a_coderef";
+"Class::MOP::Mixin::AttributeCore::BEGIN@12" -> "base::BEGIN@4";
+"Class::MOP::Mixin::AttributeCore::BEGIN@12" -> "base::import";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@10";
+"Class::MOP::Mixin::AttributeCore::BEGIN@4" -> "warnings::import";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:233]";
+"Class::MOP::Mixin::AttributeCore::BEGIN@3" -> "strict::import";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@3";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:336]";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:320]";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@4";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:275]";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Mixin::AttributeCore::default";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Mixin::AttributeCore::default";
+"Class::MOP::Class::_immutable_metaclass" -> "Class::MOP::Mixin::AttributeCore::default";
+"Class::MOP::Attribute::initialize_instance_slot" -> "Class::MOP::Mixin::AttributeCore::default";
+"Class::MOP::Mixin::AttributeCore::BEGIN@12" -> "base::BEGIN@3";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:301]";
+"Class::MOP::Mixin::AttributeCore::default" -> "Moose::Meta::Class::__ANON__[Moose/Meta/Class.pm:35]";
+"Class::MOP::BEGIN@16" -> "Class::MOP::Mixin::AttributeCore::BEGIN@12";
+"Class::MOP::Mixin::AttributeCore::default" -> "Moose::Meta::Class::__ANON__[Moose/Meta/Class.pm:30]";
+"Class::MOP::Mixin::AttributeCore::default" -> "Moose::Meta::TypeConstraint::Registry::__ANON__[Moose/Meta/TypeConstraint/Registry.pm:24]";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:509]";
+"Class::MOP::Mixin::AttributeCore::default" -> "Class::MOP::__ANON__[Class/MOP.pm:191]";
+}

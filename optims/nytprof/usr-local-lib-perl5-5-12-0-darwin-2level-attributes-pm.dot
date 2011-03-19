@@ -1,0 +1,47 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::enabled";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_attributes {
+	label="attributes";
+	"attributes::_modify_attrs_and_deprecate";
+	"attributes::CORE:regcomp";
+	"attributes::CORE:match";
+	"attributes::_modify_attrs";
+	"attributes::CORE:qr";
+	"attributes::import";
+	"attributes::reftype";
+	"attributes::BEGIN@9";
+}
+subgraph cluster_Attribute_Handlers {
+	label="Attribute::Handlers";
+	"Attribute::Handlers::BEGIN@110";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::can";
+}
+subgraph cluster_Attribute_Handlers__TEST_ {
+	label="Attribute::Handlers::_TEST_";
+	"Attribute::Handlers::_TEST_::MODIFY_CODE_ATTRIBUTES";
+}
+"attributes::import" -> "UNIVERSAL::can";
+"attributes::_modify_attrs_and_deprecate" -> "attributes::_modify_attrs";
+"attributes::import" -> "attributes::_modify_attrs_and_deprecate";
+"attributes::BEGIN@9" -> "strict::import";
+"attributes::import" -> "attributes::reftype";
+"attributes::_modify_attrs_and_deprecate" -> "attributes::CORE:regcomp";
+"Attribute::Handlers::BEGIN@110" -> "attributes::import";
+"attributes::import" -> "Attribute::Handlers::_TEST_::MODIFY_CODE_ATTRIBUTES";
+"Attribute::Handlers::BEGIN@110" -> "attributes::BEGIN@9";
+"Attribute::Handlers::BEGIN@110" -> "attributes::CORE:qr";
+"attributes::import" -> "warnings::enabled";
+"attributes::_modify_attrs_and_deprecate" -> "attributes::CORE:match";
+"attributes::import" -> "attributes::CORE:match";
+}

@@ -1,0 +1,45 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Meta_TypeCoercion_Union {
+	label="Moose::Meta::TypeCoercion::Union";
+	"Moose::Meta::TypeCoercion::Union::BEGIN@6";
+	"Moose::Meta::TypeCoercion::Union::BEGIN@8";
+	"Moose::Meta::TypeCoercion::Union::BEGIN@4";
+	"Moose::Meta::TypeCoercion::Union::BEGIN@5";
+	"Moose::Meta::TypeCoercion::Union::BEGIN@14";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_Union {
+	label="Moose::Meta::TypeConstraint::Union";
+	"Moose::Meta::TypeConstraint::Union::BEGIN@8";
+}
+"Moose::Meta::TypeCoercion::Union::BEGIN@8" -> "Exporter::import";
+"Moose::Meta::TypeConstraint::Union::BEGIN@8" -> "Moose::Meta::TypeCoercion::Union::BEGIN@4";
+"Moose::Meta::TypeCoercion::Union::BEGIN@6" -> "metaclass::import";
+"Moose::Meta::TypeConstraint::Union::BEGIN@8" -> "Moose::Meta::TypeCoercion::Union::BEGIN@14";
+"Moose::Meta::TypeCoercion::Union::BEGIN@14" -> "base::import";
+"Moose::Meta::TypeCoercion::Union::BEGIN@5" -> "warnings::import";
+"Moose::Meta::TypeConstraint::Union::BEGIN@8" -> "Moose::Meta::TypeCoercion::Union::BEGIN@8";
+"Moose::Meta::TypeCoercion::Union::BEGIN@4" -> "strict::import";
+"Moose::Meta::TypeConstraint::Union::BEGIN@8" -> "Moose::Meta::TypeCoercion::Union::BEGIN@5";
+"Moose::Meta::TypeConstraint::Union::BEGIN@8" -> "Moose::Meta::TypeCoercion::Union::BEGIN@6";
+}

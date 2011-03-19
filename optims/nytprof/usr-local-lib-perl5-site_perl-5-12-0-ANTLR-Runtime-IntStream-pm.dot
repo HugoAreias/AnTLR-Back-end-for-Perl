@@ -1,0 +1,46 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+	"Moose::Exporter::setup_import_methods";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_Moose_Role {
+	label="Moose::Role";
+	"Moose::Role::BEGIN@2";
+	"Moose::Role::BEGIN@6";
+	"Moose::Role::BEGIN@3";
+	"Moose::Role::BEGIN@17";
+	"Moose::Role::BEGIN@15";
+	"Moose::Role::BEGIN@18";
+	"Moose::Role::BEGIN@5";
+	"Moose::Role::BEGIN@8";
+	"Moose::Role::BEGIN@14";
+	"Moose::Role::BEGIN@19";
+}
+subgraph cluster_ANTLR_Runtime_IntStream {
+	label="ANTLR::Runtime::IntStream";
+	"ANTLR::Runtime::IntStream::BEGIN@3";
+	"ANTLR::Runtime::IntStream::BEGIN@84";
+}
+"ANTLR::Runtime::IntStream::BEGIN@84" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@5";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Exporter::setup_import_methods";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@8";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@15";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@14";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@2";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@18";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@3";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@17";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@19";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::IntStream::BEGIN@3";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Role::BEGIN@6";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::IntStream::BEGIN@84";
+}

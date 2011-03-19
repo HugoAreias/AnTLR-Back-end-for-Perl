@@ -1,0 +1,29 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_Data_Inheritable {
+	label="Class::Data::Inheritable";
+	"Class::Data::Inheritable::mk_classdata";
+	"Class::Data::Inheritable::BEGIN@3";
+	"Class::Data::Inheritable::__ANON__[Class/Data/Inheritable.pm:23]";
+	"Class::Data::Inheritable::BEGIN@4";
+}
+subgraph cluster_Exception_Class_Base {
+	label="Exception::Class::Base";
+	"Exception::Class::Base::BEGIN@9";
+	"Exception::Class::Base::BEGIN@15";
+}
+"Exception::Class::Base::BEGIN@15" -> "Class::Data::Inheritable::mk_classdata";
+"Class::Data::Inheritable::BEGIN@4" -> "vars::import";
+"Class::Data::Inheritable::BEGIN@3" -> "strict::import";
+"Exception::Class::Base::BEGIN@15" -> "Class::Data::Inheritable::__ANON__[Class/Data/Inheritable.pm:23]";
+"Exception::Class::Base::BEGIN@9" -> "Class::Data::Inheritable::BEGIN@3";
+"Exception::Class::Base::BEGIN@9" -> "Class::Data::Inheritable::BEGIN@4";
+}

@@ -1,0 +1,137 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::_eval_closure";
+	"Class::MOP::Method::Generated::is_inline";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Instance {
+	label="Class::MOP::Instance";
+	"Class::MOP::Instance::inline_create_instance";
+	"Class::MOP::Instance::inline_set_slot_value";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::BEGIN@10";
+	"Class::MOP::Class::get_all_attributes";
+	"Class::MOP::Class::get_meta_instance";
+	"Class::MOP::Class::_inline_constructor";
+}
+subgraph cluster_Class_MOP_Method_Constructor {
+	label="Class::MOP::Method::Constructor";
+	"Class::MOP::Method::Constructor::BEGIN@5";
+	"Class::MOP::Method::Constructor::options";
+	"Class::MOP::Method::Constructor::_new";
+	"Class::MOP::Method::Constructor::BEGIN@4";
+	"Class::MOP::Method::Constructor::BEGIN@7";
+	"Class::MOP::Method::Constructor::BEGIN@14";
+	"Class::MOP::Method::Constructor::_generate_constructor_method_inline";
+	"Class::MOP::Method::Constructor::_attributes";
+	"Class::MOP::Method::Constructor::_initialize_body";
+	"Class::MOP::Method::Constructor::BEGIN@8";
+	"Class::MOP::Method::Constructor::_generate_default_value";
+	"Class::MOP::Method::Constructor::associated_metaclass";
+	"Class::MOP::Method::Constructor::new";
+	"Class::MOP::Method::Constructor::_meta_instance";
+	"Class::MOP::Method::Constructor::_generate_slot_initializer";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_Method_Constructor {
+	label="Moose::Meta::Method::Constructor";
+	"Moose::Meta::Method::Constructor::_initialize_body";
+	"Moose::Meta::Method::Constructor::_generate_slot_initializer";
+	"Moose::Meta::Method::Constructor::_generate_instance";
+	"Moose::Meta::Method::Constructor::_generate_slot_assignment";
+	"Moose::Meta::Method::Constructor::_generate_slot_initializers";
+	"Moose::Meta::Method::Constructor::_generate_triggers";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::name";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+	"Scalar::Util::weaken";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::has_default";
+	"Class::MOP::Mixin::AttributeCore::default";
+	"Class::MOP::Mixin::AttributeCore::name";
+	"Class::MOP::Mixin::AttributeCore::init_arg";
+	"Class::MOP::Mixin::AttributeCore::has_builder";
+	"Class::MOP::Mixin::AttributeCore::is_default_a_coderef";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::associated_metaclass";
+}
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_default";
+"Class::MOP::Method::Constructor::BEGIN@8" -> "Exporter::import";
+"Class::MOP::Method::Constructor::BEGIN@7" -> "Exporter::import";
+"Class::MOP::Method::Constructor::_attributes" -> "Class::MOP::Class::get_all_attributes";
+"Class::MOP::Method::Constructor::new" -> "Scalar::Util::blessed";
+"Class::MOP::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Generated::is_inline";
+"Class::MOP::Method::Constructor::_generate_default_value" -> "Class::MOP::Mixin::AttributeCore::is_default_a_coderef";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::options";
+"Class::MOP::Class::BEGIN@10" -> "Class::MOP::Method::Constructor::BEGIN@4";
+"Class::MOP::Class::_inline_constructor" -> "Class::MOP::Method::Constructor::new";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::has_builder";
+"Class::MOP::Class::BEGIN@10" -> "Class::MOP::Method::Constructor::BEGIN@8";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"Class::MOP::Method::Constructor::_attributes" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"Class::MOP::Method::Constructor::_meta_instance" -> "Class::MOP::Method::Constructor::associated_metaclass";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Instance::inline_create_instance";
+"Class::MOP::Method::Constructor::BEGIN@14" -> "base::import";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::_meta_instance";
+"Moose::Meta::Method::Constructor::_generate_instance" -> "Class::MOP::Method::Constructor::_meta_instance";
+"Moose::Meta::Method::Constructor::_generate_slot_assignment" -> "Class::MOP::Method::Constructor::_meta_instance";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Method::Constructor::_meta_instance";
+"Class::MOP::Method::Constructor::BEGIN@5" -> "warnings::import";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Package::name";
+"Class::MOP::Class::BEGIN@10" -> "Class::MOP::Method::Constructor::BEGIN@7";
+"Class::MOP::Method::Constructor::_meta_instance" -> "Class::MOP::Class::get_meta_instance";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Method::Constructor::_generate_default_value";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Method::Constructor::_generate_default_value";
+"Class::MOP::Method::Constructor::BEGIN@4" -> "strict::import";
+"Class::MOP::Method::Constructor::_attributes" -> "Class::MOP::Method::associated_metaclass";
+"Class::MOP::Method::Constructor::_meta_instance" -> "Class::MOP::Method::associated_metaclass";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::init_arg";
+"Class::MOP::Method::Constructor::new" -> "Class::MOP::Method::Constructor::_initialize_body";
+"Class::MOP::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Constructor::_generate_constructor_method_inline";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Mixin::AttributeCore::default";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_initialize_body" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_generate_slot_initializers" -> "Class::MOP::Method::Constructor::_attributes";
+"Moose::Meta::Method::Constructor::_generate_triggers" -> "Class::MOP::Method::Constructor::_attributes";
+"Class::MOP::Method::Constructor::new" -> "Scalar::Util::weaken";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Constructor::_generate_slot_initializer";
+"Class::MOP::Method::Constructor::new" -> "UNIVERSAL::isa";
+"Class::MOP::Method::Constructor::_generate_constructor_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Constructor::_generate_slot_initializer" -> "Class::MOP::Instance::inline_set_slot_value";
+"Class::MOP::Class::BEGIN@10" -> "Class::MOP::Method::Constructor::BEGIN@5";
+"Class::MOP::Class::BEGIN@10" -> "Class::MOP::Method::Constructor::BEGIN@14";
+"Class::MOP::Method::Constructor::new" -> "Class::MOP::Method::Constructor::_new";
+}

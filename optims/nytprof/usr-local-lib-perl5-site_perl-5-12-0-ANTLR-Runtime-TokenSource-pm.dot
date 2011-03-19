@@ -1,0 +1,21 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_TokenSource {
+	label="ANTLR::Runtime::TokenSource";
+	"ANTLR::Runtime::TokenSource::BEGIN@3";
+	"ANTLR::Runtime::TokenSource::BEGIN@14";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@8";
+}
+"ANTLR::Runtime::TokenSource::BEGIN@14" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@8" -> "ANTLR::Runtime::TokenSource::BEGIN@14";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@8" -> "ANTLR::Runtime::TokenSource::BEGIN@3";
+"ANTLR::Runtime::TokenSource::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}

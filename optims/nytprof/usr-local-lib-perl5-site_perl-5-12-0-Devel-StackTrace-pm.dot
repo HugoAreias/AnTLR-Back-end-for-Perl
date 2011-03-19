@@ -1,0 +1,73 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Devel_StackTrace {
+	label="Devel::StackTrace";
+	"Devel::StackTrace::BEGIN@8";
+	"Devel::StackTrace::BEGIN@6";
+	"Devel::StackTrace::BEGIN@3";
+	"Devel::StackTrace::BEGIN@12";
+	"Devel::StackTrace::BEGIN@9";
+	"Devel::StackTrace::BEGIN@5";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Devel_StackTraceFrame {
+	label="Devel::StackTraceFrame";
+	"Devel::StackTraceFrame::BEGIN@252";
+	"Devel::StackTraceFrame::BEGIN@245";
+	"Devel::StackTraceFrame::BEGIN@251";
+	"Devel::StackTraceFrame::BEGIN@244";
+}
+subgraph cluster_File_Spec_Unix {
+	label="File::Spec::Unix";
+	"File::Spec::Unix::BEGIN@4";
+	"File::Spec::Unix::BEGIN@3";
+	"File::Spec::Unix::BEGIN@149";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_File_Spec {
+	label="File::Spec";
+	"File::Spec::BEGIN@4";
+	"File::Spec::BEGIN@3";
+}
+subgraph cluster_Exception_Class_Base {
+	label="Exception::Class::Base";
+	"Exception::Class::Base::BEGIN@10";
+}
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::Unix::BEGIN@149";
+"Devel::StackTrace::BEGIN@9" -> "Exporter::import";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTrace::BEGIN@12";
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::Unix::BEGIN@3";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTrace::BEGIN@9";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTrace::BEGIN@6";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTraceFrame::BEGIN@245";
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::BEGIN@4";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTraceFrame::BEGIN@244";
+"Devel::StackTraceFrame::BEGIN@252" -> "strict::unimport";
+"Devel::StackTrace::BEGIN@12" -> "overload::import";
+"Devel::StackTrace::BEGIN@6" -> "warnings::import";
+"Devel::StackTraceFrame::BEGIN@245" -> "warnings::import";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTrace::BEGIN@3";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTraceFrame::BEGIN@252";
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::Unix::BEGIN@4";
+"Devel::StackTraceFrame::BEGIN@244" -> "strict::import";
+"Devel::StackTrace::BEGIN@5" -> "strict::import";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTraceFrame::BEGIN@251";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTrace::BEGIN@5";
+"Devel::StackTrace::BEGIN@8" -> "File::Spec::BEGIN@3";
+"Exception::Class::Base::BEGIN@10" -> "Devel::StackTrace::BEGIN@8";
+}

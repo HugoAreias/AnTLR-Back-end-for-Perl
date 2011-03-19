@@ -1,0 +1,17 @@
+do{ my $x = {
+       'build_requires' => {
+                             'Java::JVM::Classfile' => '0.20',
+                             'Test::Class' => '0.28'
+                           },
+       'conflicts' => {},
+       'requires' => {
+                       'Error' => '0.17014',
+                       'Want' => '0.18',
+                       'List::MoreUtils' => '0.22',
+                       'Readonly' => '1.03',
+                       'Moose' => '0.82',
+                       'Carp' => '1.04'
+                     },
+       'recommends' => {}
+     };
+$x; }

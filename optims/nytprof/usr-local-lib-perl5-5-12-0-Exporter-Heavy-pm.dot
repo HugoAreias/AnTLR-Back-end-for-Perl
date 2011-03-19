@@ -1,0 +1,33 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Exporter_Heavy {
+	label="Exporter::Heavy";
+	"Exporter::Heavy::BEGIN@197";
+	"Exporter::Heavy::BEGIN@4";
+	"Exporter::Heavy::CORE:subst";
+	"Exporter::Heavy::heavy_export";
+	"Exporter::Heavy::BEGIN@3";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+	"Exporter::as_heavy";
+}
+"Exporter::as_heavy" -> "Exporter::Heavy::BEGIN@4";
+"Exporter::Heavy::BEGIN@4" -> "strict::unimport";
+"Exporter::Heavy::heavy_export" -> "Exporter::Heavy::CORE:subst";
+"Exporter::import" -> "Exporter::Heavy::heavy_export";
+"Exporter::Heavy::BEGIN@3" -> "strict::import";
+"Exporter::as_heavy" -> "Exporter::Heavy::BEGIN@3";
+"Exporter::Heavy::BEGIN@197" -> "warnings::unimport";
+"Exporter::as_heavy" -> "Exporter::Heavy::BEGIN@197";
+}

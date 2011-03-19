@@ -1,0 +1,93 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+	"ANTLR::Runtime::Lexer::emit";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::EOF";
+	"ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::start";
+	"ANTLR::Runtime::CommonToken::set_text";
+	"ANTLR::Runtime::CommonToken::input";
+	"ANTLR::Runtime::CommonToken::line";
+	"ANTLR::Runtime::CommonToken::text";
+	"ANTLR::Runtime::CommonToken::stop";
+	"ANTLR::Runtime::CommonToken::get_type";
+	"ANTLR::Runtime::CommonToken::type";
+	"ANTLR::Runtime::CommonToken::set_char_position_in_line";
+	"ANTLR::Runtime::CommonToken::BEGIN@7";
+	"ANTLR::Runtime::CommonToken::BEGIN@226";
+	"ANTLR::Runtime::CommonToken::set_line";
+	"ANTLR::Runtime::CommonToken::index";
+	"ANTLR::Runtime::CommonToken::char_position_in_line";
+	"ANTLR::Runtime::CommonToken::BUILD";
+	"ANTLR::Runtime::CommonToken::new";
+	"ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]";
+	"ANTLR::Runtime::CommonToken::set_token_index";
+	"ANTLR::Runtime::CommonToken::get_text";
+	"ANTLR::Runtime::CommonToken::BEGIN@3";
+	"ANTLR::Runtime::CommonToken::not_eof";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::fill_buffer";
+	"ANTLR::Runtime::CommonTokenStream::LA";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@19";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::substring";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]";
+}
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::start";
+"ANTLR::Runtime::CommonToken::BEGIN@226" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CommonToken::get_type" -> "ANTLR::Runtime::CommonToken::type";
+"ANTLR::Runtime::CommonToken::not_eof" -> "ANTLR::Runtime::CommonToken::type";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::set_text";
+"ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CommonToken::set_token_index";
+"ANTLR::Runtime::CommonToken::set_text" -> "ANTLR::Runtime::CommonToken::text";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::text";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::stop";
+"ANTLR::Runtime::CommonToken::new" -> "ANTLR::Runtime::CommonToken::BUILD";
+"ANTLR::Runtime::CommonToken::not_eof" -> "ANTLR::Runtime::Token::EOF";
+"ANTLR::Runtime::CommonToken::new" -> "ANTLR::Runtime::CommonToken::__ANON__[ANTLR/Runtime/CommonToken.pm:35]";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]" -> "ANTLR::Runtime::CommonToken::get_text";
+"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]" -> "ANTLR::Runtime::CommonToken::get_text";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::BEGIN@226";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::set_line";
+"ANTLR::Runtime::CommonToken::BEGIN@7" -> "overload::import";
+"ANTLR::Runtime::CommonToken::set_char_position_in_line" -> "ANTLR::Runtime::CommonToken::char_position_in_line";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::ANTLRStringStream::substring";
+"ANTLR::Runtime::CommonToken::set_token_index" -> "ANTLR::Runtime::CommonToken::index";
+"ANTLR::Runtime::CommonToken::set_line" -> "ANTLR::Runtime::CommonToken::line";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::BEGIN@7";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::CommonToken::not_eof";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::CommonToken::input";
+"ANTLR::Runtime::CommonTokenStream::LA" -> "ANTLR::Runtime::CommonToken::get_type";
+"ANTLR::Runtime::CommonToken::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::set_char_position_in_line";
+"Lavanda2Lexer::BEGIN@19" -> "ANTLR::Runtime::CommonToken::BEGIN@3";
+}

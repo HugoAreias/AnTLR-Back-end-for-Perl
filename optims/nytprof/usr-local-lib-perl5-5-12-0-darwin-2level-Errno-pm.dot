@@ -1,0 +1,32 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Config {
+	label="Config";
+	"Config::import";
+}
+subgraph cluster_Errno {
+	label="Errno";
+	"Errno::BEGIN@162";
+	"Errno::BEGIN@9";
+	"Errno::BEGIN@8";
+	"Errno::TIEHASH";
+	"Errno::BEGIN@7";
+}
+subgraph cluster_English {
+	label="English";
+	"English::BEGIN@187";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+"English::BEGIN@187" -> "Errno::BEGIN@8";
+"English::BEGIN@187" -> "Errno::BEGIN@7";
+"English::BEGIN@187" -> "Errno::BEGIN@162";
+"Errno::BEGIN@8" -> "Config::import";
+"Errno::BEGIN@162" -> "strict::unimport";
+"Errno::BEGIN@9" -> "strict::import";
+"English::BEGIN@187" -> "Errno::BEGIN@9";
+"English::BEGIN@187" -> "Errno::TIEHASH";
+}

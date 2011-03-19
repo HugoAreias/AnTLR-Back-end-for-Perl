@@ -1,0 +1,44 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::linearized_isa";
+	"Class::MOP::Class::class_precedence_list";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::init_meta";
+}
+subgraph cluster_constant {
+	label="constant";
+	"constant::import";
+}
+subgraph cluster_mro {
+	label="mro";
+	"mro::get_linear_isa";
+	"mro::BEGIN@10";
+	"mro::method_changed_in";
+	"mro::get_mro";
+	"mro::BEGIN@11";
+}
+subgraph cluster_MRO_Compat {
+	label="MRO::Compat";
+	"MRO::Compat::BEGIN@10";
+}
+"constant::import" -> "mro::method_changed_in";
+"MRO::Compat::BEGIN@10" -> "mro::BEGIN@10";
+"MRO::Compat::BEGIN@10" -> "mro::BEGIN@11";
+"Class::MOP::Class::class_precedence_list" -> "mro::get_mro";
+"mro::BEGIN@11" -> "warnings::import";
+"mro::BEGIN@10" -> "strict::import";
+"Class::MOP::Class::linearized_isa" -> "mro::get_linear_isa";
+"Moose::init_meta" -> "mro::get_linear_isa";
+}

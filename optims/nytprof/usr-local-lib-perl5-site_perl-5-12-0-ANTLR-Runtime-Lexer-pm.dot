@@ -1,0 +1,235 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::channel";
+	"ANTLR::Runtime::RecognizerSharedState::type";
+	"ANTLR::Runtime::RecognizerSharedState::text";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+	"ANTLR::Runtime::RecognizerSharedState::failed";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+	"ANTLR::Runtime::RecognizerSharedState::token_start_line";
+	"ANTLR::Runtime::RecognizerSharedState::token";
+}
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::EOF";
+}
+subgraph cluster_English {
+	label="English";
+	"English::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::make_immutable";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::skip";
+	"ANTLR::Runtime::Lexer::get_char_index";
+	"ANTLR::Runtime::Lexer::BEGIN@389";
+	"ANTLR::Runtime::Lexer::BEGIN@7";
+	"ANTLR::Runtime::Lexer::input";
+	"ANTLR::Runtime::Lexer::match";
+	"ANTLR::Runtime::Lexer::BEGIN@12";
+	"ANTLR::Runtime::Lexer::BEGIN@15";
+	"ANTLR::Runtime::Lexer::BEGIN@6";
+	"ANTLR::Runtime::Lexer::CORE:match";
+	"ANTLR::Runtime::Lexer::BEGIN@14";
+	"ANTLR::Runtime::Lexer::next_token";
+	"ANTLR::Runtime::Lexer::BEGIN@11";
+	"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+	"ANTLR::Runtime::Lexer::BEGIN@3";
+	"ANTLR::Runtime::Lexer::BEGIN@8";
+	"ANTLR::Runtime::Lexer::BEGIN@13";
+	"ANTLR::Runtime::Lexer::emit";
+	"ANTLR::Runtime::Lexer::BEGIN@5";
+	"ANTLR::Runtime::Lexer::BEGIN@9";
+	"ANTLR::Runtime::Lexer::BEGIN@17";
+	"ANTLR::Runtime::Lexer::match_range";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::has";
+	"Moose::extends";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::EOF_TOKEN";
+	"ANTLR::Runtime::Token::SKIP_TOKEN";
+	"ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::set_line";
+	"ANTLR::Runtime::CommonToken::set_text";
+	"ANTLR::Runtime::CommonToken::new";
+	"ANTLR::Runtime::CommonToken::not_eof";
+	"ANTLR::Runtime::CommonToken::set_char_position_in_line";
+}
+subgraph cluster_feature {
+	label="feature";
+	"feature::import";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::catch";
+	"Try::Tiny::try";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedRangeException {
+	label="ANTLR::Runtime::MismatchedRangeException";
+	"ANTLR::Runtime::MismatchedRangeException::meta";
+	"ANTLR::Runtime::MismatchedRangeException::BEGIN@30";
+	"ANTLR::Runtime::MismatchedRangeException::BEGIN@6";
+	"ANTLR::Runtime::MismatchedRangeException::BEGIN@3";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::fill_buffer";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::state";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]";
+	"Lavanda2Lexer::m_tokens";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::consume";
+	"ANTLR::Runtime::ANTLRStringStream::index";
+	"ANTLR::Runtime::ANTLRStringStream::LA";
+	"ANTLR::Runtime::ANTLRStringStream::get_line";
+	"ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line";
+}
+subgraph cluster_Exception_Class {
+	label="Exception::Class";
+	"Exception::Class::import";
+}
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@12";
+"ANTLR::Runtime::Lexer::BEGIN@389" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@6";
+"ANTLR::Runtime::Lexer::next_token" -> "Try::Tiny::try";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "ANTLR::Runtime::MismatchedRangeException::BEGIN@3";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token_start_line";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token_start_line";
+"ANTLR::Runtime::Lexer::BEGIN@7" -> "Exporter::import";
+"ANTLR::Runtime::Lexer::BEGIN@8" -> "Exporter::import";
+"ANTLR::Runtime::Lexer::BEGIN@5" -> "Exporter::import";
+"ANTLR::Runtime::Lexer::skip" -> "ANTLR::Runtime::Token::SKIP_TOKEN";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::Token::SKIP_TOKEN";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "ANTLR::Runtime::MismatchedRangeException::BEGIN@30";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::set_text";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@7";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::Token::DEFAULT_CHANNEL";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_index";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::channel";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::RecognizerSharedState::failed";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::RecognizerSharedState::failed";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@3";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "Moose::extends";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@15";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::Token::EOF_TOKEN";
+"ANTLR::Runtime::Lexer::next_token" -> "Try::Tiny::catch";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::set_line";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@389";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@11";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "Lavanda2Lexer::m_tokens";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token_start_char_position_in_line";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::get_line";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@8";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::type";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@5";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]" -> "ANTLR::Runtime::Lexer::match";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]" -> "ANTLR::Runtime::Lexer::match";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::Lexer::emit";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::Lexer::emit";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@14";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@9";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "ANTLR::Runtime::MismatchedRangeException::meta";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::get_char_index" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::Lexer::input";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::CommonToken::not_eof";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line";
+"ANTLR::Runtime::Lexer::skip" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::BaseRecognizer::state";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::BaseRecognizer::state";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]" -> "ANTLR::Runtime::Lexer::match_range";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::Lexer::skip";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::text";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::text";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "Class::MOP::Class::make_immutable";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "Moose::has";
+"Try::Tiny::try" -> "ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@13";
+"ANTLR::Runtime::Lexer::BEGIN@17" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Lexer::BEGIN@17";
+"ANTLR::Runtime::Lexer::BEGIN@15" -> "ANTLR::Runtime::MismatchedRangeException::BEGIN@6";
+"ANTLR::Runtime::Lexer::BEGIN@9" -> "Exception::Class::import";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::index";
+"ANTLR::Runtime::Lexer::get_char_index" -> "ANTLR::Runtime::ANTLRStringStream::index";
+"ANTLR::Runtime::Lexer::BEGIN@6" -> "feature::import";
+"ANTLR::Runtime::Lexer::skip" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::RecognizerSharedState::token";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::Lexer::next_token";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::new";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::Lexer::get_char_index";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::Lexer::CORE:match";
+"ANTLR::Runtime::Lexer::emit" -> "ANTLR::Runtime::CommonToken::set_char_position_in_line";
+"ANTLR::Runtime::Lexer::BEGIN@3" -> "English::import";
+}

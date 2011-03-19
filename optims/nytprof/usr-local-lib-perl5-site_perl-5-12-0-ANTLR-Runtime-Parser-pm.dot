@@ -1,0 +1,48 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_ANTLR_Runtime_Parser {
+	label="ANTLR::Runtime::Parser";
+	"ANTLR::Runtime::Parser::BEGIN@3";
+	"ANTLR::Runtime::Parser::input";
+	"ANTLR::Runtime::Parser::set_token_stream";
+	"ANTLR::Runtime::Parser::BEGIN@95";
+	"ANTLR::Runtime::Parser::get_current_input_symbol";
+	"ANTLR::Runtime::Parser::BUILD";
+	"ANTLR::Runtime::Parser::reset";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::LT";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::match";
+	"ANTLR::Runtime::BaseRecognizer::reset";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::new";
+}
+"ANTLR::Runtime::Parser::BEGIN@95" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Parser::get_current_input_symbol" -> "ANTLR::Runtime::Parser::input";
+"ANTLR::Runtime::Parser::reset" -> "ANTLR::Runtime::Parser::input";
+"ANTLR::Runtime::Parser::set_token_stream" -> "ANTLR::Runtime::Parser::input";
+"ANTLR::Runtime::Parser::get_current_input_symbol" -> "ANTLR::Runtime::CommonTokenStream::LT";
+"ANTLR::Runtime::BaseRecognizer::match" -> "ANTLR::Runtime::Parser::get_current_input_symbol";
+"ANTLR::Runtime::Parser::set_token_stream" -> "ANTLR::Runtime::Parser::reset";
+"ANTLR::Runtime::Parser::BUILD" -> "ANTLR::Runtime::Parser::set_token_stream";
+"ANTLR::Runtime::Parser::reset" -> "ANTLR::Runtime::BaseRecognizer::reset";
+"Lavanda2Parser::new" -> "ANTLR::Runtime::Parser::BUILD";
+"ANTLR::Runtime::Parser::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Parser::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::Parser::BEGIN@95";
+}

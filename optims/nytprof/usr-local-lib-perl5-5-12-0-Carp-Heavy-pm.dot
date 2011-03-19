@@ -1,0 +1,17 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Error_Default {
+	label="Moose::Error::Default";
+	"Moose::Error::Default::BEGIN@10";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Carp {
+	label="Carp";
+	"Carp::BEGIN@4";
+}
+"Carp::BEGIN@4" -> "Exporter::import";
+"Moose::Error::Default::BEGIN@10" -> "Carp::BEGIN@4";
+}

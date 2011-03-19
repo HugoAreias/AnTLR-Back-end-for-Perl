@@ -1,0 +1,72 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Object {
+	label="Class::MOP::Object";
+	"Class::MOP::Object::meta";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@21";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::BEGIN@19";
+	"Moose::Meta::Attribute::BEGIN@21";
+	"Moose::Meta::Attribute::BEGIN@7";
+	"Moose::Meta::Attribute::BEGIN@4";
+	"Moose::Meta::Attribute::BEGIN@10";
+	"Moose::Meta::Attribute::BEGIN@17";
+	"Moose::Meta::Attribute::BEGIN@9";
+	"Moose::Meta::Attribute::BEGIN@5";
+	"Moose::Meta::Attribute::BEGIN@15";
+	"Moose::Meta::Attribute::BEGIN@18";
+	"Moose::Meta::Attribute::BEGIN@8";
+	"Moose::Meta::Attribute::BEGIN@16";
+}
+subgraph cluster_Class_MOP_Mixin_HasAttributes {
+	label="Class::MOP::Mixin::HasAttributes";
+	"Class::MOP::Mixin::HasAttributes::add_attribute";
+}
+subgraph cluster_Moose_Meta_TypeCoercion {
+	label="Moose::Meta::TypeCoercion";
+	"Moose::Meta::TypeCoercion::BEGIN@9";
+	"Moose::Meta::TypeCoercion::BEGIN@6";
+	"Moose::Meta::TypeCoercion::BEGIN@4";
+	"Moose::Meta::TypeCoercion::BEGIN@8";
+	"Moose::Meta::TypeCoercion::BEGIN@5";
+}
+"Moose::BEGIN@21" -> "Moose::Meta::TypeCoercion::BEGIN@9";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@7";
+"Moose::BEGIN@21" -> "Moose::Meta::TypeCoercion::BEGIN@8";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Class::MOP::Object::meta";
+"Moose::Meta::TypeCoercion::BEGIN@6" -> "metaclass::import";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@8";
+"Moose::Meta::TypeCoercion::BEGIN@5" -> "warnings::import";
+"Moose::BEGIN@21" -> "Moose::Meta::TypeCoercion::BEGIN@4";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@4";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@16";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@19";
+"Moose::Meta::TypeCoercion::BEGIN@4" -> "strict::import";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@9";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@10";
+"Moose::BEGIN@21" -> "Moose::Meta::TypeCoercion::BEGIN@6";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@21";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@15";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@5";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@17";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Class::MOP::Mixin::HasAttributes::add_attribute";
+"Moose::BEGIN@21" -> "Moose::Meta::TypeCoercion::BEGIN@5";
+"Moose::Meta::TypeCoercion::BEGIN@8" -> "Moose::Meta::Attribute::BEGIN@18";
+}

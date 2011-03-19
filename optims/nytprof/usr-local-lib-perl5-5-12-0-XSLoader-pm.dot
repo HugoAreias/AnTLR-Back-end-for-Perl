@@ -1,0 +1,44 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::BEGIN@11";
+}
+subgraph cluster_Devel_GlobalDestruction {
+	label="Devel::GlobalDestruction";
+	"Devel::GlobalDestruction::BEGIN@10";
+}
+subgraph cluster_XSLoader {
+	label="XSLoader";
+	"XSLoader::load";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@596";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@11";
+	"Moose::BEGIN@15";
+}
+subgraph cluster_Attribute_Handlers {
+	label="Attribute::Handlers";
+	"Attribute::Handlers::BEGIN@110";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@5";
+}
+subgraph cluster_MRO_Compat {
+	label="MRO::Compat";
+	"MRO::Compat::BEGIN@10";
+}
+"Moose::BEGIN@11" -> "XSLoader::load";
+"Moose::Exporter::BEGIN@11" -> "XSLoader::load";
+"Moose::BEGIN@15" -> "XSLoader::load";
+"Devel::GlobalDestruction::BEGIN@10" -> "XSLoader::load";
+"Moose::Util::TypeConstraints::BEGIN@596" -> "XSLoader::load";
+"MRO::Compat::BEGIN@10" -> "XSLoader::load";
+"Attribute::Handlers::BEGIN@110" -> "XSLoader::load";
+"main::BEGIN@5" -> "XSLoader::load";
+}

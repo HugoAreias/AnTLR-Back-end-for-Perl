@@ -1,0 +1,116 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Meta_Role_Composite {
+	label="Moose::Meta::Role::Composite";
+	"Moose::Meta::Role::Composite::new";
+	"Moose::Meta::Role::Composite::__ANON__[Moose/Meta/Role/Composite.pm:30]";
+	"Moose::Meta::Role::Composite::BEGIN@13";
+	"Moose::Meta::Role::Composite::BEGIN@7";
+	"Moose::Meta::Role::Composite::application_role_summation_class";
+	"Moose::Meta::Role::Composite::name";
+	"Moose::Meta::Role::Composite::BEGIN@3";
+	"Moose::Meta::Role::Composite::add_method";
+	"Moose::Meta::Role::Composite::_method_map";
+	"Moose::Meta::Role::Composite::apply_params";
+	"Moose::Meta::Role::Composite::BEGIN@4";
+	"Moose::Meta::Role::Composite::_get_local_methods";
+	"Moose::Meta::Role::Composite::_new";
+	"Moose::Meta::Role::Composite::BEGIN@5";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::load_class";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::composition_class_roles";
+	"Moose::Meta::Role::combine";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@28";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_Role_Application_RoleSummation {
+	label="Moose::Meta::Role::Application::RoleSummation";
+	"Moose::Meta::Role::Application::RoleSummation::apply_methods";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::name";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+	"UNIVERSAL::can";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::clone";
+	"Class::MOP::Method::body";
+	"Class::MOP::Method::package_name";
+}
+subgraph cluster_Moose_Meta_Role_Application {
+	label="Moose::Meta::Role::Application";
+	"Moose::Meta::Role::Application::new";
+	"Moose::Meta::Role::Application::apply";
+}
+subgraph cluster_Moose_Meta_Role_Application_ToClass {
+	label="Moose::Meta::Role::Application::ToClass";
+	"Moose::Meta::Role::Application::ToClass::apply_methods";
+}
+"Moose::Meta::Role::Composite::add_method" -> "Class::MOP::Method::package_name";
+"Moose::Meta::Role::Composite::BEGIN@7" -> "Exporter::import";
+"Moose::Meta::Role::Composite::add_method" -> "Moose::Meta::Role::Composite::_method_map";
+"Moose::Meta::Role::Composite::_get_local_methods" -> "Moose::Meta::Role::Composite::_method_map";
+"Moose::Meta::Role::Composite::apply_params" -> "Moose::Meta::Role::Composite::application_role_summation_class";
+"Moose::Meta::Role::Composite::add_method" -> "Scalar::Util::blessed";
+"Moose::Meta::Role::Composite::new" -> "Moose::Meta::Role::Composite::_new";
+"Moose::BEGIN@28" -> "Moose::Meta::Role::Composite::BEGIN@3";
+"Moose::Meta::Role::combine" -> "Moose::Meta::Role::Composite::new";
+"Moose::Meta::Role::Composite::apply_params" -> "Moose::Meta::Role::Application::apply";
+"Moose::Meta::Role::Composite::BEGIN@5" -> "metaclass::import";
+"Moose::Meta::Role::Composite::add_method" -> "UNIVERSAL::can";
+"Moose::Meta::Role::Composite::BEGIN@13" -> "base::import";
+"Moose::Meta::Role::Composite::BEGIN@4" -> "warnings::import";
+"Moose::BEGIN@28" -> "Moose::Meta::Role::Composite::BEGIN@5";
+"Moose::Meta::Role::Composite::new" -> "Moose::Meta::Role::composition_class_roles";
+"Moose::Meta::Role::Composite::new" -> "Class::MOP::Package::name";
+"Moose::Meta::Role::Composite::BEGIN@3" -> "strict::import";
+"Moose::Meta::Role::Application::RoleSummation::apply_methods" -> "Moose::Meta::Role::Composite::add_method";
+"Moose::Meta::Role::combine" -> "Moose::Meta::Role::Composite::apply_params";
+"Moose::Meta::Role::Composite::apply_params" -> "Class::MOP::load_class";
+"Moose::Meta::Role::Composite::add_method" -> "Class::MOP::Method::clone";
+"Moose::BEGIN@28" -> "Moose::Meta::Role::Composite::BEGIN@4";
+"Moose::Meta::Role::Composite::_new" -> "Moose::Meta::Role::Composite::__ANON__[Moose/Meta/Role/Composite.pm:30]";
+"Moose::Meta::Role::Application::ToClass::apply_methods" -> "Moose::Meta::Role::Composite::_get_local_methods";
+"Moose::Meta::Role::Composite::add_method" -> "Moose::Meta::Role::Composite::name";
+"Moose::Meta::Role::Composite::apply_params" -> "Moose::Meta::Role::Application::new";
+"Moose::Meta::Role::Composite::new" -> "UNIVERSAL::isa";
+"Moose::BEGIN@28" -> "Moose::Meta::Role::Composite::BEGIN@7";
+"Moose::Meta::Role::Composite::add_method" -> "Class::MOP::Method::body";
+"Moose::BEGIN@28" -> "Moose::Meta::Role::Composite::BEGIN@13";
+}

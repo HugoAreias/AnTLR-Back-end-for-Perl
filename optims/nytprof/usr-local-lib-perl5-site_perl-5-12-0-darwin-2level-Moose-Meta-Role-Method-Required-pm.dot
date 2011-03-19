@@ -1,0 +1,50 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::add_required_methods";
+	"Moose::Meta::Role::BEGIN@19";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::import";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+subgraph cluster_Moose_Meta_Role_Method_Required {
+	label="Moose::Meta::Role::Method::Required";
+	"Moose::Meta::Role::Method::Required::BEGIN@11";
+	"Moose::Meta::Role::Method::Required::BEGIN@4";
+	"Moose::Meta::Role::Method::Required::BEGIN@5";
+	"Moose::Meta::Role::Method::Required::_new";
+	"Moose::Meta::Role::Method::Required::BEGIN@6";
+	"Moose::Meta::Role::Method::Required::new";
+	"Moose::Meta::Role::Method::Required::BEGIN@8";
+}
+"Moose::Meta::Role::BEGIN@19" -> "Moose::Meta::Role::Method::Required::BEGIN@5";
+"Moose::Meta::Role::Method::Required::new" -> "Moose::Meta::Role::Method::Required::_new";
+"Moose::Meta::Role::Method::Required::BEGIN@6" -> "metaclass::import";
+"Moose::Meta::Role::add_required_methods" -> "Moose::Meta::Role::Method::Required::new";
+"Moose::Meta::Role::Method::Required::BEGIN@11" -> "base::import";
+"Moose::Meta::Role::Method::Required::BEGIN@8" -> "overload::import";
+"Moose::Meta::Role::Method::Required::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Role::Method::Required::BEGIN@4" -> "strict::import";
+"Moose::Meta::Role::BEGIN@19" -> "Moose::Meta::Role::Method::Required::BEGIN@6";
+"Moose::Meta::Role::BEGIN@19" -> "Moose::Meta::Role::Method::Required::BEGIN@8";
+"Moose::Meta::Role::BEGIN@19" -> "Moose::Meta::Role::Method::Required::BEGIN@4";
+"Moose::Meta::Role::BEGIN@19" -> "Moose::Meta::Role::Method::Required::BEGIN@11";
+}

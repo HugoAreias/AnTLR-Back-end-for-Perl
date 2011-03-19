@@ -1,0 +1,92 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_BitSet {
+	label="ANTLR::Runtime::BitSet";
+	"ANTLR::Runtime::BitSet::BEGIN@11";
+}
+subgraph cluster_ANTLR_Runtime_UnwantedTokenException {
+	label="ANTLR::Runtime::UnwantedTokenException";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@8";
+}
+subgraph cluster_Devel_StackTrace {
+	label="Devel::StackTrace";
+	"Devel::StackTrace::BEGIN@12";
+}
+subgraph cluster_ANTLR_Runtime_MissingTokenException {
+	label="ANTLR::Runtime::MissingTokenException";
+	"ANTLR::Runtime::MissingTokenException::BEGIN@6";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedSetException {
+	label="ANTLR::Runtime::MismatchedSetException";
+	"ANTLR::Runtime::MismatchedSetException::BEGIN@6";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::BEGIN@7";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::OVERLOAD";
+	"overload::BEGIN@145";
+	"overload::import";
+	"overload::CORE:match";
+}
+subgraph cluster_ANTLR_Runtime_NoViableAltException {
+	label="ANTLR::Runtime::NoViableAltException";
+	"ANTLR::Runtime::NoViableAltException::BEGIN@6";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedRangeException {
+	label="ANTLR::Runtime::MismatchedRangeException";
+	"ANTLR::Runtime::MismatchedRangeException::BEGIN@6";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@5";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@13";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedTokenException {
+	label="ANTLR::Runtime::MismatchedTokenException";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@8";
+}
+subgraph cluster_Moose_Meta_Role_Method_Required {
+	label="Moose::Meta::Role::Method::Required";
+	"Moose::Meta::Role::Method::Required::BEGIN@8";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::BEGIN@19";
+}
+subgraph cluster_Moose_Meta_TypeConstraint {
+	label="Moose::Meta::TypeConstraint";
+	"Moose::Meta::TypeConstraint::BEGIN@8";
+}
+subgraph cluster_Exception_Class_Base {
+	label="Exception::Class::Base";
+	"Exception::Class::Base::BEGIN@34";
+}
+subgraph cluster_warnings_register {
+	label="warnings::register";
+	"warnings::register::import";
+}
+"overload::BEGIN@145" -> "warnings::register::import";
+"overload::import" -> "overload::OVERLOAD";
+"ANTLR::Runtime::MismatchedSetException::BEGIN@6" -> "overload::import";
+"ANTLR::Runtime::NoViableAltException::BEGIN@6" -> "overload::import";
+"ANTLR::Runtime::MismatchedTokenException::BEGIN@8" -> "overload::import";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@13" -> "overload::import";
+"ANTLR::Runtime::MismatchedRangeException::BEGIN@6" -> "overload::import";
+"Moose::Meta::Role::Method::Required::BEGIN@8" -> "overload::import";
+"Class::MOP::Method::BEGIN@19" -> "overload::import";
+"ANTLR::Runtime::BitSet::BEGIN@11" -> "overload::import";
+"ANTLR::Runtime::UnwantedTokenException::BEGIN@8" -> "overload::import";
+"Exception::Class::Base::BEGIN@34" -> "overload::import";
+"Moose::Meta::TypeConstraint::BEGIN@8" -> "overload::import";
+"Devel::StackTrace::BEGIN@12" -> "overload::import";
+"ANTLR::Runtime::MissingTokenException::BEGIN@6" -> "overload::import";
+"ANTLR::Runtime::CommonToken::BEGIN@7" -> "overload::import";
+"main::BEGIN@5" -> "overload::BEGIN@145";
+"overload::OVERLOAD" -> "overload::CORE:match";
+}

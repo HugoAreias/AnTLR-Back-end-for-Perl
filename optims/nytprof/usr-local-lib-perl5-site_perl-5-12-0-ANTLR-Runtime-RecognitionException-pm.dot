@@ -1,0 +1,24 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_ANTLR_Runtime_RecognitionException {
+	label="ANTLR::Runtime::RecognitionException";
+	"ANTLR::Runtime::RecognitionException::BEGIN@138";
+	"ANTLR::Runtime::RecognitionException::BEGIN@3";
+	"ANTLR::Runtime::RecognitionException::BEGIN@4";
+}
+"ANTLR::Runtime::RecognitionException::BEGIN@138" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::RecognitionException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::RecognitionException::BEGIN@4" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::BEGIN@138";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::BEGIN@4";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RecognitionException::BEGIN@3";
+}

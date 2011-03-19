@@ -1,0 +1,41 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::BEGIN@17";
+}
+subgraph cluster_Moose_Meta_Method_Delegation {
+	label="Moose::Meta::Method::Delegation";
+	"Moose::Meta::Method::Delegation::BEGIN@8";
+	"Moose::Meta::Method::Delegation::BEGIN@7";
+	"Moose::Meta::Method::Delegation::BEGIN@4";
+	"Moose::Meta::Method::Delegation::BEGIN@14";
+	"Moose::Meta::Method::Delegation::BEGIN@5";
+}
+"Moose::Meta::Attribute::BEGIN@17" -> "Moose::Meta::Method::Delegation::BEGIN@4";
+"Moose::Meta::Attribute::BEGIN@17" -> "Moose::Meta::Method::Delegation::BEGIN@8";
+"Moose::Meta::Method::Delegation::BEGIN@8" -> "Exporter::import";
+"Moose::Meta::Method::Delegation::BEGIN@7" -> "Exporter::import";
+"Moose::Meta::Attribute::BEGIN@17" -> "Moose::Meta::Method::Delegation::BEGIN@5";
+"Moose::Meta::Attribute::BEGIN@17" -> "Moose::Meta::Method::Delegation::BEGIN@7";
+"Moose::Meta::Method::Delegation::BEGIN@14" -> "base::import";
+"Moose::Meta::Method::Delegation::BEGIN@5" -> "warnings::import";
+"Moose::Meta::Method::Delegation::BEGIN@4" -> "strict::import";
+"Moose::Meta::Attribute::BEGIN@17" -> "Moose::Meta::Method::Delegation::BEGIN@14";
+}

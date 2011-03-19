@@ -1,0 +1,31 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Error_Default {
+	label="Moose::Error::Default";
+	"Moose::Error::Default::BEGIN@10";
+	"Moose::Error::Default::BEGIN@3";
+	"Moose::Error::Default::BEGIN@4";
+}
+subgraph cluster_Carp {
+	label="Carp";
+	"Carp::BEGIN@4";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::BEGIN@21";
+}
+"Moose::Meta::Class::BEGIN@21" -> "Moose::Error::Default::BEGIN@10";
+"Moose::Error::Default::BEGIN@10" -> "Carp::BEGIN@4";
+"Moose::Error::Default::BEGIN@4" -> "warnings::import";
+"Moose::Error::Default::BEGIN@3" -> "strict::import";
+"Moose::Meta::Class::BEGIN@21" -> "Moose::Error::Default::BEGIN@3";
+"Moose::Meta::Class::BEGIN@21" -> "Moose::Error::Default::BEGIN@4";
+}

@@ -1,0 +1,147 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Config {
+	label="Config";
+	"Config::FETCH";
+}
+subgraph cluster_DynaLoader {
+	label="DynaLoader";
+	"DynaLoader::BEGIN@18";
+	"DynaLoader::CORE:regcomp";
+	"DynaLoader::BEGIN@25";
+	"DynaLoader::bootstrap";
+}
+subgraph cluster_Class_MOP_Deprecated {
+	label="Class::MOP::Deprecated";
+	"Class::MOP::Deprecated::BEGIN@10";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::BEGIN@13";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@28";
+}
+subgraph cluster_Params_Util {
+	label="Params::Util";
+	"Params::Util::_HASH";
+	"Params::Util::BEGIN@65";
+	"Params::Util::BEGIN@58";
+	"Params::Util::BEGIN@59";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@14";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Sub_Install {
+	label="Sub::Install";
+	"Sub::Install::__ANON__[Sub/Install.pm:132]";
+	"Sub::Install::BEGIN@148";
+	"Sub::Install::BEGIN@4";
+	"Sub::Install::BEGIN@3";
+	"Sub::Install::BEGIN@6";
+	"Sub::Install::BEGIN@184";
+	"Sub::Install::BEGIN@287";
+	"Sub::Install::BEGIN@139";
+	"Sub::Install::BEGIN@190";
+	"Sub::Install::BEGIN@7";
+	"Sub::Install::__ANON__[Sub/Install.pm:284]";
+}
+subgraph cluster_Moose_Util_MetaRole {
+	label="Moose::Util::MetaRole";
+	"Moose::Util::MetaRole::BEGIN@13";
+}
+subgraph cluster_AutoLoader {
+	label="AutoLoader";
+	"AutoLoader::BEGIN@138";
+	"AutoLoader::BEGIN@30";
+	"AutoLoader::BEGIN@4";
+	"AutoLoader::BEGIN@3";
+	"AutoLoader::BEGIN@186";
+	"AutoLoader::BEGIN@13";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::BEGIN@2";
+	"Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+	"Package::DeprecationManager::_build_warn";
+	"Package::DeprecationManager::import";
+	"Package::DeprecationManager::BEGIN@9";
+	"Package::DeprecationManager::BEGIN@11";
+	"Package::DeprecationManager::_build_import";
+	"Package::DeprecationManager::BEGIN@10";
+	"Package::DeprecationManager::BEGIN@6";
+	"Package::DeprecationManager::BEGIN@7";
+}
+subgraph cluster_Moose_Util_TypeConstraints_OptimizedConstraints {
+	label="Moose::Util::TypeConstraints::OptimizedConstraints";
+	"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@7";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::BEGIN@15";
+}
+subgraph cluster_Moose_Deprecated {
+	label="Moose::Deprecated";
+	"Moose::Deprecated::BEGIN@10";
+}
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@138";
+"Package::DeprecationManager::BEGIN@10" -> "Exporter::import";
+"Package::DeprecationManager::BEGIN@9" -> "Exporter::import";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@9";
+"Moose::Util::TypeConstraints::BEGIN@28" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Util::TypeConstraints::OptimizedConstraints::BEGIN@7" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::BEGIN@14" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Meta::Attribute::BEGIN@15" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Util::MetaRole::BEGIN@13" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Exporter::BEGIN@13" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@190";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@6";
+"Package::DeprecationManager::import" -> "Params::Util::_HASH";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@7";
+"Package::DeprecationManager::BEGIN@10" -> "Params::Util::BEGIN@65";
+"Package::DeprecationManager::BEGIN@10" -> "Params::Util::BEGIN@58";
+"Package::DeprecationManager::BEGIN@7" -> "warnings::import";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@7";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@186";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@184";
+"Package::DeprecationManager::BEGIN@10" -> "Config::FETCH";
+"Package::DeprecationManager::import" -> "Package::DeprecationManager::_build_import";
+"Package::DeprecationManager::BEGIN@6" -> "strict::import";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::__ANON__[Sub/Install.pm:284]";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@3";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@11";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::bootstrap";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::import";
+"Class::MOP::Deprecated::BEGIN@10" -> "Package::DeprecationManager::import";
+"Package::DeprecationManager::BEGIN@10" -> "Params::Util::BEGIN@59";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@2";
+"Package::DeprecationManager::import" -> "Package::DeprecationManager::_build_warn";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@4";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::BEGIN@25";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@148";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@13";
+"Package::DeprecationManager::import" -> "Sub::Install::__ANON__[Sub/Install.pm:132]";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@287";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@10";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@4";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@3";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@6";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@139";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::CORE:regcomp";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::BEGIN@18";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@30";
+}

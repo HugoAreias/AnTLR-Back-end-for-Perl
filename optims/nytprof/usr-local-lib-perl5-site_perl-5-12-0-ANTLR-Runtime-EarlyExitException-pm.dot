@@ -1,0 +1,21 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_ANTLR_Runtime_EarlyExitException {
+	label="ANTLR::Runtime::EarlyExitException";
+	"ANTLR::Runtime::EarlyExitException::BEGIN@3";
+	"ANTLR::Runtime::EarlyExitException::BEGIN@13";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@18";
+}
+"ANTLR::Runtime::EarlyExitException::BEGIN@13" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Lavanda2Lexer::BEGIN@18" -> "ANTLR::Runtime::EarlyExitException::BEGIN@13";
+"ANTLR::Runtime::EarlyExitException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Lexer::BEGIN@18" -> "ANTLR::Runtime::EarlyExitException::BEGIN@3";
+}

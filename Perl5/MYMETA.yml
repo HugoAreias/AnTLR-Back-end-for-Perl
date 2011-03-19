@@ -1,0 +1,78 @@
+---
+abstract: 'ANTLR Runtime for Perl 5'
+author:
+  - 'Ronald Blaschke (ron@rblasch.org)'
+build_requires:
+  Java::JVM::Classfile: 0.20
+  Test::Class: 0.28
+configure_requires:
+  Module::Build: 0.36
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3603'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: ANTLR-Runtime
+provides:
+  ANTLR::Runtime:
+    file: lib/ANTLR/Runtime.pm
+    version: v0.0.1
+  ANTLR::Runtime::ANTLRFileStream:
+    file: lib/ANTLR/Runtime/ANTLRFileStream.pm
+  ANTLR::Runtime::ANTLRStringStream:
+    file: lib/ANTLR/Runtime/ANTLRStringStream.pm
+  ANTLR::Runtime::BaseRecognizer:
+    file: lib/ANTLR/Runtime/BaseRecognizer.pm
+  ANTLR::Runtime::BitSet:
+    file: lib/ANTLR/Runtime/BitSet.pm
+  ANTLR::Runtime::CharStream:
+    file: lib/ANTLR/Runtime/CharStream.pm
+  ANTLR::Runtime::CharStreamState:
+    file: lib/ANTLR/Runtime/CharStreamState.pm
+  ANTLR::Runtime::CommonToken:
+    file: lib/ANTLR/Runtime/CommonToken.pm
+  ANTLR::Runtime::CommonTokenStream:
+    file: lib/ANTLR/Runtime/CommonTokenStream.pm
+  ANTLR::Runtime::DFA:
+    file: lib/ANTLR/Runtime/DFA.pm
+  ANTLR::Runtime::EarlyExitException:
+    file: lib/ANTLR/Runtime/EarlyExitException.pm
+  ANTLR::Runtime::Exception:
+    file: lib/ANTLR/Runtime/Exception.pm
+  ANTLR::Runtime::IntStream:
+    file: lib/ANTLR/Runtime/IntStream.pm
+  ANTLR::Runtime::Lexer:
+    file: lib/ANTLR/Runtime/Lexer.pm
+  ANTLR::Runtime::MismatchedSetException:
+    file: lib/ANTLR/Runtime/MismatchedSetException.pm
+  ANTLR::Runtime::MismatchedTokenException:
+    file: lib/ANTLR/Runtime/MismatchedTokenException.pm
+  ANTLR::Runtime::MissingTokenException:
+    file: lib/ANTLR/Runtime/MissingTokenException.pm
+  ANTLR::Runtime::NoViableAltException:
+    file: lib/ANTLR/Runtime/NoViableAltException.pm
+  ANTLR::Runtime::Parser:
+    file: lib/ANTLR/Runtime/Parser.pm
+  ANTLR::Runtime::RecognitionException:
+    file: lib/ANTLR/Runtime/RecognitionException.pm
+  ANTLR::Runtime::Stream:
+    file: lib/ANTLR/Runtime/Stream.pm
+  ANTLR::Runtime::Token:
+    file: lib/ANTLR/Runtime/Token.pm
+  ANTLR::Runtime::TokenSource:
+    file: lib/ANTLR/Runtime/TokenSource.pm
+  ANTLR::Runtime::TokenStream:
+    file: lib/ANTLR/Runtime/TokenStream.pm
+  ANTLR::Runtime::UnwantedTokenException:
+    file: lib/ANTLR/Runtime/UnwantedTokenException.pm
+requires:
+  Carp: 1.04
+  Error: 0.17014
+  List::MoreUtils: 0.22
+  Moose: 0.82
+  Readonly: 1.03
+  Want: 0.18
+resources:
+  license: http://dev.perl.org/licenses/
+version: v0.0.1

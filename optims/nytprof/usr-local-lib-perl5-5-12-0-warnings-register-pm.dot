@@ -1,0 +1,24 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_vars {
+	label="vars";
+	"vars::BEGIN@7";
+}
+subgraph cluster_constant {
+	label="constant";
+	"constant::BEGIN@4";
+}
+subgraph cluster_overload {
+	label="overload";
+	"overload::BEGIN@145";
+}
+subgraph cluster_warnings_register {
+	label="warnings::register";
+	"warnings::register::mkMask";
+	"warnings::register::import";
+}
+"warnings::register::import" -> "warnings::register::mkMask";
+"constant::BEGIN@4" -> "warnings::register::import";
+"overload::BEGIN@145" -> "warnings::register::import";
+"vars::BEGIN@7" -> "warnings::register::import";
+}

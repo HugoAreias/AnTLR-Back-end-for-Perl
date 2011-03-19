@@ -1,0 +1,65 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Config {
+	label="Config";
+	"Config::FETCH";
+}
+subgraph cluster_Errno {
+	label="Errno";
+	"Errno::BEGIN@162";
+	"Errno::BEGIN@9";
+	"Errno::BEGIN@8";
+	"Errno::TIEHASH";
+	"Errno::BEGIN@7";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+}
+subgraph cluster_English {
+	label="English";
+	"English::import";
+	"English::BEGIN@187";
+	"English::CORE:match";
+	"English::BEGIN@148";
+	"English::BEGIN@47";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::BEGIN@3";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@8";
+}
+subgraph cluster_Tie_Hash_NamedCapture {
+	label="Tie::Hash::NamedCapture";
+	"Tie::Hash::NamedCapture::TIEHASH";
+	"Tie::Hash::NamedCapture::flags";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@8";
+}
+"English::BEGIN@187" -> "Errno::BEGIN@8";
+"English::import" -> "Exporter::import";
+"English::BEGIN@187" -> "Errno::BEGIN@7";
+"English::BEGIN@187" -> "Errno::BEGIN@162";
+"Lavanda2Lexer::BEGIN@8" -> "English::BEGIN@148";
+"English::BEGIN@187" -> "Config::FETCH";
+"English::import" -> "English::CORE:match";
+"Lavanda2Lexer::BEGIN@8" -> "English::BEGIN@187";
+"English::BEGIN@148" -> "Tie::Hash::NamedCapture::flags";
+"English::BEGIN@47" -> "warnings::unimport";
+"Lavanda2Lexer::BEGIN@8" -> "English::BEGIN@47";
+"English::BEGIN@148" -> "Tie::Hash::NamedCapture::TIEHASH";
+"English::BEGIN@187" -> "Errno::BEGIN@9";
+"English::BEGIN@187" -> "Errno::TIEHASH";
+"Lavanda2Lexer::BEGIN@8" -> "English::import";
+"Lavanda2Parser::BEGIN@8" -> "English::import";
+"ANTLR::Runtime::Lexer::BEGIN@3" -> "English::import";
+}

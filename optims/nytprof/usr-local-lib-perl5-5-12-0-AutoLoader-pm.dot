@@ -1,0 +1,31 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_AutoLoader {
+	label="AutoLoader";
+	"AutoLoader::BEGIN@138";
+	"AutoLoader::BEGIN@30";
+	"AutoLoader::BEGIN@4";
+	"AutoLoader::BEGIN@3";
+	"AutoLoader::BEGIN@186";
+	"AutoLoader::BEGIN@13";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::BEGIN@10";
+}
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@138";
+"AutoLoader::BEGIN@138" -> "strict::unimport";
+"AutoLoader::BEGIN@186" -> "strict::unimport";
+"AutoLoader::BEGIN@30" -> "strict::unimport";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@186";
+"AutoLoader::BEGIN@3" -> "strict::import";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@3";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@13";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@4";
+"Package::DeprecationManager::BEGIN@10" -> "AutoLoader::BEGIN@30";
+}

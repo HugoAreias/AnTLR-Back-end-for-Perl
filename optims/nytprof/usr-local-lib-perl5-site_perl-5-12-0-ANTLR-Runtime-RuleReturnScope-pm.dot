@@ -1,0 +1,21 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_RuleReturnScope {
+	label="ANTLR::Runtime::RuleReturnScope";
+	"ANTLR::Runtime::RuleReturnScope::BEGIN@26";
+	"ANTLR::Runtime::RuleReturnScope::BEGIN@3";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+"ANTLR::Runtime::RuleReturnScope::BEGIN@26" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RuleReturnScope::BEGIN@3";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::RuleReturnScope::BEGIN@26";
+"ANTLR::Runtime::RuleReturnScope::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}

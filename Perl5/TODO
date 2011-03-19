@@ -1,0 +1,38 @@
+solve dollar sign escape conflict with Terence Parr
+generate main script
+make install generated LP
+change classes path in the build, makefile and tests
+change the required modules in the build and makefile (Carp, Moose, Data::Lock, Try::Tiny)
+use Params::Validate qw( :types ) to verify method parameters
+
+RUNTIME
+
+Moose does not recognizes local variables as instance variables
+verify if not required variables can be undef. Add Maybe if needed
+verify if required fields appear in all constructs in Java version. Solve this with Params::Validate
+IntStream is not implemented by any other stream class, it must be implemented by the class that uses it
+missing the constructor for a list of integers in BitSet (BUILDARGS)
+add debug variable in DFA
+missing extract_information_from_tree_node_stream method in RecognitionException
+(NA efficiency decision) replace moose mutators for hand written set mutators
+CommonToken to_String() dependencies: MissingTokenException
+(done) change next_token method in Lexer
+(done) missing some exceptions in method get_error_message in BaseRecognizer
+(done) added accessors in CharStreamState
+(done) switched readonly for dlock
+(done) added condition in CommonToken BUILD
+(done) added toString method in CommonToken
+(done) added reset method in CommonTokenStream
+(done) added BUILD in RecognizerSharedState
+(done) changed combine_follows in BaseRecognizer
+(done) commented mismatch and recover_from_mismatched_element methods in BaseRecognizer
+(done) changed of method in BitSet
+(done) changed or_in_place in BitSet
+(done) changed is_nil return in BitSet
+(done) missing the BUILD in Parser
+
+StringTemplate
+
+review cyclicDFA template
+review scopeSetAttributeRef and scopeAttributeRef
+missing delegators of both lexer and parser

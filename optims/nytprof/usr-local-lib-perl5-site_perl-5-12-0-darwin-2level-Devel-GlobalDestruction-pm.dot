@@ -1,0 +1,63 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Sub_Exporter {
+	label="Sub::Exporter";
+	"Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+	"Sub::Exporter::BEGIN@7";
+	"Sub::Exporter::BEGIN@8";
+	"Sub::Exporter::BEGIN@6";
+	"Sub::Exporter::BEGIN@636";
+	"Sub::Exporter::setup_exporter";
+	"Sub::Exporter::BEGIN@9";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Devel_GlobalDestruction {
+	label="Devel::GlobalDestruction";
+	"Devel::GlobalDestruction::BEGIN@26";
+	"Devel::GlobalDestruction::BEGIN@8";
+	"Devel::GlobalDestruction::BEGIN@2";
+	"Devel::GlobalDestruction::BEGIN@1";
+	"Devel::GlobalDestruction::BEGIN@10";
+	"Devel::GlobalDestruction::BEGIN@5";
+	"Devel::GlobalDestruction::BEGIN@3";
+	"Devel::GlobalDestruction::BEGIN@6";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::BEGIN@15";
+}
+subgraph cluster_XSLoader {
+	label="XSLoader";
+	"XSLoader::load";
+}
+"Class::MOP::Class::BEGIN@15" -> "Devel::GlobalDestruction::BEGIN@5";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::BEGIN@6";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::BEGIN@9";
+"Class::MOP::Class::BEGIN@15" -> "Devel::GlobalDestruction::BEGIN@8";
+"Devel::GlobalDestruction::BEGIN@26" -> "Devel::GlobalDestruction::BEGIN@1";
+"Class::MOP::Class::BEGIN@15" -> "Devel::GlobalDestruction::BEGIN@10";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+"Devel::GlobalDestruction::BEGIN@6" -> "warnings::import";
+"Devel::GlobalDestruction::BEGIN@8" -> "vars::import";
+"Class::MOP::Class::BEGIN@15" -> "Devel::GlobalDestruction::BEGIN@26";
+"Devel::GlobalDestruction::BEGIN@5" -> "strict::import";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::BEGIN@8";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::BEGIN@7";
+"Devel::GlobalDestruction::BEGIN@10" -> "XSLoader::load";
+"Devel::GlobalDestruction::BEGIN@26" -> "Devel::GlobalDestruction::BEGIN@3";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::setup_exporter";
+"Class::MOP::Class::BEGIN@15" -> "Devel::GlobalDestruction::BEGIN@6";
+"Devel::GlobalDestruction::BEGIN@26" -> "Sub::Exporter::BEGIN@636";
+"Devel::GlobalDestruction::BEGIN@26" -> "Devel::GlobalDestruction::BEGIN@2";
+}

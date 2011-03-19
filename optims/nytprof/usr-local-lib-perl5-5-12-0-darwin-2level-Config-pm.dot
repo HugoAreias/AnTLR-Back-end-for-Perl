@@ -1,0 +1,59 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Config {
+	label="Config";
+	"Config::BEGIN@35";
+	"Config::CORE:match";
+	"Config::CORE:subst";
+	"Config::TIEHASH";
+	"Config::BEGIN@5";
+	"Config::fetch_string";
+	"Config::AUTOLOAD";
+	"Config::import";
+	"Config::CORE:pack";
+	"Config::BEGIN@9";
+	"Config::launcher";
+	"Config::CORE:substcont";
+	"Config::CORE:unpack";
+	"Config::FETCH";
+}
+subgraph cluster_DynaLoader {
+	label="DynaLoader";
+	"DynaLoader::BEGIN@25";
+}
+subgraph cluster_Errno {
+	label="Errno";
+	"Errno::BEGIN@8";
+}
+subgraph cluster_English {
+	label="English";
+	"English::BEGIN@187";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::BEGIN@10";
+}
+"Config::AUTOLOAD" -> "Config::CORE:substcont";
+"Config::FETCH" -> "Config::fetch_string";
+"DynaLoader::BEGIN@25" -> "Config::TIEHASH";
+"Errno::BEGIN@8" -> "Config::import";
+"DynaLoader::BEGIN@25" -> "Config::import";
+"Config::BEGIN@35" -> "strict::unimport";
+"Config::FETCH" -> "Config::AUTOLOAD";
+"Config::FETCH" -> "Config::launcher";
+"Config::AUTOLOAD" -> "Config::CORE:unpack";
+"Config::AUTOLOAD" -> "Config::BEGIN@5";
+"Package::DeprecationManager::BEGIN@10" -> "Config::FETCH";
+"English::BEGIN@187" -> "Config::FETCH";
+"Config::AUTOLOAD" -> "Config::CORE:subst";
+"Config::BEGIN@9" -> "strict::import";
+"Config::AUTOLOAD" -> "Config::CORE:match";
+"Config::AUTOLOAD" -> "Config::CORE:pack";
+"DynaLoader::BEGIN@25" -> "Config::BEGIN@35";
+"DynaLoader::BEGIN@25" -> "Config::BEGIN@9";
+}

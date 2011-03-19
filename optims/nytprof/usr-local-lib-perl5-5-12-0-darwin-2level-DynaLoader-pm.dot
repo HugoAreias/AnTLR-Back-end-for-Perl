@@ -1,0 +1,86 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Config {
+	label="Config";
+	"Config::BEGIN@35";
+	"Config::TIEHASH";
+	"Config::BEGIN@9";
+	"Config::import";
+}
+subgraph cluster_DynaLoader {
+	label="DynaLoader";
+	"DynaLoader::CORE:ftfile";
+	"DynaLoader::CORE:ftsize";
+	"DynaLoader::CORE:regcomp";
+	"DynaLoader::dl_undef_symbols";
+	"DynaLoader::BEGIN@25";
+	"DynaLoader::dl_find_symbol";
+	"DynaLoader::dl_load_file";
+	"DynaLoader::CORE:subst";
+	"DynaLoader::BEGIN@18";
+	"DynaLoader::dl_load_flags";
+	"DynaLoader::dl_install_xsub";
+	"DynaLoader::CORE:ftdir";
+	"DynaLoader::bootstrap";
+}
+subgraph cluster_List_MoreUtils {
+	label="List::MoreUtils";
+	"List::MoreUtils::bootstrap";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::BEGIN@17";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::BEGIN@12";
+}
+subgraph cluster_Params_Util {
+	label="Params::Util";
+	"Params::Util::bootstrap";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::bootstrap";
+	"Moose::BEGIN@15";
+}
+subgraph cluster_version {
+	label="version";
+	"version::(bool";
+	"version::(cmp";
+}
+subgraph cluster_Sub_Name {
+	label="Sub::Name";
+	"Sub::Name::bootstrap";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::BEGIN@10";
+}
+"DynaLoader::bootstrap" -> "DynaLoader::CORE:ftsize";
+"DynaLoader::BEGIN@25" -> "Config::TIEHASH";
+"DynaLoader::BEGIN@25" -> "Config::import";
+"DynaLoader::bootstrap" -> "DynaLoader::dl_load_flags";
+"DynaLoader::bootstrap" -> "DynaLoader::dl_load_file";
+"DynaLoader::bootstrap" -> "Params::Util::bootstrap";
+"DynaLoader::bootstrap" -> "DynaLoader::dl_find_symbol";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::bootstrap";
+"Class::MOP::Class::BEGIN@17" -> "DynaLoader::bootstrap";
+"Class::MOP::Mixin::HasMethods::BEGIN@12" -> "DynaLoader::bootstrap";
+"Moose::BEGIN@15" -> "DynaLoader::bootstrap";
+"DynaLoader::BEGIN@25" -> "Config::BEGIN@35";
+"DynaLoader::BEGIN@25" -> "version::(bool";
+"DynaLoader::bootstrap" -> "DynaLoader::CORE:subst";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::BEGIN@25";
+"DynaLoader::BEGIN@25" -> "Config::BEGIN@9";
+"DynaLoader::bootstrap" -> "DynaLoader::CORE:ftdir";
+"DynaLoader::bootstrap" -> "DynaLoader::dl_undef_symbols";
+"DynaLoader::bootstrap" -> "DynaLoader::dl_install_xsub";
+"DynaLoader::bootstrap" -> "Moose::bootstrap";
+"DynaLoader::bootstrap" -> "Sub::Name::bootstrap";
+"DynaLoader::bootstrap" -> "List::MoreUtils::bootstrap";
+"DynaLoader::bootstrap" -> "DynaLoader::CORE:ftfile";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::CORE:regcomp";
+"DynaLoader::BEGIN@25" -> "version::(cmp";
+"Package::DeprecationManager::BEGIN@10" -> "DynaLoader::BEGIN@18";
+}

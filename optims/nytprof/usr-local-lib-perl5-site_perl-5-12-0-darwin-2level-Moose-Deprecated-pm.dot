@@ -1,0 +1,43 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@14";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::BEGIN@2";
+	"Package::DeprecationManager::BEGIN@10";
+	"Package::DeprecationManager::import";
+	"Package::DeprecationManager::BEGIN@6";
+	"Package::DeprecationManager::BEGIN@9";
+	"Package::DeprecationManager::BEGIN@7";
+	"Package::DeprecationManager::BEGIN@11";
+}
+subgraph cluster_Moose_Deprecated {
+	label="Moose::Deprecated";
+	"Moose::Deprecated::BEGIN@10";
+	"Moose::Deprecated::BEGIN@3";
+	"Moose::Deprecated::BEGIN@4";
+}
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@9";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@6";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@7";
+"Moose::Deprecated::BEGIN@4" -> "warnings::import";
+"Moose::Deprecated::BEGIN@3" -> "strict::import";
+"Moose::BEGIN@14" -> "Moose::Deprecated::BEGIN@4";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@11";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::import";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@2";
+"Moose::BEGIN@14" -> "Moose::Deprecated::BEGIN@3";
+"Moose::BEGIN@14" -> "Moose::Deprecated::BEGIN@10";
+"Moose::Deprecated::BEGIN@10" -> "Package::DeprecationManager::BEGIN@10";
+}

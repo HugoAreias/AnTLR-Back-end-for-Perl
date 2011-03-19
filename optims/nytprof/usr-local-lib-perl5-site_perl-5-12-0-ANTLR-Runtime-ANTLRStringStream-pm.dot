@@ -1,0 +1,162 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::EOF";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::make_immutable";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::next_token";
+	"ANTLR::Runtime::Lexer::get_char_index";
+	"ANTLR::Runtime::Lexer::match_range";
+	"ANTLR::Runtime::Lexer::match";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]";
+	"ANTLR::Runtime::DFA::predict";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::has";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::get_text";
+}
+subgraph cluster_main {
+	label="main";
+	"main::BEGIN@7";
+}
+subgraph cluster_ANTLR_Runtime_CharStreamState {
+	label="ANTLR::Runtime::CharStreamState";
+	"ANTLR::Runtime::CharStreamState::set_char_position_in_line";
+	"ANTLR::Runtime::CharStreamState::meta";
+	"ANTLR::Runtime::CharStreamState::get_line";
+	"ANTLR::Runtime::CharStreamState::get_p";
+	"ANTLR::Runtime::CharStreamState::set_p";
+	"ANTLR::Runtime::CharStreamState::new";
+	"ANTLR::Runtime::CharStreamState::get_char_position_in_line";
+	"ANTLR::Runtime::CharStreamState::BEGIN@59";
+	"ANTLR::Runtime::CharStreamState::set_line";
+	"ANTLR::Runtime::CharStreamState::BEGIN@3";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@7";
+	"ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+	"ANTLR::Runtime::ANTLRStringStream::markers";
+	"ANTLR::Runtime::ANTLRStringStream::rewind";
+	"ANTLR::Runtime::ANTLRStringStream::consume";
+	"ANTLR::Runtime::ANTLRStringStream::line";
+	"ANTLR::Runtime::ANTLRStringStream::mark";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@5";
+	"ANTLR::Runtime::ANTLRStringStream::index";
+	"ANTLR::Runtime::ANTLRStringStream::p";
+	"ANTLR::Runtime::ANTLRStringStream::new";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@257";
+	"ANTLR::Runtime::ANTLRStringStream::input";
+	"ANTLR::Runtime::ANTLRStringStream::substring";
+	"ANTLR::Runtime::ANTLRStringStream::get_line";
+	"ANTLR::Runtime::ANTLRStringStream::release";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@3";
+	"ANTLR::Runtime::ANTLRStringStream::LA";
+	"ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line";
+	"ANTLR::Runtime::ANTLRStringStream::length";
+	"ANTLR::Runtime::ANTLRStringStream::BUILD";
+	"ANTLR::Runtime::ANTLRStringStream::seek";
+	"ANTLR::Runtime::ANTLRStringStream::last_marker";
+	"ANTLR::Runtime::ANTLRStringStream::mark_depth";
+	"ANTLR::Runtime::ANTLRStringStream::__ANON__[ANTLR/Runtime/ANTLRStringStream.pm:60]";
+}
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@257" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::CharStreamState::new";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@3" -> "Exporter::import";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::CharStreamState::set_line";
+"main::BEGIN@7" -> "ANTLR::Runtime::ANTLRStringStream::BEGIN@7";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::CharStreamState::set_char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::seek" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::index" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::ANTLRStringStream::p";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "ANTLR::Runtime::ANTLRStringStream::__ANON__[ANTLR/Runtime/ANTLRStringStream.pm:60]";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@5" -> "ANTLR::Runtime::CharStreamState::BEGIN@59";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::CharStreamState::get_line";
+"ANTLR::Runtime::ANTLRStringStream::BUILD" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::substring" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::ANTLRStringStream::input";
+"ANTLR::Runtime::ANTLRStringStream::new" -> "ANTLR::Runtime::ANTLRStringStream::BUILD";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::CharStreamState::set_p";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::CharStreamState::get_p";
+"ANTLR::Runtime::CommonToken::get_text" -> "ANTLR::Runtime::ANTLRStringStream::substring";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::get_line";
+"ANTLR::Runtime::ANTLRStringStream::BUILD" -> "ANTLR::Runtime::ANTLRStringStream::length";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::length";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::ANTLRStringStream::length";
+"main::BEGIN@7" -> "ANTLR::Runtime::ANTLRStringStream::BEGIN@5";
+"main::BEGIN@7" -> "ANTLR::Runtime::ANTLRStringStream::BEGIN@257";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::release";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@5" -> "ANTLR::Runtime::CharStreamState::BEGIN@3";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::CharStreamState::get_char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::ANTLRStringStream::LA";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]" -> "ANTLR::Runtime::ANTLRStringStream::rewind";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line";
+"ANTLR::Runtime::DFA::predict" -> "ANTLR::Runtime::ANTLRStringStream::mark";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@5" -> "Class::MOP::Class::make_immutable";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@5" -> "Moose::has";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@7" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::Lexer::match_range" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::Lexer::match" -> "ANTLR::Runtime::ANTLRStringStream::consume";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::ANTLRStringStream::get_line" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::line";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::ANTLRStringStream::index";
+"ANTLR::Runtime::Lexer::get_char_index" -> "ANTLR::Runtime::ANTLRStringStream::index";
+"main::BEGIN@7" -> "ANTLR::Runtime::ANTLRStringStream::BEGIN@3";
+"ANTLR::Runtime::ANTLRStringStream::consume" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::get_char_position_in_line" -> "ANTLR::Runtime::ANTLRStringStream::char_position_in_line";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::seek";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::last_marker";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::mark_depth";
+"ANTLR::Runtime::ANTLRStringStream::release" -> "ANTLR::Runtime::ANTLRStringStream::mark_depth";
+"ANTLR::Runtime::ANTLRStringStream::mark" -> "ANTLR::Runtime::ANTLRStringStream::markers";
+"ANTLR::Runtime::ANTLRStringStream::rewind" -> "ANTLR::Runtime::ANTLRStringStream::markers";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@5" -> "ANTLR::Runtime::CharStreamState::meta";
+}

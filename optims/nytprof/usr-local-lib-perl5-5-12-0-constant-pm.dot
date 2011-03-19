@@ -1,0 +1,74 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Internals {
+	label="Internals";
+	"Internals::SvREADONLY";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::BEGIN@15";
+}
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_constant {
+	label="constant";
+	"constant::import";
+	"constant::BEGIN@4";
+	"constant::BEGIN@3";
+	"constant::BEGIN@114";
+	"constant::BEGIN@25";
+	"constant::BEGIN@29";
+	"constant::BEGIN@52";
+	"constant::CORE:regcomp";
+	"constant::CORE:qr";
+	"constant::BEGIN@2";
+	"constant::CORE:match";
+	"constant::BEGIN@6";
+}
+subgraph cluster_mro {
+	label="mro";
+	"mro::method_changed_in";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@25";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@24";
+}
+subgraph cluster_warnings_register {
+	label="warnings::register";
+	"warnings::register::import";
+}
+"constant::import" -> "mro::method_changed_in";
+"constant::import" -> "Internals::SvREADONLY";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@25";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@114";
+"constant::BEGIN@4" -> "warnings::register::import";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@29";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@4";
+"Lavanda2Parser::BEGIN@24" -> "constant::import";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::import";
+"Lavanda2Lexer::BEGIN@25" -> "constant::import";
+"constant::BEGIN@29" -> "strict::unimport";
+"constant::BEGIN@52" -> "strict::unimport";
+"constant::BEGIN@114" -> "strict::unimport";
+"constant::BEGIN@6" -> "vars::import";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@3";
+"constant::BEGIN@3" -> "strict::import";
+"constant::import" -> "constant::CORE:regcomp";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::CORE:regcomp";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@52";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@2";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::BEGIN@6";
+"Class::MOP::Method::Generated::BEGIN@15" -> "constant::CORE:qr";
+"constant::import" -> "constant::CORE:match";
+}

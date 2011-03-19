@@ -1,0 +1,57 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Sub_Exporter {
+	label="Sub::Exporter";
+	"Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+}
+subgraph cluster_Moose_Meta_TypeConstraint_DuckType {
+	label="Moose::Meta::TypeConstraint::DuckType";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@5";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@17";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@7";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@9";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@8";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@3";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@11";
+	"Moose::Meta::TypeConstraint::DuckType::BEGIN@4";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@36";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@7" -> "Exporter::import";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@8" -> "Exporter::import";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@5" -> "metaclass::import";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@3";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@9";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@17" -> "base::import";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@9" -> "Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@4" -> "warnings::import";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@8";
+"Moose::Meta::TypeConstraint::DuckType::BEGIN@3" -> "strict::import";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@5";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@7";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@17";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@11";
+"Moose::Util::TypeConstraints::BEGIN@36" -> "Moose::Meta::TypeConstraint::DuckType::BEGIN@4";
+}

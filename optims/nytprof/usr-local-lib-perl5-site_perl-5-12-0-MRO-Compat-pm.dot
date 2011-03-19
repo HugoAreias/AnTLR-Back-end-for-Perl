@@ -1,0 +1,55 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_XSLoader {
+	label="XSLoader";
+	"XSLoader::load";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::BEGIN@9";
+}
+subgraph cluster_mro {
+	label="mro";
+	"mro::BEGIN@10";
+	"mro::BEGIN@11";
+}
+subgraph cluster_MRO_Compat {
+	label="MRO::Compat";
+	"MRO::Compat::BEGIN@2";
+	"MRO::Compat::BEGIN@225";
+	"MRO::Compat::BEGIN@116";
+	"MRO::Compat::BEGIN@39";
+	"MRO::Compat::BEGIN@256";
+	"MRO::Compat::BEGIN@3";
+	"MRO::Compat::BEGIN@10";
+	"MRO::Compat::BEGIN@226";
+}
+"MRO::Compat::BEGIN@10" -> "mro::BEGIN@10";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@10";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@116";
+"MRO::Compat::BEGIN@10" -> "mro::BEGIN@11";
+"MRO::Compat::BEGIN@116" -> "strict::unimport";
+"MRO::Compat::BEGIN@256" -> "strict::unimport";
+"MRO::Compat::BEGIN@225" -> "strict::unimport";
+"MRO::Compat::BEGIN@3" -> "warnings::import";
+"MRO::Compat::BEGIN@2" -> "strict::import";
+"MRO::Compat::BEGIN@39" -> "warnings::unimport";
+"MRO::Compat::BEGIN@226" -> "warnings::unimport";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@226";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@3";
+"MRO::Compat::BEGIN@10" -> "XSLoader::load";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@256";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@225";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@2";
+"Class::MOP::BEGIN@9" -> "MRO::Compat::BEGIN@39";
+}

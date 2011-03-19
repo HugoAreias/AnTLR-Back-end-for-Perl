@@ -1,0 +1,102 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Sub_Exporter {
+	label="Sub::Exporter";
+	"Sub::Exporter::default_installer";
+	"Sub::Exporter::setup_exporter";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Data_OptList {
+	label="Data::OptList";
+	"Data::OptList::BEGIN@214";
+}
+subgraph cluster_Moose_Util {
+	label="Moose::Util";
+	"Moose::Util::BEGIN@6";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::BEGIN@13";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Sub_Install {
+	label="Sub::Install";
+	"Sub::Install::__ANON__[Sub/Install.pm:175]";
+	"Sub::Install::__ANON__[Sub/Install.pm:132]";
+	"Sub::Install::BEGIN@148";
+	"Sub::Install::_installer";
+	"Sub::Install::BEGIN@3";
+	"Sub::Install::BEGIN@6";
+	"Sub::Install::BEGIN@184";
+	"Sub::Install::__ANON__[Sub/Install.pm:176]";
+	"Sub::Install::BEGIN@139";
+	"Sub::Install::_CODELIKE";
+	"Sub::Install::exporter";
+	"Sub::Install::__ANON__[Sub/Install.pm:187]";
+	"Sub::Install::BEGIN@4";
+	"Sub::Install::CORE:qr";
+	"Sub::Install::_build_public_installer";
+	"Sub::Install::BEGIN@287";
+	"Sub::Install::_do_with_warn";
+	"Sub::Install::BEGIN@190";
+	"Sub::Install::__ANON__[Sub/Install.pm:284]";
+	"Sub::Install::BEGIN@7";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::import";
+	"Package::DeprecationManager::BEGIN@11";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::reftype";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::BEGIN@10";
+}
+"Sub::Install::BEGIN@6" -> "Exporter::import";
+"Sub::Install::BEGIN@287" -> "Sub::Install::exporter";
+"Data::OptList::BEGIN@214" -> "Sub::Install::exporter";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@190";
+"Sub::Install::BEGIN@190" -> "Sub::Install::_installer";
+"Sub::Install::BEGIN@184" -> "strict::unimport";
+"Sub::Install::__ANON__[Sub/Install.pm:132]" -> "Sub::Install::_CODELIKE";
+"Sub::Install::BEGIN@3" -> "warnings::import";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@7";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@184";
+"Sub::Install::BEGIN@190" -> "Sub::Install::_build_public_installer";
+"Sub::Install::BEGIN@4" -> "strict::import";
+"Class::MOP::BEGIN@13" -> "Sub::Install::__ANON__[Sub/Install.pm:284]";
+"Moose::Meta::Class::BEGIN@10" -> "Sub::Install::__ANON__[Sub/Install.pm:284]";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::__ANON__[Sub/Install.pm:284]";
+"Moose::Util::BEGIN@6" -> "Sub::Install::__ANON__[Sub/Install.pm:284]";
+"Sub::Install::__ANON__[Sub/Install.pm:175]" -> "Sub::Install::__ANON__[Sub/Install.pm:187]";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@4";
+"Sub::Install::BEGIN@139" -> "Sub::Install::CORE:qr";
+"Sub::Install::BEGIN@148" -> "Sub::Install::CORE:qr";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@148";
+"Package::DeprecationManager::import" -> "Sub::Install::__ANON__[Sub/Install.pm:132]";
+"Sub::Exporter::default_installer" -> "Sub::Install::__ANON__[Sub/Install.pm:132]";
+"Sub::Exporter::setup_exporter" -> "Sub::Install::__ANON__[Sub/Install.pm:132]";
+"Sub::Install::__ANON__[Sub/Install.pm:132]" -> "Sub::Install::__ANON__[Sub/Install.pm:175]";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@287";
+"Sub::Install::BEGIN@190" -> "Sub::Install::_do_with_warn";
+"Sub::Install::_CODELIKE" -> "Scalar::Util::reftype";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@3";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@6";
+"Package::DeprecationManager::BEGIN@11" -> "Sub::Install::BEGIN@139";
+"Sub::Install::_do_with_warn" -> "Sub::Install::__ANON__[Sub/Install.pm:176]";
+"Sub::Install::BEGIN@190" -> "Sub::Install::__ANON__[Sub/Install.pm:176]";
+}

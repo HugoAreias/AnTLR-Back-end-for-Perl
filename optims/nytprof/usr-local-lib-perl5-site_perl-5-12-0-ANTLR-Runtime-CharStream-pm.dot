@@ -1,0 +1,71 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::EOF";
+	"ANTLR::Runtime::CharStream::BEGIN@3";
+	"ANTLR::Runtime::CharStream::BEGIN@4";
+	"ANTLR::Runtime::CharStream::BEGIN@6";
+	"ANTLR::Runtime::CharStream::BEGIN@29";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::next_token";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::EOF";
+}
+subgraph cluster_Data_Lock {
+	label="Data::Lock";
+	"Data::Lock::BEGIN@2";
+	"Data::Lock::BEGIN@7";
+	"Data::Lock::BEGIN@8";
+	"Data::Lock::CORE:match";
+	"Data::Lock::BEGIN@10";
+	"Data::Lock::BEGIN@18";
+	"Data::Lock::BEGIN@3";
+	"Data::Lock::BEGIN@4";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::fill_buffer";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::LA";
+}
+"ANTLR::Runtime::CharStream::BEGIN@29" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Exporter::import";
+"ANTLR::Runtime::CharStream::BEGIN@3" -> "Exporter::import";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@18";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@3";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@7";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@4";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@10";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@29";
+"ANTLR::Runtime::Lexer::next_token" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::CommonTokenStream::fill_buffer" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::Token::EOF" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::ANTLRStringStream::LA" -> "ANTLR::Runtime::CharStream::EOF";
+"ANTLR::Runtime::CharStream::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@6";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@2";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::CORE:match";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@4";
+"Class::MOP::__ANON__[Class/MOP.pm:117]" -> "ANTLR::Runtime::CharStream::BEGIN@3";
+"ANTLR::Runtime::CharStream::BEGIN@4" -> "Data::Lock::BEGIN@8";
+}

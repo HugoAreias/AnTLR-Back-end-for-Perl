@@ -1,0 +1,147 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Class_MOP_Method_Accessor {
+	label="Class::MOP::Method::Accessor";
+	"Class::MOP::Method::Accessor::_generate_accessor_method_inline";
+	"Class::MOP::Method::Accessor::_generate_predicate_method";
+	"Class::MOP::Method::Accessor::_generate_writer_method_inline";
+	"Class::MOP::Method::Accessor::_new";
+	"Class::MOP::Method::Accessor::BEGIN@7";
+	"Class::MOP::Method::Accessor::_generate_accessor_method";
+	"Class::MOP::Method::Accessor::BEGIN@14";
+	"Class::MOP::Method::Accessor::_initialize_body";
+	"Class::MOP::Method::Accessor::accessor_type";
+	"Class::MOP::Method::Accessor::BEGIN@5";
+	"Class::MOP::Method::Accessor::BEGIN@8";
+	"Class::MOP::Method::Accessor::_generate_reader_method";
+	"Class::MOP::Method::Accessor::_generate_reader_method_inline";
+	"Class::MOP::Method::Accessor::_generate_writer_method";
+	"Class::MOP::Method::Accessor::associated_attribute";
+	"Class::MOP::Method::Accessor::BEGIN@4";
+	"Class::MOP::Method::Accessor::new";
+	"Class::MOP::Method::Accessor::_generate_predicate_method_inline";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_Class_MOP_Method_Generated {
+	label="Class::MOP::Method::Generated";
+	"Class::MOP::Method::Generated::_eval_closure";
+	"Class::MOP::Method::Generated::is_inline";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Instance {
+	label="Class::MOP::Instance";
+	"Class::MOP::Instance::inline_is_slot_initialized";
+	"Class::MOP::Instance::inline_get_slot_value";
+	"Class::MOP::Instance::inline_set_slot_value";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::BEGIN@9";
+	"Class::MOP::Class::instance_metaclass";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]";
+	"Class::MOP::Attribute::associated_class";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+	"Scalar::Util::weaken";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::isa";
+}
+subgraph cluster_Class_MOP_Mixin_AttributeCore {
+	label="Class::MOP::Mixin::AttributeCore";
+	"Class::MOP::Mixin::AttributeCore::name";
+}
+subgraph cluster_Moose_Meta_Method_Accessor {
+	label="Moose::Meta::Method::Accessor";
+	"Moose::Meta::Method::Accessor::_generate_reader_method_inline";
+	"Moose::Meta::Method::Accessor::_generate_accessor_method";
+	"Moose::Meta::Method::Accessor::_generate_reader_method";
+	"Moose::Meta::Method::Accessor::_new";
+}
+subgraph cluster_Class_MOP_Method {
+	label="Class::MOP::Method";
+	"Class::MOP::Method::_new";
+	"Class::MOP::Method::wrap";
+}
+"Class::MOP::Method::Accessor::BEGIN@7" -> "Exporter::import";
+"Class::MOP::Method::Accessor::BEGIN@8" -> "Exporter::import";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Class::instance_metaclass";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_reader_method_inline";
+"Class::MOP::Method::Accessor::new" -> "Scalar::Util::blessed";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Generated::is_inline";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_accessor_method_inline";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Instance::inline_is_slot_initialized";
+"Class::MOP::Class::BEGIN@9" -> "Class::MOP::Method::Accessor::BEGIN@5";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_writer_method_inline";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Moose::Meta::Method::Accessor::_generate_reader_method_inline";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_accessor_method";
+"Class::MOP::Method::Accessor::new" -> "Class::MOP::Method::_new";
+"Class::MOP::Method::Accessor::BEGIN@14" -> "base::import";
+"Class::MOP::Method::Accessor::BEGIN@5" -> "warnings::import";
+"Class::MOP::Class::BEGIN@9" -> "Class::MOP::Method::Accessor::BEGIN@14";
+"Class::MOP::Method::Accessor::_generate_reader_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_predicate_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_accessor_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_writer_method" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Method::Accessor::associated_attribute";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Moose::Meta::Method::Accessor::_generate_reader_method";
+"Class::MOP::Method::Accessor::new" -> "Moose::Meta::Method::Accessor::_new";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Moose::Meta::Method::Accessor::_generate_accessor_method";
+"Class::MOP::Method::Accessor::BEGIN@4" -> "strict::import";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_predicate_method";
+"Class::MOP::Class::BEGIN@9" -> "Class::MOP::Method::Accessor::BEGIN@7";
+"Class::MOP::Method::wrap" -> "Class::MOP::Method::Accessor::_new";
+"Class::MOP::Method::Accessor::new" -> "Class::MOP::Method::Accessor::_new";
+"Class::MOP::Method::Accessor::new" -> "Class::MOP::Method::Accessor::_initialize_body";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_reader_method";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::accessor_type";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_writer_method";
+"Class::MOP::Method::Accessor::new" -> "Scalar::Util::weaken";
+"Class::MOP::Method::Accessor::new" -> "UNIVERSAL::isa";
+"Class::MOP::Class::BEGIN@9" -> "Class::MOP::Method::Accessor::BEGIN@8";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Attribute::associated_class";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Method::Generated::_eval_closure";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_predicate_method_inline" -> "Class::MOP::Mixin::AttributeCore::name";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Instance::inline_set_slot_value";
+"Class::MOP::Method::Accessor::_generate_writer_method_inline" -> "Class::MOP::Instance::inline_set_slot_value";
+"Class::MOP::Method::Accessor::_generate_accessor_method_inline" -> "Class::MOP::Instance::inline_get_slot_value";
+"Class::MOP::Method::Accessor::_generate_reader_method_inline" -> "Class::MOP::Instance::inline_get_slot_value";
+"Class::MOP::Class::BEGIN@9" -> "Class::MOP::Method::Accessor::BEGIN@4";
+"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]" -> "Class::MOP::Method::Accessor::new";
+"Class::MOP::Method::Accessor::_initialize_body" -> "Class::MOP::Method::Accessor::_generate_predicate_method_inline";
+}

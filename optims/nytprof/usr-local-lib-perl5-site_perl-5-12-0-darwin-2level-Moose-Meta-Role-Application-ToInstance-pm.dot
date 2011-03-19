@@ -1,0 +1,45 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Moose_Meta_Role_Application_ToInstance {
+	label="Moose::Meta::Role::Application::ToInstance";
+	"Moose::Meta::Role::Application::ToInstance::BEGIN@3";
+	"Moose::Meta::Role::Application::ToInstance::BEGIN@5";
+	"Moose::Meta::Role::Application::ToInstance::BEGIN@4";
+	"Moose::Meta::Role::Application::ToInstance::BEGIN@13";
+	"Moose::Meta::Role::Application::ToInstance::BEGIN@7";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@33";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_metaclass {
+	label="metaclass";
+	"metaclass::import";
+}
+"Moose::Meta::Role::Application::ToInstance::BEGIN@7" -> "Exporter::import";
+"Moose::Meta::Role::Application::ToInstance::BEGIN@5" -> "metaclass::import";
+"Moose::Meta::Role::Application::ToInstance::BEGIN@13" -> "base::import";
+"Moose::Meta::Role::Application::ToInstance::BEGIN@4" -> "warnings::import";
+"Moose::BEGIN@33" -> "Moose::Meta::Role::Application::ToInstance::BEGIN@5";
+"Moose::Meta::Role::Application::ToInstance::BEGIN@3" -> "strict::import";
+"Moose::BEGIN@33" -> "Moose::Meta::Role::Application::ToInstance::BEGIN@13";
+"Moose::BEGIN@33" -> "Moose::Meta::Role::Application::ToInstance::BEGIN@7";
+"Moose::BEGIN@33" -> "Moose::Meta::Role::Application::ToInstance::BEGIN@3";
+"Moose::BEGIN@33" -> "Moose::Meta::Role::Application::ToInstance::BEGIN@4";
+}

@@ -1,0 +1,503 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_Sub_Exporter {
+	label="Sub::Exporter";
+	"Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+	"Sub::Exporter::default_generator";
+	"Sub::Exporter::build_exporter";
+}
+subgraph cluster_ANTLR_Runtime_BitSet {
+	label="ANTLR::Runtime::BitSet";
+	"ANTLR::Runtime::BitSet::BEGIN@299";
+	"ANTLR::Runtime::BitSet::BEGIN@7";
+	"ANTLR::Runtime::BitSet::BEGIN@8";
+}
+subgraph cluster_ANTLR_Runtime_UnwantedTokenException {
+	label="ANTLR::Runtime::UnwantedTokenException";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@36";
+	"ANTLR::Runtime::UnwantedTokenException::BEGIN@5";
+}
+subgraph cluster_Class_MOP_Object {
+	label="Class::MOP::Object";
+	"Class::MOP::Object::meta";
+}
+subgraph cluster_List_MoreUtils {
+	label="List::MoreUtils";
+	"List::MoreUtils::uniq";
+	"List::MoreUtils::firstidx";
+}
+subgraph cluster_Class_MOP_Deprecated {
+	label="Class::MOP::Deprecated";
+	"Class::MOP::Deprecated::BEGIN@4";
+	"Class::MOP::Deprecated::BEGIN@3";
+	"Class::MOP::Deprecated::BEGIN@10";
+}
+subgraph cluster_ANTLR_Runtime_RecognizerSharedState {
+	label="ANTLR::Runtime::RecognizerSharedState";
+	"ANTLR::Runtime::RecognizerSharedState::BEGIN@5";
+	"ANTLR::Runtime::RecognizerSharedState::BEGIN@152";
+}
+subgraph cluster_ANTLR_Runtime_CharStream {
+	label="ANTLR::Runtime::CharStream";
+	"ANTLR::Runtime::CharStream::BEGIN@6";
+	"ANTLR::Runtime::CharStream::BEGIN@29";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::unimport";
+	"warnings::import";
+}
+subgraph cluster_ANTLR_Runtime_TokenSource {
+	label="ANTLR::Runtime::TokenSource";
+	"ANTLR::Runtime::TokenSource::BEGIN@3";
+	"ANTLR::Runtime::TokenSource::BEGIN@14";
+}
+subgraph cluster_ANTLR_Runtime_RuleReturnScope {
+	label="ANTLR::Runtime::RuleReturnScope";
+	"ANTLR::Runtime::RuleReturnScope::BEGIN@26";
+	"ANTLR::Runtime::RuleReturnScope::BEGIN@3";
+}
+subgraph cluster_sacos_return {
+	label="sacos_return";
+	"sacos_return::BEGIN@175";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::import";
+	"Moose::Exporter::_strip_metaclass";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+	"Moose::Exporter::BEGIN@15";
+	"Moose::Exporter::BEGIN@3";
+	"Moose::Exporter::BEGIN@4";
+	"Moose::Exporter::_make_import_sub";
+	"Moose::Exporter::setup_import_methods";
+	"Moose::Exporter::BEGIN@387";
+	"Moose::Exporter::_sub_from_package";
+	"Moose::Exporter::BEGIN@11";
+	"Moose::Exporter::BEGIN@12";
+	"Moose::Exporter::BEGIN@16";
+	"Moose::Exporter::_flag_as_reexport";
+	"Moose::Exporter::_follow_also";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:264]";
+	"Moose::Exporter::BEGIN@489";
+	"Moose::Exporter::BEGIN@13";
+	"Moose::Exporter::_export_is_flagged";
+	"Moose::Exporter::BEGIN@499";
+	"Moose::Exporter::BEGIN@18";
+	"Moose::Exporter::_late_curry_wrapper";
+	"Moose::Exporter::_make_wrapped_sub_with_meta";
+	"Moose::Exporter::_remove_keywords";
+	"Moose::Exporter::BEGIN@14";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+	"Moose::Exporter::BEGIN@386";
+	"Moose::Exporter::_make_unimport_sub";
+	"Moose::Exporter::_make_sub_exporter_params";
+	"Moose::Exporter::_get_caller";
+	"Moose::Exporter::_follow_also_real";
+	"Moose::Exporter::build_import_methods";
+	"Moose::Exporter::_make_init_meta";
+	"Moose::Exporter::__ANON__[Moose/Exporter.pm:194]";
+	"Moose::Exporter::_strip_traits";
+	"Moose::Exporter::BEGIN@207";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::make_immutable";
+	"Class::MOP::Class::get_meta_instance";
+}
+subgraph cluster_XSLoader {
+	label="XSLoader";
+	"XSLoader::load";
+}
+subgraph cluster_Class_MOP_Mixin_HasMethods {
+	label="Class::MOP::Mixin::HasMethods";
+	"Class::MOP::Mixin::HasMethods::add_method";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::BEGIN@16";
+	"Class::MOP::BEGIN@4";
+	"Class::MOP::BEGIN@17";
+	"Class::MOP::BEGIN@14";
+	"Class::MOP::class_of";
+	"Class::MOP::BEGIN@7";
+	"Class::MOP::BEGIN@23";
+	"Class::MOP::BEGIN@18";
+	"Class::MOP::BEGIN@19";
+	"Class::MOP::BEGIN@21";
+	"Class::MOP::BEGIN@20";
+	"Class::MOP::BEGIN@11";
+	"Class::MOP::BEGIN@13";
+	"Class::MOP::BEGIN@9";
+	"Class::MOP::BEGIN@5";
+	"Class::MOP::BEGIN@12";
+	"Class::MOP::get_code_info";
+}
+subgraph cluster_ANTLR_Runtime_Parser {
+	label="ANTLR::Runtime::Parser";
+	"ANTLR::Runtime::Parser::BEGIN@3";
+	"ANTLR::Runtime::Parser::BEGIN@95";
+}
+subgraph cluster_ANTLR_Runtime_RecognitionException {
+	label="ANTLR::Runtime::RecognitionException";
+	"ANTLR::Runtime::RecognitionException::BEGIN@138";
+	"ANTLR::Runtime::RecognitionException::BEGIN@3";
+	"ANTLR::Runtime::RecognitionException::BEGIN@4";
+}
+subgraph cluster_lote_return {
+	label="lote_return";
+	"lote_return::BEGIN@407";
+}
+subgraph cluster_ANTLR_Runtime_MissingTokenException {
+	label="ANTLR::Runtime::MissingTokenException";
+	"ANTLR::Runtime::MissingTokenException::BEGIN@3";
+	"ANTLR::Runtime::MissingTokenException::BEGIN@39";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::BEGIN@389";
+	"ANTLR::Runtime::Lexer::BEGIN@17";
+}
+subgraph cluster_Moose_Util_TypeConstraints {
+	label="Moose::Util::TypeConstraints";
+	"Moose::Util::TypeConstraints::BEGIN@7";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::BEGIN@252";
+	"ANTLR::Runtime::DFA::BEGIN@6";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedSetException {
+	label="ANTLR::Runtime::MismatchedSetException";
+	"ANTLR::Runtime::MismatchedSetException::BEGIN@28";
+	"ANTLR::Runtime::MismatchedSetException::BEGIN@3";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@35";
+	"Moose::with";
+	"Moose::init_meta";
+	"Moose::BEGIN@15";
+	"Moose::extends";
+	"Moose::has";
+}
+subgraph cluster_lotes_return {
+	label="lotes_return";
+	"lotes_return::BEGIN@321";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Exception {
+	label="ANTLR::Runtime::Exception";
+	"ANTLR::Runtime::Exception::BEGIN@5";
+	"ANTLR::Runtime::Exception::BEGIN@21";
+}
+subgraph cluster_Moose_Util_MetaRole {
+	label="Moose::Util::MetaRole";
+	"Moose::Util::MetaRole::BEGIN@11";
+	"Moose::Util::MetaRole::BEGIN@13";
+	"Moose::Util::MetaRole::BEGIN@5";
+	"Moose::Util::MetaRole::BEGIN@3";
+	"Moose::Util::MetaRole::BEGIN@4";
+	"Moose::Util::MetaRole::BEGIN@12";
+}
+subgraph cluster_ANTLR_Runtime_Token {
+	label="ANTLR::Runtime::Token";
+	"ANTLR::Runtime::Token::BEGIN@87";
+	"ANTLR::Runtime::Token::BEGIN@10";
+}
+subgraph cluster_ANTLR_Runtime_CommonToken {
+	label="ANTLR::Runtime::CommonToken";
+	"ANTLR::Runtime::CommonToken::BEGIN@3";
+	"ANTLR::Runtime::CommonToken::BEGIN@226";
+}
+subgraph cluster_ANTLR_Runtime_EarlyExitException {
+	label="ANTLR::Runtime::EarlyExitException";
+	"ANTLR::Runtime::EarlyExitException::BEGIN@3";
+	"ANTLR::Runtime::EarlyExitException::BEGIN@13";
+}
+subgraph cluster_Lavanda2Lexer_DFA4 {
+	label="Lavanda2Lexer::DFA4";
+	"Lavanda2Lexer::DFA4::BEGIN@779";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::new";
+}
+subgraph cluster_Moose_Role {
+	label="Moose::Role";
+	"Moose::Role::BEGIN@17";
+	"Moose::Role::BEGIN@19";
+	"Moose::Role::requires";
+	"Moose::Role::init_meta";
+}
+subgraph cluster_ANTLR_Runtime_NoViableAltException {
+	label="ANTLR::Runtime::NoViableAltException";
+	"ANTLR::Runtime::NoViableAltException::BEGIN@3";
+	"ANTLR::Runtime::NoViableAltException::BEGIN@39";
+}
+subgraph cluster_Sub_Name {
+	label="Sub::Name";
+	"Sub::Name::subname";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedRangeException {
+	label="ANTLR::Runtime::MismatchedRangeException";
+	"ANTLR::Runtime::MismatchedRangeException::BEGIN@30";
+	"ANTLR::Runtime::MismatchedRangeException::BEGIN@3";
+}
+subgraph cluster_ANTLR_Runtime_CharStreamState {
+	label="ANTLR::Runtime::CharStreamState";
+	"ANTLR::Runtime::CharStreamState::BEGIN@59";
+	"ANTLR::Runtime::CharStreamState::BEGIN@3";
+}
+subgraph cluster_ANTLR_Runtime_CommonTokenStream {
+	label="ANTLR::Runtime::CommonTokenStream";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@10";
+	"ANTLR::Runtime::CommonTokenStream::BEGIN@431";
+}
+subgraph cluster_ANTLR_Runtime_BaseRecognizer {
+	label="ANTLR::Runtime::BaseRecognizer";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@12";
+	"ANTLR::Runtime::BaseRecognizer::BEGIN@778";
+}
+subgraph cluster_Class_MOP_Package {
+	label="Class::MOP::Package";
+	"Class::MOP::Package::add_package_symbol";
+	"Class::MOP::Package::initialize";
+	"Class::MOP::Package::BEGIN@80";
+	"Class::MOP::Package::has_package_symbol";
+}
+subgraph cluster_Package_DeprecationManager {
+	label="Package::DeprecationManager";
+	"Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+}
+subgraph cluster_UNIVERSAL {
+	label="UNIVERSAL";
+	"UNIVERSAL::VERSION";
+	"UNIVERSAL::can";
+}
+subgraph cluster_ANTLR_Runtime_MismatchedTokenException {
+	label="ANTLR::Runtime::MismatchedTokenException";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@5";
+	"ANTLR::Runtime::MismatchedTokenException::BEGIN@31";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::BEGIN@807";
+	"Lavanda2Lexer::BEGIN@6";
+}
+subgraph cluster_ANTLR_Runtime_TokenStream {
+	label="ANTLR::Runtime::TokenStream";
+	"ANTLR::Runtime::TokenStream::BEGIN@3";
+	"ANTLR::Runtime::TokenStream::BEGIN@27";
+}
+subgraph cluster_Moose_Meta_Attribute {
+	label="Moose::Meta::Attribute";
+	"Moose::Meta::Attribute::BEGIN@19";
+}
+subgraph cluster_ANTLR_Runtime_ParserRuleReturnScope {
+	label="ANTLR::Runtime::ParserRuleReturnScope";
+	"ANTLR::Runtime::ParserRuleReturnScope::BEGIN@3";
+	"ANTLR::Runtime::ParserRuleReturnScope::BEGIN@27";
+}
+subgraph cluster_Class_MOP_Mixin_HasAttributes {
+	label="Class::MOP::Mixin::HasAttributes";
+	"Class::MOP::Mixin::HasAttributes::add_attribute";
+}
+subgraph cluster_ANTLR_Runtime_ANTLRStringStream {
+	label="ANTLR::Runtime::ANTLRStringStream";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@7";
+	"ANTLR::Runtime::ANTLRStringStream::BEGIN@257";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@6";
+	"Lavanda2Parser::BEGIN@740";
+}
+subgraph cluster_ANTLR_Runtime_IntStream {
+	label="ANTLR::Runtime::IntStream";
+	"ANTLR::Runtime::IntStream::BEGIN@3";
+	"ANTLR::Runtime::IntStream::BEGIN@84";
+}
+subgraph cluster_Class_MOP_Mixin {
+	label="Class::MOP::Mixin";
+	"Class::MOP::Mixin::meta";
+}
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@17";
+"Moose::Role::BEGIN@17" -> "Moose::Exporter::import";
+"Moose::Util::TypeConstraints::BEGIN@7" -> "Moose::Exporter::import";
+"Moose::BEGIN@15" -> "Moose::Exporter::import";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@14";
+"ANTLR::Runtime::BitSet::BEGIN@299" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::NoViableAltException::BEGIN@39" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::MismatchedSetException::BEGIN@28" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::MismatchedRangeException::BEGIN@30" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@778" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Lexer::BEGIN@389" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Lavanda2Lexer::BEGIN@807" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::EarlyExitException::BEGIN@13" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::IntStream::BEGIN@84" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::RecognizerSharedState::BEGIN@152" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::MismatchedTokenException::BEGIN@31" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::UnwantedTokenException::BEGIN@36" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@257" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::ParserRuleReturnScope::BEGIN@27" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CommonToken::BEGIN@226" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::RecognitionException::BEGIN@138" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::TokenStream::BEGIN@27" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Parser::BEGIN@95" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@431" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::MissingTokenException::BEGIN@39" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::DFA::BEGIN@252" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::RuleReturnScope::BEGIN@26" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Exception::BEGIN@21" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::TokenSource::BEGIN@14" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CharStream::BEGIN@29" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::Token::BEGIN@87" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"ANTLR::Runtime::CharStreamState::BEGIN@59" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Lavanda2Parser::BEGIN@740" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:479]";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@15";
+"Moose::Exporter::build_import_methods" -> "Moose::Exporter::_make_import_sub";
+"Moose::Exporter::BEGIN@16" -> "Exporter::import";
+"Moose::Exporter::BEGIN@12" -> "Exporter::import";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@386";
+"Moose::Exporter::_follow_also" -> "Moose::Exporter::_follow_also_real";
+"Moose::Exporter::setup_import_methods" -> "Moose::Exporter::build_import_methods";
+"Moose::Exporter::build_import_methods" -> "Moose::Exporter::_make_init_meta";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@4";
+"Moose::Exporter::BEGIN@13" -> "Package::DeprecationManager::__ANON__[Package/DeprecationManager.pm:60]";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@5";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Object::meta";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Deprecated::BEGIN@4";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@21";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@5";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:256]" -> "Class::MOP::class_of";
+"Moose::Meta::Attribute::BEGIN@19" -> "Moose::Exporter::setup_import_methods";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Exporter::setup_import_methods";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Exporter::setup_import_methods";
+"Moose::Exporter::build_import_methods" -> "Class::MOP::Package::has_package_symbol";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "UNIVERSAL::can";
+"Moose::Exporter::_remove_keywords" -> "Moose::Exporter::_export_is_flagged";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@18";
+"Moose::Exporter::BEGIN@489" -> "strict::unimport";
+"Moose::Exporter::BEGIN@499" -> "strict::unimport";
+"Moose::Exporter::BEGIN@386" -> "strict::unimport";
+"Moose::Exporter::BEGIN@207" -> "strict::unimport";
+"Moose::Exporter::_make_sub_exporter_params" -> "Moose::Exporter::_make_wrapped_sub_with_meta";
+"Moose::Exporter::_follow_also" -> "List::MoreUtils::uniq";
+"Moose::Exporter::BEGIN@15" -> "Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Sub::Exporter::__ANON__[Sub/Exporter.pm:756]";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::Exporter::_get_caller";
+"Moose::Exporter::import" -> "warnings::import";
+"Moose::Exporter::BEGIN@4" -> "warnings::import";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "warnings::import";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@11";
+"Moose::Exporter::_strip_traits" -> "List::MoreUtils::firstidx";
+"Moose::Exporter::_strip_metaclass" -> "List::MoreUtils::firstidx";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::Exporter::_strip_metaclass";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@13";
+"Sub::Exporter::default_generator" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:264]";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@13";
+"Moose::with" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+"Moose::has" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+"Moose::extends" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+"Moose::Role::requires" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:256]";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Class::get_meta_instance";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@20";
+"Sub::Exporter::default_generator" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:194]";
+"Moose::Exporter::BEGIN@15" -> "UNIVERSAL::VERSION";
+"Moose::Exporter::import" -> "strict::import";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "strict::import";
+"Moose::Exporter::BEGIN@3" -> "strict::import";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@3";
+"Moose::Exporter::_make_sub_exporter_params" -> "Class::MOP::get_code_info";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Package::BEGIN@80";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@11";
+"Moose::Exporter::build_import_methods" -> "Moose::Exporter::_follow_also";
+"Moose::Exporter::BEGIN@387" -> "warnings::unimport";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@489";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@23";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@19";
+"Moose::Exporter::build_import_methods" -> "Moose::Exporter::_make_sub_exporter_params";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::Exporter::_strip_traits";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::init_meta";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:264]" -> "Sub::Name::subname";
+"Moose::Exporter::_make_sub_exporter_params" -> "Moose::Exporter::_sub_from_package";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Deprecated::BEGIN@3";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::Exporter::_flag_as_reexport";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Deprecated::BEGIN@10";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@12";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@499";
+"Moose::Exporter::build_import_methods" -> "Class::MOP::Package::initialize";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@7";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@14";
+"Moose::Exporter::BEGIN@11" -> "XSLoader::load";
+"Moose::Exporter::build_import_methods" -> "Moose::Exporter::_make_unimport_sub";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@13";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Mixin::HasAttributes::add_attribute";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@12";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Class::make_immutable";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@4";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@16";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@12";
+"Moose::Exporter::build_import_methods" -> "Class::MOP::Package::add_package_symbol";
+"ANTLR::Runtime::ANTLRStringStream::BEGIN@7" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::BitSet::BEGIN@7" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::MismatchedTokenException::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::IntStream::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::CommonTokenStream::BEGIN@10" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::NoViableAltException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Exception::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::ParserRuleReturnScope::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::MismatchedRangeException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Moose::Role::BEGIN@19" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::TokenSource::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::RecognizerSharedState::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Parser::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::CharStream::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Lexer::BEGIN@17" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::UnwantedTokenException::BEGIN@5" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::EarlyExitException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::MismatchedSetException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"sacos_return::BEGIN@175" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::RecognitionException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Lexer::DFA4::BEGIN@779" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Lavanda2Lexer::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Token::BEGIN@10" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::Parser::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"lote_return::BEGIN@407" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"lotes_return::BEGIN@321" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::RuleReturnScope::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::BitSet::BEGIN@8" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::MissingTokenException::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::TokenStream::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::BaseRecognizer::BEGIN@12" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::DFA::BEGIN@6" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Moose::BEGIN@35" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::CommonToken::BEGIN@3" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"ANTLR::Runtime::RecognitionException::BEGIN@4" -> "Moose::Exporter::__ANON__[Moose/Exporter.pm:390]";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@4";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Mixin::meta";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:479]" -> "Moose::Exporter::_remove_keywords";
+"Moose::Exporter::build_import_methods" -> "Sub::Exporter::build_exporter";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@18";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:390]" -> "Moose::Role::init_meta";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Mixin::HasMethods::add_method";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@16";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@3";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Attribute::new";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@387";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::BEGIN@9";
+"Moose::Exporter::__ANON__[Moose/Exporter.pm:264]" -> "Moose::Exporter::_late_curry_wrapper";
+"Moose::Exporter::BEGIN@14" -> "Moose::Util::MetaRole::BEGIN@11";
+"Moose::BEGIN@15" -> "Moose::Exporter::BEGIN@207";
+}

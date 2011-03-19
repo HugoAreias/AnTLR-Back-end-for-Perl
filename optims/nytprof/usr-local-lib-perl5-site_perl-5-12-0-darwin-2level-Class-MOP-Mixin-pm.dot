@@ -1,0 +1,58 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_base {
+	label="base";
+	"base::import";
+}
+subgraph cluster_warnings {
+	label="warnings";
+	"warnings::import";
+}
+subgraph cluster_Moose_Exporter {
+	label="Moose::Exporter";
+	"Moose::Exporter::BEGIN@11";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::initialize";
+}
+subgraph cluster_Moose_Meta_Role {
+	label="Moose::Meta::Role";
+	"Moose::Meta::Role::BEGIN@17";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_CharStreamState {
+	label="ANTLR::Runtime::CharStreamState";
+	"ANTLR::Runtime::CharStreamState::BEGIN@3";
+}
+subgraph cluster_Scalar_Util {
+	label="Scalar::Util";
+	"Scalar::Util::blessed";
+}
+subgraph cluster_Class_MOP_Mixin {
+	label="Class::MOP::Mixin";
+	"Class::MOP::Mixin::BEGIN@10";
+	"Class::MOP::Mixin::BEGIN@4";
+	"Class::MOP::Mixin::meta";
+	"Class::MOP::Mixin::BEGIN@3";
+}
+"base::import" -> "Class::MOP::Mixin::BEGIN@3";
+"base::import" -> "Class::MOP::Mixin::BEGIN@10";
+"Class::MOP::Mixin::BEGIN@10" -> "Exporter::import";
+"Class::MOP::Mixin::meta" -> "Scalar::Util::blessed";
+"Class::MOP::Mixin::BEGIN@4" -> "warnings::import";
+"Class::MOP::Mixin::meta" -> "Class::MOP::Class::initialize";
+"Class::MOP::Mixin::BEGIN@3" -> "strict::import";
+"base::import" -> "Class::MOP::Mixin::BEGIN@4";
+"Moose::Exporter::BEGIN@11" -> "Class::MOP::Mixin::meta";
+"Moose::Meta::Role::BEGIN@17" -> "Class::MOP::Mixin::meta";
+"ANTLR::Runtime::CharStreamState::BEGIN@3" -> "Class::MOP::Mixin::meta";
+"base::import" -> "Class::MOP::Mixin::meta";
+}

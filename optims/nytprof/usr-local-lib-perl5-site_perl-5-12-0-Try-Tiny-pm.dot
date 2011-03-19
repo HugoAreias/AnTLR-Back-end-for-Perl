@@ -1,0 +1,293 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Class_MOP_Class {
+	label="Class::MOP::Class";
+	"Class::MOP::Class::_post_add_attribute";
+	"Class::MOP::Class::__ANON__[Class/MOP/Class.pm:720]";
+}
+subgraph cluster_Try_Tiny_ScopeGuard {
+	label="Try::Tiny::ScopeGuard";
+	"Try::Tiny::ScopeGuard::DESTROY";
+}
+subgraph cluster_Class_MOP {
+	label="Class::MOP";
+	"Class::MOP::__ANON__[Class/MOP.pm:117]";
+	"Class::MOP::load_first_existing_class";
+	"Class::MOP::BEGIN@14";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::next_token";
+	"ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+}
+subgraph cluster_ANTLR_Runtime_DFA {
+	label="ANTLR::Runtime::DFA";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]";
+	"ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]";
+	"ANTLR::Runtime::DFA::predict";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_Class_MOP_Attribute {
+	label="Class::MOP::Attribute";
+	"Class::MOP::Attribute::_process_accessors";
+	"Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]";
+}
+subgraph cluster_Moose_Object {
+	label="Moose::Object";
+	"Moose::Object::DESTROY";
+	"Moose::Object::__ANON__[Moose/Object.pm:90]";
+}
+subgraph cluster_Try_Tiny {
+	label="Try::Tiny";
+	"Try::Tiny::finally";
+	"Try::Tiny::BEGIN@6";
+	"Try::Tiny::catch";
+	"Try::Tiny::BEGIN@8";
+	"Try::Tiny::BEGIN@3";
+	"Try::Tiny::try";
+	"Try::Tiny::BEGIN@46";
+}
+subgraph cluster_Lavanda2Lexer {
+	label="Lavanda2Lexer";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:560]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:188]";
+	"Lavanda2Lexer::m_T__13";
+	"Lavanda2Lexer::m_T__11";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:280]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:120]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:257]";
+	"Lavanda2Lexer::m_T__12";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]";
+	"Lavanda2Lexer::m_T__17";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:98]";
+	"Lavanda2Lexer::m_T__16";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:461]";
+	"Lavanda2Lexer::m_T__19";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]";
+	"Lavanda2Lexer::m_LETTER";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:234]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:303]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:76]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:492]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:351]";
+	"Lavanda2Lexer::m_NUM";
+	"Lavanda2Lexer::m_DATA";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:211]";
+	"Lavanda2Lexer::m_DIGIT";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:142]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]";
+	"Lavanda2Lexer::m_T__18";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]";
+	"Lavanda2Lexer::m_T__15";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+	"Lavanda2Lexer::m_WS";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:333]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:165]";
+	"Lavanda2Lexer::m_ID";
+	"Lavanda2Lexer::m_T__14";
+	"Lavanda2Lexer::m_T__10";
+	"Lavanda2Lexer::m_T__20";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]";
+	"Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:406]";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::tipo";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]";
+	"Lavanda2Parser::saco";
+	"Lavanda2Parser::lotes";
+	"Lavanda2Parser::sacos";
+	"Lavanda2Parser::cabec";
+	"Lavanda2Parser::fio";
+	"Lavanda2Parser::lote";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:514]";
+	"Lavanda2Parser::lavanda";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:644]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]";
+	"Lavanda2Parser::classe";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:723]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:167]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:313]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:458]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:136]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:256]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]";
+	"Lavanda2Parser::tinto";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:399]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]";
+	"Lavanda2Parser::__ANON__[Lavanda2Parser.pm:579]";
+}
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:157]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:186]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:404]";
+"Lavanda2Parser::tipo" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__13" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__11" -> "Try::Tiny::try";
+"Lavanda2Parser::sacos" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__12" -> "Try::Tiny::try";
+"ANTLR::Runtime::Lexer::next_token" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__17" -> "Try::Tiny::try";
+"Lavanda2Parser::lote" -> "Try::Tiny::try";
+"Lavanda2Parser::fio" -> "Try::Tiny::try";
+"Moose::Object::DESTROY" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__16" -> "Try::Tiny::try";
+"Lavanda2Parser::classe" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__19" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_LETTER" -> "Try::Tiny::try";
+"Lavanda2Parser::tinto" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_NUM" -> "Try::Tiny::try";
+"ANTLR::Runtime::DFA::predict" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_DATA" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_DIGIT" -> "Try::Tiny::try";
+"Lavanda2Parser::saco" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__18" -> "Try::Tiny::try";
+"Lavanda2Parser::lotes" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__15" -> "Try::Tiny::try";
+"Lavanda2Parser::cabec" -> "Try::Tiny::try";
+"Class::MOP::load_first_existing_class" -> "Try::Tiny::try";
+"Lavanda2Parser::lavanda" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_WS" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__14" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_ID" -> "Try::Tiny::try";
+"Class::MOP::Attribute::_process_accessors" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__10" -> "Try::Tiny::try";
+"Class::MOP::Class::_post_add_attribute" -> "Try::Tiny::try";
+"Lavanda2Lexer::m_T__20" -> "Try::Tiny::try";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:331]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:98]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:313]";
+"Try::Tiny::BEGIN@46" -> "Exporter::import";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:389]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:303]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:142]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:644]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:136]";
+"Try::Tiny::try" -> "Class::MOP::Class::__ANON__[Class/MOP/Class.pm:720]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:120]";
+"Try::Tiny::try" -> "Class::MOP::__ANON__[Class/MOP.pm:117]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:257]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:256]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:209]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:349]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:278]";
+"ANTLR::Runtime::Lexer::next_token" -> "Try::Tiny::catch";
+"Lavanda2Parser::tipo" -> "Try::Tiny::catch";
+"Lavanda2Parser::cabec" -> "Try::Tiny::catch";
+"Class::MOP::load_first_existing_class" -> "Try::Tiny::catch";
+"Lavanda2Parser::fio" -> "Try::Tiny::catch";
+"Lavanda2Parser::lote" -> "Try::Tiny::catch";
+"Moose::Object::DESTROY" -> "Try::Tiny::catch";
+"Lavanda2Parser::lavanda" -> "Try::Tiny::catch";
+"Lavanda2Parser::classe" -> "Try::Tiny::catch";
+"Class::MOP::Attribute::_process_accessors" -> "Try::Tiny::catch";
+"Class::MOP::Class::_post_add_attribute" -> "Try::Tiny::catch";
+"Lavanda2Parser::saco" -> "Try::Tiny::catch";
+"Lavanda2Parser::lotes" -> "Try::Tiny::catch";
+"Lavanda2Parser::sacos" -> "Try::Tiny::catch";
+"Lavanda2Parser::tinto" -> "Try::Tiny::catch";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:492]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:96]";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:713]";
+"Try::Tiny::try" -> "Try::Tiny::ScopeGuard::DESTROY";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:126]";
+"Try::Tiny::BEGIN@6" -> "vars::import";
+"Try::Tiny::try" -> "Moose::Object::__ANON__[Moose/Object.pm:90]";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:504]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:558]";
+"Try::Tiny::BEGIN@3" -> "strict::import";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:246]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:406]";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:448]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:280]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:163]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:351]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:118]";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:303]";
+"Try::Tiny::try" -> "Class::MOP::Attribute::__ANON__[Class/MOP/Attribute.pm:342]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:301]";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@3";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:74]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:461]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:459]";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:569]";
+"Lavanda2Parser::tipo" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__13" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__11" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_NUM" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_DATA" -> "Try::Tiny::finally";
+"ANTLR::Runtime::DFA::predict" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_DIGIT" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__18" -> "Try::Tiny::finally";
+"Lavanda2Parser::saco" -> "Try::Tiny::finally";
+"Lavanda2Parser::lotes" -> "Try::Tiny::finally";
+"Lavanda2Parser::sacos" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__12" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__15" -> "Try::Tiny::finally";
+"Lavanda2Parser::cabec" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__17" -> "Try::Tiny::finally";
+"Lavanda2Parser::lote" -> "Try::Tiny::finally";
+"Lavanda2Parser::fio" -> "Try::Tiny::finally";
+"Lavanda2Parser::lavanda" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__16" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_WS" -> "Try::Tiny::finally";
+"Lavanda2Parser::classe" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_ID" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__19" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__14" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__10" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_T__20" -> "Try::Tiny::finally";
+"Lavanda2Lexer::m_LETTER" -> "Try::Tiny::finally";
+"Lavanda2Parser::tinto" -> "Try::Tiny::finally";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:514]";
+"Try::Tiny::try" -> "ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:172]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:165]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:490]";
+"Try::Tiny::try" -> "ANTLR::Runtime::Lexer::__ANON__[ANTLR/Runtime/Lexer.pm:87]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:723]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:458]";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@6";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:76]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:232]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:255]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:560]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:188]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:167]";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@8";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:399]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:579]";
+"Try::Tiny::try" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:140]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:234]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:211]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "ANTLR::Runtime::DFA::__ANON__[ANTLR/Runtime/DFA.pm:175]";
+"Try::Tiny::ScopeGuard::DESTROY" -> "Lavanda2Lexer::__ANON__[Lavanda2Lexer.pm:333]";
+"Try::Tiny::try" -> "Lavanda2Parser::__ANON__[Lavanda2Parser.pm:634]";
+"Class::MOP::BEGIN@14" -> "Try::Tiny::BEGIN@46";
+}

@@ -1,0 +1,308 @@
+$VAR1 = {
+          'Sacos' => [
+                       {
+                         'IdCli' => 'sergio',
+                         'Num' => '1',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'ruben',
+                         'Num' => '2',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '5',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'dani',
+                         'Num' => '3',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '5',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'hugo',
+                         'Num' => '4',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'celina',
+                         'Num' => '5',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '4',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'pedro',
+                         'Num' => '6',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '4',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '4',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '2',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'pedro',
+                         'Num' => '7',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '4',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '5',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'pedro',
+                         'Num' => '8',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '2',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '2',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '4',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'dani',
+                         'Num' => '9',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'fib',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      }
+                                    ]
+                       },
+                       {
+                         'IdCli' => 'ruben',
+                         'Num' => '10',
+                         'Lotes' => [
+                                      {
+                                        'Qt' => '3',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'cor'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '1',
+                                        'Tipo' => {
+                                                    'Fio' => 'la',
+                                                    'Classe' => 'casa',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      },
+                                      {
+                                        'Qt' => '2',
+                                        'Tipo' => {
+                                                    'Fio' => 'alg',
+                                                    'Classe' => 'corpo',
+                                                    'Tinto' => 'br'
+                                                  }
+                                      }
+                                    ]
+                       }
+                     ],
+          'Cabec' => {
+                       'IdPR' => 'PstVVerde',
+                       'Data' => '13-04-2007'
+                     }
+        };

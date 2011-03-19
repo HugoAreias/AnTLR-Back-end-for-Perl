@@ -1,0 +1,36 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_vars {
+	label="vars";
+	"vars::import";
+}
+subgraph cluster_Data_OptList {
+	label="Data::OptList";
+	"Data::OptList::__is_a";
+}
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+}
+subgraph cluster_Moose {
+	label="Moose";
+	"Moose::BEGIN@11";
+}
+subgraph cluster_List_Util {
+	label="List::Util";
+	"List::Util::BEGIN@11";
+	"List::Util::first";
+	"List::Util::BEGIN@12";
+}
+subgraph cluster_Moose_Meta_Class {
+	label="Moose::Meta::Class";
+	"Moose::Meta::Class::_find_common_base";
+}
+"Moose::BEGIN@11" -> "List::Util::BEGIN@11";
+"List::Util::first" -> "Data::OptList::__is_a";
+"List::Util::BEGIN@12" -> "vars::import";
+"List::Util::BEGIN@11" -> "strict::import";
+"Moose::BEGIN@11" -> "List::Util::BEGIN@12";
+"Data::OptList::__is_a" -> "List::Util::first";
+"Moose::Meta::Class::_find_common_base" -> "List::Util::first";
+}

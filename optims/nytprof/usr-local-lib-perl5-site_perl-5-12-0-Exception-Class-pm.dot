@@ -1,0 +1,86 @@
+digraph {
+graph [overlap=false]
+subgraph cluster_strict {
+	label="strict";
+	"strict::import";
+	"strict::unimport";
+}
+subgraph cluster_ANTLR_Runtime_Lexer {
+	label="ANTLR::Runtime::Lexer";
+	"ANTLR::Runtime::Lexer::BEGIN@9";
+}
+subgraph cluster_Exporter {
+	label="Exporter";
+	"Exporter::import";
+}
+subgraph cluster_ANTLR_Runtime_Exception {
+	label="ANTLR::Runtime::Exception";
+	"ANTLR::Runtime::Exception::BEGIN@3";
+}
+subgraph cluster_Lavanda2Parser {
+	label="Lavanda2Parser";
+	"Lavanda2Parser::BEGIN@11";
+}
+subgraph cluster_Exception_Class_Base {
+	label="Exception::Class::Base";
+	"Exception::Class::Base::BEGIN@37";
+	"Exception::Class::Base::BEGIN@6";
+	"Exception::Class::Base::BEGIN@43";
+	"Exception::Class::Base::BEGIN@34";
+	"Exception::Class::Base::BEGIN@63";
+	"Exception::Class::Base::BEGIN@9";
+	"Exception::Class::Base::BEGIN@13";
+	"Exception::Class::Base::BEGIN@10";
+	"Exception::Class::Base::BEGIN@15";
+	"Exception::Class::Base::BEGIN@2";
+	"Exception::Class::Base::BEGIN@7";
+	"Exception::Class::Base::BEGIN@11";
+}
+subgraph cluster_Exception_Class {
+	label="Exception::Class";
+	"Exception::Class::BEGIN@10";
+	"Exception::Class::BEGIN@176";
+	"Exception::Class::BEGIN@14";
+	"Exception::Class::BEGIN@8";
+	"Exception::Class::BEGIN@2";
+	"Exception::Class::import";
+	"Exception::Class::BEGIN@46";
+	"Exception::Class::BEGIN@79";
+	"Exception::Class::BEGIN@168";
+	"Exception::Class::BEGIN@11";
+	"Exception::Class::BEGIN@6";
+	"Exception::Class::CORE:sort";
+}
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@2";
+"Exception::Class::BEGIN@11" -> "Exporter::import";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@9";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@2";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@63";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@6";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@6";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@8";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@11";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@10";
+"Exception::Class::BEGIN@176" -> "strict::unimport";
+"Exception::Class::BEGIN@79" -> "strict::unimport";
+"Exception::Class::BEGIN@46" -> "strict::unimport";
+"Exception::Class::BEGIN@168" -> "strict::unimport";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@14";
+"Exception::Class::import" -> "Exception::Class::CORE:sort";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@176";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@13";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@43";
+"Exception::Class::BEGIN@8" -> "strict::import";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@7";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@10";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@79";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@168";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@11";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@34";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::BEGIN@46";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@37";
+"ANTLR::Runtime::Lexer::BEGIN@9" -> "Exception::Class::import";
+"Lavanda2Parser::BEGIN@11" -> "Exception::Class::import";
+"ANTLR::Runtime::Exception::BEGIN@3" -> "Exception::Class::import";
+"Exception::Class::BEGIN@10" -> "Exception::Class::Base::BEGIN@15";
+}

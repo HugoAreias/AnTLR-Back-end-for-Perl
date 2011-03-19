@@ -1,0 +1,19 @@
+How to Install the Code Generator
+
+1. Locate AnTLR folder
+2. Locate org/antlr/codegen inside AnTLR folder
+3. Copy Perl5Target.class into this folder*
+4. Copy Perl5.stg into org/antlr/codegen/templates/Perl5. Create this folder if it does not exist
+
+* if the target classes end with .java, you need to copy Perl5Target.java and recompile AnTLR.
+Otherwise, you can try to compile Perl5Target.java and copy the generated Perl5Target.class into
+the AnTLR's codegen folder (where are located the .class)
+
+How to Generate Perl Parsers with AnTLR
+
+1. Locate AnTLR folder
+2. Locate org folder inside AnTLR folder, and positionate one level above it
+3. Run the command: java org/antlr/Tool [grammar_path]*
+
+* be sure to install the Perl runtime library before executing the generated parsers, otherwise
+they will fail to work
