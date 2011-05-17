@@ -41,7 +41,7 @@ subtype 'Char'
 # The current char when an error occurred. For lexers.
 has 'c' => (
     is  => 'ro',
-    isa => 'Maybe[Char]',
+    isa => 'Maybe[Int]',
 );
 
 # Track the line at which the error occurred in case this is
