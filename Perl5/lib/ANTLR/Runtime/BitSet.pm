@@ -203,7 +203,7 @@ sub equals : method {
 sub member : method {
     my ($self, $el) = @_;
 
-	return 0 if ( 0 > $el );
+	return 0 if ( 0 > $el || length $self->bits < $el );
     return (substr $self->bits, $el, 1) eq '1';
 }
 
