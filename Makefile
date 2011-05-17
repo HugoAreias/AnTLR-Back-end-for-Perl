@@ -36,8 +36,7 @@ t017 :
 	mv ./t017parser*.pm ./tests/
 
 edif :
-	#java org/antlr/Tool ./EDIF.g
-	perl edif.pl input
+	perl edif.pl
 
 .PHONY: cleanall clean
 
